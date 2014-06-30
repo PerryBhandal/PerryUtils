@@ -36,7 +36,7 @@ Dir.chdir(CWD) do
 
 	if ARGV.length == 2
 		#Create our new branch
-		system("git checkout -b #{ARGV[0]}")
+		system("git checkout -b #{ARGV[1]}")
 	end
 end
 
