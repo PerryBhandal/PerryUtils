@@ -34,7 +34,7 @@ Dir.chdir(CWD) do
 	#Delete our branch
 	system("git branch -d #{branchName}")
 
-	if ARGV.length == 1
+	if ARGV.length == 2
 		#Create our new branch
 		system("git checkout -b #{ARGV[0]}")
 	end
