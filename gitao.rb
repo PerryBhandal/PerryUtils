@@ -6,19 +6,14 @@
 
 CWD = `pwd -P`.strip()
 
-if ARGV.length > 1
-	$stderr.puts("Unexpected number of arguments. Expected zero, or one containing the name of the new branch.")
+if ARGV.length > 2 || ARGV.length == 0
+	$stderr.puts("Unexpected number of arguments. Expected one (in which case it would simply merge into that branch) or two if a new branch should be created.")
 	exit
 end
 
 Dir.chdir(CWD) do
 	#Get current branch name
 	branchName = `git rev-parse --abbrev-ref HEAD`.strip()
-
-	if branchName == "master"
-		$stderr.puts("In master currently. Can't merge or delete this.")
-		exit
-	end
 
 	#Make sure no files are pending commit
 	status = `git status`.strip()
@@ -27,8 +22,8 @@ Dir.chdir(CWD) do
 		exit
 	end
 
-	#Check out our master
-	system("git checkout master")
+	#Check out our target branch name.
+	system("git checkout #{ARGV[0]}")
 
 	#Merge in our branch
 	system("git merge #{branchName}")
@@ -39,7 +34,7 @@ Dir.chdir(CWD) do
 	#Delete our branch
 	system("git branch -d #{branchName}")
 
-	if ARGV.length == 1
+	if ARGV.length == 2
 		#Create our new branch
 		system("git checkout -b #{ARGV[0]}")
 	end
