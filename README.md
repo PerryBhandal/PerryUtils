@@ -1,8 +1,10 @@
 PerryUtils
 ==========
 
-This repo is where I place utilties I've written to make myself more productive/efficient.
+This repo is where I place utilities I need on both of my systems, as well as configuration files, etc.
 
-For the most part there won't be much documentation as I doubt too many other people will find them particularly useful! That being said, I've included some minimal documentation in the header of each file. 
+I doubt anyone has any use for any of this, so there's virtually no documentation in any of my utils!
 
-In the off chance someone happens to stumble across this repo, feel free to ping me if you have any questions.
+In fact, I bet no one will ever read this, so I'll say it: I enjoy watching Glee. I don't even know why. The plot line is horrible, but dammit those kids can sing!
+
+That was cathartic.
