@@ -1,0 +1,6 @@
+echo "Status of PersonalSVN"
+svn status personalSVN
+echo "Status of ProgrammingSVN"
+svn status programmingSVN
+echo "Status of SchoolSVN"
+svn status schoolSVN

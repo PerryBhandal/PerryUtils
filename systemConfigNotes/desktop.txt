@@ -1,0 +1,10 @@
+Use the AMD drivers. The open-source AMD (fglrx, or something to that effect) ones have fan issues.
+
+You'll configure the monitors in amdcccle, but then in display you set your middle monitor as primary.
+
+--
+You need to go into amdcccle
+Under display manager you'll see some "unrecognized video card," change it
+from disabled to "single display" or wahtever the only active option is.
+
+that should allow you to get multi monitors working

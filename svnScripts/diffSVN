@@ -1,0 +1,18 @@
+#!/bin/sh
+
+#Parameters are
+#$2 - startmonth
+#$3 - startday
+#$4 - startyear
+#$5 - endmonth
+#$6 - endday
+#$7 - endyear
+
+echo "Diff PersonalSVN"
+svn diff personalSVN --summarize -r {$3-$1-$2}:{$6-$4-$5}
+echo "----------------"
+echo "Diff SchoolSVN"
+svn diff schoolSVN --summarize -r {$3-$1-$2}:{$6-$4-$5}
+echo "----------------"
+echo "Diff ProgrammingSVN"
+svn diff programmingSVN --summarize -r {$3-$1-$2}:{$6-$4-$5}

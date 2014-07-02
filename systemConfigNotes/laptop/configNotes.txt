@@ -1,0 +1,60 @@
+Touchpad delay:
+
+Uncheck "Disable touchpad while typing"
+---
+Disable bluetooth on load
+
+Add
+
+rfkill block bluetooth
+
+to rc.local
+
+--
+
+Install gnome do, subversion
+
+--
+
+Get this new power manager (don't install laptop-mode-tools)
+
+sudo add-apt-repository ppa:linrunner/tlp
+sudo apt-get update
+sudo apt-get install tlp tlp-rdw
+sudo tlp start
+---
+
+https://help.ubuntu.com/community/PowerManagement/ReducedPower
+
+Do the 99-savings file from there and install it into /etc/pm/sleep.d and power.d
+
+---
+Theme: android_halo
+
+Controls and window: Adwaita-X-dark
+
+Icons: gnome
+----
+Fix screenshot
+
+You'll need to install dconf-editor, then go into org.cinnamon.settings-daemon.plugins.media-keys and disable the normal prints, then set "area-screenshot-clip" to Print (notice the upper case)
+----
+Be sure you're running a more recent kernel to get decent battery life. I went from 3.11 to 3.13.6 (most recent stable) and it improved battery life significantly -- got down to 8 or 9 watts of use from 17 or 18
+
+Here's what I was running for good life:
+
+Linux perry-laptop 3.13.6-031306-generic #201403070154 SMP Fri Mar 7 06:55:03 UTC 2014 x86_64 x86_64 x86_64 GNU/Linux
+--
+Disable the swish sound when moving between worksapces in system settings > sound under the sound effects tab
+
+Also disable the beep on snapping.
+--
+shortcuts:
+
+Set alt + left to push snap left
+Set alt + right to push snap right
+Set alt + up to push snap up
+Set alt + down to push snap down
+
+--
+Disable edge tiling and snapping in system settings > window tiling and edge flip

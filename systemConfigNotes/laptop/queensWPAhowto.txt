@@ -1,0 +1,7 @@
+Security: WPA & WPA2 Enterprise
+Authentication: Protected EAP (PEAP)
+Anonymous Identity: Empty
+CA Certiifcate: None
+PEAP version: Automatic
+Inner auth: MSCHAPV2
+Use qcard pass (not CASLAB).
