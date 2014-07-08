@@ -1,0 +1,14 @@
+/*** FUNCTIONS */
+
+/* Used to determine the amount of padding needed on top and on the bottom to make an element vertically centered within its containing element, with padding extending to the top and bottom of it */
+
+@mixin get-vcenter-padding($element-height, $enclosing-height) {
+	padding-top: floor((($enclosing-height) - ($element-height))/2);
+	padding-bottom: floor((($enclosing-height) - ($element-height))/2);
+}
+
+@mixin get-vcenter-margin($element-height, $enclosing-height) {
+	margin-top: floor((($enclosing-height) - ($element-height))/2);
+	margin-bottom: floor((($enclosing-height) - ($element-height))/2);
+}
+
