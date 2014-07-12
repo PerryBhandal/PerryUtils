@@ -12,3 +12,12 @@
 	margin-bottom: floor((($enclosing-height) - ($element-height))/2);
 }
 
+.fw-container {
+	width: 100%;
+	min-width: 960px;
+}
+
+.pw-container {
+	width: 960px;
+	margin: 0 auto;
+}
