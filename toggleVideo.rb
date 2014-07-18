@@ -21,11 +21,7 @@ mousePos = parseMousePos(mousePosStr)
 focusedWindow = `xdotool getwindowfocus`
 
 system("xdotool mousemove #{XLOC} #{YLOC}")
-
 system("xdotool click 1")
-
 sleep(MIDCLICKDELAY)
-
 system("xdotool mousemove #{mousePos[0]} #{mousePos[1]}")
-
 system("xdotool windowfocus #{focusedWindow}")
