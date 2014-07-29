@@ -79,9 +79,23 @@ if !exists(":DiffOrig")
 		  \ | wincmd p | diffthis
 endif
 
-" START PERSONAL SETTINGS "
+" ************START PERSONAL SETTINGS "
 
+" Set up Vundle "
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+
+" Don't store any backups, just :w constantly! "
 set nobackup
 set noswapfile
 
-" END PERSONAL SETTINGS "
+" *********** END PERSONAL SETTINGS "
