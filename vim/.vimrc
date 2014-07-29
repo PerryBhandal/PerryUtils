@@ -101,9 +101,11 @@ Plugin 'altercation/vim-colors-solarized' " Theme.
 Plugin 'ecomba/vim-ruby-refactoring' " Refactoring for Ruby
 Plugin 'matchit.zip' " Dependency for some of Ruby refactoring's methods
 
-Bundle 'vim-ruby/vim-ruby'
+" Removed this bundle for now. I prefer YCM Bundle 'vim-ruby/vim-ruby'
 
 Plugin 'scrooloose/syntastic'
+
+Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -128,6 +130,6 @@ set nohls
 " Use ruby lint instead of mri and keep the loc list always visible
 let g:syntastic_ruby_checkers = ['rubylint']
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_check_on_open = 1
+"Removed this for now, disliked the delay on load: let g:syntastic_check_on_open = 1
 let g:syntastic_auto_loc_list=1
 " *********** END PERSONAL SETTINGS "

@@ -1,3 +1,8 @@
 Copy .vimrc and the .vim folder into ~/
 
 Each time you add a new plugin you need to open vim and do :PluginInstall
+
+Before YouCompleteMe will work, you have to manually compile the
+ycm_support_libs. Read more about doing that on their GH page:
+
+https://github.com/Valloric/YouCompleteMe
