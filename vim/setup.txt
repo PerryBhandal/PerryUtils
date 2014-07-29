@@ -1,0 +1,2 @@
+Copy .vimrc and the .vim folder into ~/
+Install vundle (from Git)
