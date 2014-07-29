@@ -108,6 +108,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'kien/ctrlp.vim'
+Plugin 'airblade/vim-gitgutter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -139,4 +140,11 @@ let g:neocomplcache_enable_at_startup = 1
 
 " Enable ` to cyce between screens"
 nnoremap <silent> ` <c-w><c-w>
+
+" Set up solarize
+
+syntax enable
+set background=dark
+colorscheme solarized
+
 " *********** END PERSONAL SETTINGS "
