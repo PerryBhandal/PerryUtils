@@ -101,7 +101,6 @@ Plugin 'ecomba/vim-ruby-refactoring' " Refactoring for Ruby
 Plugin 'matchit.zip' " Dependency for some of Ruby refactoring's methods
 
 Bundle 'vim-ruby/vim-ruby'
-Plugin 'neocomplcache'
 Plugin 'scrooloose/syntastic'
 
 Plugin 'Valloric/YouCompleteMe'
