@@ -144,6 +144,7 @@ map <C-n> :NERDTreeToggle<CR>
 " Set folding
 set foldenable
 set foldmethod=syntax
+set foldnestmax=3
 
 " Enable ` to cyce between screens"
 nnoremap <silent> ` <c-w><c-w>
