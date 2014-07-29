@@ -96,7 +96,6 @@ Plugin 'endwise.vim'
 
 Plugin 'bling/vim-airline' " Status bar
 Plugin 'tpope/vim-fugitive' " Git
-Plugin 'altercation/vim-colors-solarized' " Theme.
 
 Plugin 'ecomba/vim-ruby-refactoring' " Refactoring for Ruby
 Plugin 'matchit.zip' " Dependency for some of Ruby refactoring's methods
@@ -109,7 +108,6 @@ Plugin 'Valloric/YouCompleteMe'
 
 Plugin 'kien/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
-
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -141,10 +139,5 @@ let g:neocomplcache_enable_at_startup = 1
 " Enable ` to cyce between screens"
 nnoremap <silent> ` <c-w><c-w>
 
-" Set up solarize
-
-syntax enable
-set background=dark
-colorscheme solarized
-
+colorscheme railscasts
 " *********** END PERSONAL SETTINGS "
