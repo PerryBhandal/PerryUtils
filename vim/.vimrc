@@ -137,6 +137,10 @@ let g:syntastic_auto_loc_list=1
 
 let g:neocomplcache_enable_at_startup = 1
 
+" Make ctrl + n open nerd tree 
+
+map <C-n> :NERDTreeToggle<CR>
+
 
 " Enable ` to cyce between screens"
 nnoremap <silent> ` <c-w><c-w>
