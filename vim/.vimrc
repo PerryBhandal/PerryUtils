@@ -86,7 +86,12 @@ endif
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+" Below installs vundle. This shows how you can enable a vim plugin from GH as
+" well
 Plugin 'gmarik/Vundle.vim'
+" Below installs endwise (automatic closing tags). This is hosted on vim
+" scripts. So in this case the specific plugin is the one here
+" http://www.vim.org/scripts/script.php?script_id=2386
 Plugin 'endwise.vim'
 
 " All of your Plugins must be added before the following line
