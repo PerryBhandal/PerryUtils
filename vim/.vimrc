@@ -94,6 +94,10 @@ Plugin 'gmarik/Vundle.vim'
 " http://www.vim.org/scripts/script.php?script_id=2386
 Plugin 'endwise.vim'
 
+Plugin 'bling/vim-airline' " Status bar
+Plugin 'tpope/vim-fugitive' " Git
+Plugin 'altercation/vim-colors-solarized' " Theme.
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -102,5 +106,10 @@ filetype plugin indent on    " required
 " Don't store any backups, just :w constantly! "
 set nobackup
 set noswapfile
+
+" Settings for solarized (theme) plugin "
+syntax enable
+set background=dark
+colorscheme solarized
 
 " *********** END PERSONAL SETTINGS "
