@@ -114,4 +114,7 @@ colorscheme solarized
 
 " Show line numbers "
 set number
+
+"Disable search highlighting by default"
+set nohls
 " *********** END PERSONAL SETTINGS "
