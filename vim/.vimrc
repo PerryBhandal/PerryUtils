@@ -149,4 +149,7 @@ set foldnestmax=3
 nnoremap <silent> ` <c-w><c-w>
 
 colorscheme railscasts
+
+" Remove toolbars in case we're running gvim
+set guioptions=aci
 " *********** END PERSONAL SETTINGS "
