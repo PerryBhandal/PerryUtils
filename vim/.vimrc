@@ -100,7 +100,7 @@ Plugin 'tpope/vim-fugitive' " Git
 Plugin 'ecomba/vim-ruby-refactoring' " Refactoring for Ruby
 Plugin 'matchit.zip' " Dependency for some of Ruby refactoring's methods
 
-" Removed this bundle for now. I prefer YCM Bundle 'vim-ruby/vim-ruby'
+Bundle 'vim-ruby/vim-ruby'
 Plugin 'neocomplcache'
 Plugin 'scrooloose/syntastic'
 
@@ -141,6 +141,9 @@ let g:neocomplcache_enable_at_startup = 1
 
 map <C-n> :NERDTreeToggle<CR>
 
+" Set folding
+set foldenable
+set foldmethod=syntax
 
 " Enable ` to cyce between screens"
 nnoremap <silent> ` <c-w><c-w>
