@@ -87,7 +87,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
-
+Plugin 'endwise.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
