@@ -1,2 +1,4 @@
 Copy .vimrc and the .vim folder into ~/
 Install vundle (from Git)
+
+Each time you add a new plugin you need to open vim and do :PluginInstall
