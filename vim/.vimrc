@@ -98,6 +98,9 @@ Plugin 'bling/vim-airline' " Status bar
 Plugin 'tpope/vim-fugitive' " Git
 Plugin 'altercation/vim-colors-solarized' " Theme.
 
+Plugin 'ecomba/vim-ruby-refactoring' " Refactoring for Ruby
+Plugin 'matchit.zip' " Dependency for some of Ruby refactoring's methods
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
