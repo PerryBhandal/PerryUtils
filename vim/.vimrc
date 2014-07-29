@@ -112,4 +112,6 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" Show line numbers "
+set number
 " *********** END PERSONAL SETTINGS "
