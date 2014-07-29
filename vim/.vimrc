@@ -117,10 +117,6 @@ set nobackup
 set noswapfile
 
 " Settings for solarized (theme) plugin "
-syntax enable
-set background=dark
-colorscheme solarized
-
 " Show line numbers "
 set number
 
@@ -137,4 +133,8 @@ let g:syntastic_auto_loc_list=1
 " support for local fs checking require_relative
 
 let g:neocomplcache_enable_at_startup = 1
+
+
+" Enable ` to cyce between screens"
+nnoremap <silent> ` <c-w><c-w>
 " *********** END PERSONAL SETTINGS "
