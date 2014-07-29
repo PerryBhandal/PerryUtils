@@ -102,7 +102,7 @@ Plugin 'ecomba/vim-ruby-refactoring' " Refactoring for Ruby
 Plugin 'matchit.zip' " Dependency for some of Ruby refactoring's methods
 
 " Removed this bundle for now. I prefer YCM Bundle 'vim-ruby/vim-ruby'
-
+Plugin 'neocomplcache'
 Plugin 'scrooloose/syntastic'
 
 Plugin 'Valloric/YouCompleteMe'
@@ -132,4 +132,9 @@ let g:syntastic_ruby_checkers = ['rubylint']
 let g:syntastic_always_populate_loc_list = 1
 "Removed this for now, disliked the delay on load: let g:syntastic_check_on_open = 1
 let g:syntastic_auto_loc_list=1
+
+" Neocomplcache is another auto completion library. Using this as it has
+" support for local fs checking require_relative
+
+let g:neocomplcache_enable_at_startup = 1
 " *********** END PERSONAL SETTINGS "
