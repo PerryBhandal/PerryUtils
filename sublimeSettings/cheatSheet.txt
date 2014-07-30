@@ -1,0 +1,24 @@
+General workflow
+--
+**Projects**
+Except for very basic projects, create a Sublime project for everything. Eases project specific config settings. Keep it your repo as well.
+
+**Snippets**
+To use snippets just type the keyword in and then press tab. For example, here are a few useful snippets:
+
+def tab (adds the end, and prompts for method name).
+
+Be aggressive about adding new snippets.
+
+Default
+---
+Command Palette: ctrl + shift + p (menu, package commands, etc)
+File dropdown: ctrl + p (use this to load files)
+Goto symbols: ctrl + r (can type symbol names here to navigate them).
+Go to line by number: ctrl + g, then enter number.
+ctrl + # - Switches to a specific viewport (e.g. ctrl+1 for left, ctrl + 2 for right).
+ctrl + alt + # - Puts in that many workspaces.
+
+Personal binds
+--
+Look at the keybinds file to see these.

@@ -1,0 +1,11 @@
+{
+	"installed_packages":
+	[
+		"Git",
+		"SideBarGit",
+		"GitGutter",
+		"SublimeCodeIntel",
+		"Predawn",
+		"SideBarEnhancements"
+	]
+}

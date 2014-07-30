@@ -1,0 +1,5 @@
+Current pains
+--
+1) Poor code folding. Need a way to just do function level folding (a la Eclipse). Seems to exist for some languages, but unclear if Ruby has it.
+2) Need a way to do git commits from inside. Trying to integrate it with SidebarEnhancements to no avail.
+3) Need to integrate ruby-lint with SubLinter at some point. For now just run it manually.

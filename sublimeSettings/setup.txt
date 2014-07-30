@@ -1,0 +1,9 @@
+All of these files go into ~/.config/sublime-text-3/Packages/User
+
+1) Make sure you're running Sublime 3 (not ST2)
+
+2) Install Packagecontrol
+
+https://sublime.wbond.net/installation
+
+3) Plugins are all listed in the preferences file, just copy that.

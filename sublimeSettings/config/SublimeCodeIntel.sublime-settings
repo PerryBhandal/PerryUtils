@@ -1,0 +1,6 @@
+{
+    "Ruby": {
+        "ruby": "/usr/bin/ruby",
+        "rubyExtraPaths": []
+    }
+}

@@ -1,0 +1,6 @@
+[
+	{ "keys": ["f12"], "command": "reindent", "args": {"single_line": false} },
+	{"keys": ["ctrl+b"], "command": "goto_definition" },
+	{"keys": ["ctrl+space"], "command": "autoComplete" }
+	
+]
