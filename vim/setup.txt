@@ -1,3 +1,7 @@
+Compile vim from source
+
+https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
+
 Copy .vimrc and the .vim folder into ~/
 
 Each time you add a new plugin you need to open vim and do :PluginInstall
