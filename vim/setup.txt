@@ -1,12 +1,10 @@
-Compile vim from source
+**** Compile vim from source
 
 https://github.com/Valloric/YouCompleteMe/wiki/Building-Vim-from-source
 
-Copy .vimrc and the .vim folder into ~/
+Few notes about this:
+- In step 3, do everything EXCLUDING make VIMRUNTIMEDIR (and beyond). You'll do checkinstall there.
+- Use checkinstall instead of make (so replace sudo make install with sudo checkinstall).
+- Do not do any of the update-alternatives stuff and beyond. The above handles setting up gvim and vim, and you can handle file associations on a per-extension basis.
 
-Each time you add a new plugin you need to open vim and do :PluginInstall
 
-Before YouCompleteMe will work, you have to manually compile the
-ycm_support_libs. Read more about doing that on their GH page:
-
-https://github.com/Valloric/YouCompleteMe
