@@ -18,6 +18,7 @@ vnoremap z za
 
 " Fold globally to a single level. TODO: Make this language sensitive.
 nnoremap <c-z> :%foldc<cr>
+nnoremap <a-z> :%foldo<cr>
 
 "TODO: Add command to fold everything to a method-level.
 
