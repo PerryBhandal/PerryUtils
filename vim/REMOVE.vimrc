@@ -73,6 +73,8 @@ Plugin 'tpope/vim-fugitive'
 " UI Elements
 Plugin 'bling/vim-airline'
 
+" Other
+Plugin "Valloric/YouCompleteMe"
 """End Plugins
 
 call vundle#end()
