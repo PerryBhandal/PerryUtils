@@ -84,6 +84,7 @@ Plugin 'bling/vim-airline'
 
 " Other
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'matchit.zip'
 
 " Language specific
 Plugin 'c.vim'
