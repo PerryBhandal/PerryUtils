@@ -19,3 +19,10 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 cd ~/.vim/bundle/YouCompleteMe
 ./install.sh --clang-completer
+
+*** Language specific packages
+
+C/C++ 
+--
+Plugin page: http://www.vim.org/scripts/script.php?script_id=213
+Hotkeys: http://lug.fh-swf.de/vim/vim-c/c-hotkeys.pdf
