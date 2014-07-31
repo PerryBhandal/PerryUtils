@@ -37,6 +37,7 @@ set autoindent
 set history=50
 set showcmd
 
+filetype on
 filetype plugin indent on
 filetype plugin on
 
@@ -92,6 +93,14 @@ Plugin 'c.vim'
 " Ruby
 Plugin 'endwise.vim'
 
+" BEGIN Vim-ruby Bundle
+Bundle 'vim-ruby/vim-ruby'
+
+autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1 
+autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+" END vim-ruby bundle
+
 """End Plugins
 call vundle#end()
 
@@ -139,3 +148,5 @@ set guioptions=aci
 set clipboard=unnamed
 set clipboard=unnamedplus
 "}}}
+
+
