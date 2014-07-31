@@ -115,3 +115,8 @@ colorscheme railscasts
 set guioptions=aci
 
 "}}}
+
+"{{{Clipboard
+set clipboard=unnamed
+set clipboard=unnamedplus
+"}}}
