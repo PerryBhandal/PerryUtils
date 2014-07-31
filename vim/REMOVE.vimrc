@@ -3,6 +3,8 @@
 " Author: Perry Bhandal
 """
 
+set nocompatible " Ensure this always remains at the top as it has side effects.
+
 "{{{General Hotkeys
 " Quit on ctrl + w
 nnoremap <c-w> :q<cr>
@@ -29,7 +31,6 @@ nnoremap <f12> :source ~/.vimrc<cr>
 
 "{{{ Basic Settings
 
-set nocompatible
 set autoindent
 set history=50
 set showcmd
