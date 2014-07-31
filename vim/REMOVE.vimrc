@@ -51,6 +51,10 @@ set number  " Show line numbers
 
 " Resize splits when our window is resized.
 au VimResized * :wincmd =
+
+" Auto reload .vimrc on change.
+autocmd BufWritePost .vimrc source %
+
 "}}}
 
 "{{{ Spelling
