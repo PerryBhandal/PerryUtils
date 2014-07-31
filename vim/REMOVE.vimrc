@@ -14,8 +14,8 @@ nnoremap <c-w> :q<cr>
 nnoremap z za
 vnoremap z za
 
-" Fold everything but the current fold and its parent folds
-nnoremap <c-z> mzzMzvzz
+" Fold globally to a single level. TODO: Make this language sensitive.
+nnoremap <c-z> :%foldc<cr>
 
 "TODO: Add command to fold everything to a method-level.
 
@@ -114,7 +114,7 @@ augroup END
 
 augroup ft_cpp
 	au!
-	au FileType cpp setlocal foldmethod=marker foldmarker={,} foldnestmax=1
+	au FileType cpp setlocal foldmethod=marker foldmarker={,}
 augroup END
 
 "}}}
