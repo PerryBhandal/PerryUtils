@@ -142,6 +142,12 @@ augroup ft_cpp
 	au FileType cpp setlocal foldmethod=marker foldmarker={,}
 augroup END
 
+augroup ft_ruby
+	au!
+	au FileType ruby setlocal foldmethod=syntax
+	au BufRead,BufNewFile Capfile setlocal filetype=ruby
+augroup END	
+
 "}}}
 
 "{{{ Appearance
