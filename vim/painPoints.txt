@@ -1,0 +1,5 @@
+1) Need an easy way to commit files. GitFugitive is a good start, but need a better workflow for it.
+
+2) When you define a function or class in any language, it should auto-pad it with 1 line at the top and bottom.
+
+
