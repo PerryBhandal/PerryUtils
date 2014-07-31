@@ -7,4 +7,7 @@ Few notes about this:
 - Use checkinstall instead of make (so replace sudo make install with sudo checkinstall).
 - Do not do any of the update-alternatives stuff and beyond. The above handles setting up gvim and vim, and you can handle file associations on a per-extension basis.
 
+** *** Install Vundle plugin manager
+
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
