@@ -1,1 +1,1 @@
-cp REMOVE.vimrc ~/
+cp REMOVE.vimrc ~/.vimrc
