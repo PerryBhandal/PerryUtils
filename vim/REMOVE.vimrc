@@ -10,10 +10,6 @@ set autoindent
 set history=50
 set showcmd
 
-if has('mouse')
-	set mouse=a
-end
-
 filetype plugin indent on
 
 " Return to same line when you re-open a file
@@ -53,6 +49,11 @@ Plugin 'bling/vim-airline'
 
 call vundle#end()
 
+	"{{{GitFugitive
+	nnoremap gd :Gdiff<cr>
+	"TODO: Add for Gstatus and Gcommit here (and add, potentially)
+	"}}}
+
 "}}}
 
 "{{{ Folding
@@ -69,10 +70,14 @@ vnoremap z za
 "{{{ File-Types
 augroup ft_vim
 	au!
-
 	au FileType vim setlocal foldmethod=marker
 	au FileType help setlocal textwidth=78
 	au BufWinEnter *.txt if &ft == 'help' | wincmd L | endif
+augroup END
+
+augroup ft_c
+	au!
+	au FileType c setlocal foldmethod=marker foldmarker={,}
 augroup END
 
 "}}}
