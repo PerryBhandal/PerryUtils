@@ -85,6 +85,9 @@ Plugin 'c.vim'
 
 """End Plugins
 
+" Squelches ycm usage warnings when using global extra_conf
+let g:ycm_extra_conf_globlist = ['~/.ycm_extra_conf.py']
+
 call vundle#end()
 
 
