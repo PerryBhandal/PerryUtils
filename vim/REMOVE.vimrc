@@ -31,6 +31,7 @@ nnoremap <f12> :source ~/.vimrc<cr>
 
 "{{{ Basic Settings
 
+syntax enable
 set autoindent
 set history=50
 set showcmd
