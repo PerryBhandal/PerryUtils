@@ -18,11 +18,11 @@ filetype plugin indent on
 
 " Return to same line when you re-open a file
 augroup line_return
-    au!
-    au BufReadPost *
-        \ if line("'\"") > 0 && line("'\"") <= line("$") |
-        \     execute 'normal! g`"zvzz' |
-        \ endif
+	au!
+	au BufReadPost *
+				\ if line("'\"") > 0 && line("'\"") <= line("$") |
+				\     execute 'normal! g`"zvzz' |
+				\ endif
 augroup END
 
 " Don't store backups (just :w constantly!)
@@ -35,53 +35,53 @@ set number  " Show line numbers
 
 "{{{ Plugins
 
-	set rtp+=~/.vim/bundle/Vundle.vim
-	call vundle#begin()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-	"""Begin Plugins
+"""Begin Plugins
 
-	" Appearance
-	Plugin 'jgdavey/vim-railscasts'
+" Appearance
+Plugin 'jgdavey/vim-railscasts'
 
-	" Source Control
-	Plugin 'tpope/vim-fugitive'
+" Source Control
+Plugin 'tpope/vim-fugitive'
 
-	" UI Elements
-	Plugin 'bling/vim-airline'
+" UI Elements
+Plugin 'bling/vim-airline'
 
-	"""End Plugins
+"""End Plugins
 
-	call vundle#end()
+call vundle#end()
 
 "}}}
 
 "{{{ Folding
 
-	set foldlevelstart=0
+set foldlevelstart=0
 
-	" Use z for fold toggling
-	nnoremap z za
-	vnoremap z za
+" Use z for fold toggling
+nnoremap z za
+vnoremap z za
 
-	"TODO: Add command to fold everything to a method-level.
+"TODO: Add command to fold everything to a method-level.
 "}}}
 
 "{{{ File-Types
 augroup ft_vim
-    au!
+	au!
 
-    au FileType vim setlocal foldmethod=marker
-    au FileType help setlocal textwidth=78
-    au BufWinEnter *.txt if &ft == 'help' | wincmd L | endif
+	au FileType vim setlocal foldmethod=marker
+	au FileType help setlocal textwidth=78
+	au BufWinEnter *.txt if &ft == 'help' | wincmd L | endif
 augroup END
 
 "}}}
 
 "{{{ Appearance
 
-	colorscheme railscasts
+colorscheme railscasts
 
-	" Remove toolbars in case we're running gvim
-	set guioptions=aci
+" Remove toolbars in case we're running gvim
+set guioptions=aci
 
 "}}}
