@@ -74,6 +74,9 @@ set foldlevelstart=0
 nnoremap z za
 vnoremap z za
 
+" Fold everything but the current fold and its parent folds
+nnoremap <c-z> mzzMzvzz
+
 "TODO: Add command to fold everything to a method-level.
 "}}}
 
