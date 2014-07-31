@@ -27,6 +27,16 @@ set noswapfile
 
 set number  " Show line numbers
 
+" Resize splits when our window is resized.
+au VimResized * :wincmd =
+"}}}
+
+"{{{General Hotkeys
+	nnoremap <c-w> :q<cr>
+"}}}
+
+"{{{ Spelling
+	set dictionary=/usr/share/dict/words	
 "}}}
 
 "{{{ Plugins
