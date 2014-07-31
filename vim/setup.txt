@@ -20,6 +20,8 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cd ~/.vim/bundle/YouCompleteMe
 ./install.sh --clang-completer
 
+Note: You'll want to have a default .ycm_extra_conf.py that's stored in ~ so that you don't get pesky messages about YCM not having a config file even for projects you don't want YCM active for. copyTo.sh copies the default one that's stored in this folder.
+
 *** Language specific packages
 
 C/C++ 
