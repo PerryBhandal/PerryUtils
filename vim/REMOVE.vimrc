@@ -3,6 +3,28 @@
 " Author: Perry Bhandal
 """
 
+"{{{General Hotkeys
+" Quit on ctrl + w
+nnoremap <c-w> :q<cr>
+
+" TODO: Save on ctrl + s
+
+""" Begin Folding Hotkeys
+" Use z for fold toggling
+nnoremap z za
+vnoremap z za
+
+" Fold everything but the current fold and its parent folds
+nnoremap <c-z> mzzMzvzz
+
+"TODO: Add command to fold everything to a method-level.
+
+""" Begin Git hotkeys
+nnoremap gd :Gdiff<cr>
+"TODO: Add for Gstatus and Gcommit here (and add, potentially)
+
+"}}}
+
 "{{{ Basic Settings
 
 set nocompatible
@@ -31,12 +53,8 @@ set number  " Show line numbers
 au VimResized * :wincmd =
 "}}}
 
-"{{{General Hotkeys
-	nnoremap <c-w> :q<cr>
-"}}}
-
 "{{{ Spelling
-	set dictionary=/usr/share/dict/words	
+set dictionary=/usr/share/dict/words	
 "}}}
 
 "{{{ Plugins
@@ -59,10 +77,6 @@ Plugin 'bling/vim-airline'
 
 call vundle#end()
 
-	"{{{GitFugitive
-	nnoremap gd :Gdiff<cr>
-	"TODO: Add for Gstatus and Gcommit here (and add, potentially)
-	"}}}
 
 "}}}
 
@@ -70,14 +84,6 @@ call vundle#end()
 
 set foldlevelstart=0
 
-" Use z for fold toggling
-nnoremap z za
-vnoremap z za
-
-" Fold everything but the current fold and its parent folds
-nnoremap <c-z> mzzMzvzz
-
-"TODO: Add command to fold everything to a method-level.
 "}}}
 
 "{{{ File-Types
