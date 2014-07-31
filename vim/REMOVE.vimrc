@@ -38,6 +38,7 @@ set history=50
 set showcmd
 
 filetype plugin indent on
+filetype plugin on
 
 " Return to same line when you re-open a file
 augroup line_return
@@ -84,10 +85,12 @@ Plugin 'bling/vim-airline'
 
 " Other
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'matchit.zip'
 
-" Language specific
+"" Language specific
 Plugin 'c.vim'
+
+" Ruby
+Plugin 'endwise.vim'
 
 """End Plugins
 call vundle#end()
