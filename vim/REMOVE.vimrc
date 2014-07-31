@@ -28,6 +28,10 @@ nnoremap gd :Gdiff<cr>
 
 "Reload .vimrc file manually
 nnoremap <f12> :source ~/.vimrc<cr>
+
+" Syntastic hotkeys
+nnoremap <silent> <c-e> :Error<cr>
+nnoremap <silent> <a-e> :lclose<cr> " TODO: Fix this so we can eventually just use a single key (c-e) to toggle open and close).
 "}}}
 
 "{{{ Basic Settings
@@ -100,6 +104,11 @@ autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
 autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 " END vim-ruby bundle
+
+" BEGIN SYNTASTIC
+Plugin 'scrooloose/syntastic'
+let g:syntastic_ruby_checkers = ['rubylint']
+" END SYNTASTIC
 
 """End Plugins
 call vundle#end()
