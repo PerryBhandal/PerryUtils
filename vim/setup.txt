@@ -11,3 +11,11 @@ Few notes about this:
 
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+**** Install YCM auto completion
+
+1) Ensure development tools and cmake are installed (sudo apt-get install build-essential cmake)
+2) Have python headers installed (sudo apt-get install python-dev)
+3) Compile with support for C languages:
+
+cd ~/.vim/bundle/YouCompleteMe
+./install.sh --clang-completer
