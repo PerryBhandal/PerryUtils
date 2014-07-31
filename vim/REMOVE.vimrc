@@ -23,6 +23,8 @@ nnoremap <c-z> mzzMzvzz
 nnoremap gd :Gdiff<cr>
 "TODO: Add for Gstatus and Gcommit here (and add, potentially)
 
+"Reload .vimrc file manually
+nnoremap <f12> :source ~/.vimrc<cr>
 "}}}
 
 "{{{ Basic Settings
@@ -84,12 +86,10 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'c.vim'
 
 """End Plugins
+call vundle#end()
 
 " Squelches ycm usage warnings when using global extra_conf
 let g:ycm_extra_conf_globlist = ['~/.ycm_extra_conf.py']
-
-call vundle#end()
-
 
 "}}}
 
@@ -110,6 +110,11 @@ augroup END
 augroup ft_c
 	au!
 	au FileType c setlocal foldmethod=marker foldmarker={,}
+augroup END
+
+augroup ft_cpp
+	au!
+	au FileType cpp setlocal foldmethod=marker foldmarker={,} foldnestmax=1
 augroup END
 
 "}}}
