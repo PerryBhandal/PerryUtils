@@ -28,3 +28,7 @@ C/C++
 --
 Plugin page: http://www.vim.org/scripts/script.php?script_id=213
 Hotkeys: http://lug.fh-swf.de/vim/vim-c/c-hotkeys.pdf
+
+Ruby
+--
+Ensure that the ruby-lint gem is installed in your core Ruby install.
