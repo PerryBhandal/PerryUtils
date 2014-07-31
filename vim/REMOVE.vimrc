@@ -79,6 +79,10 @@ Plugin 'bling/vim-airline'
 
 " Other
 Plugin 'Valloric/YouCompleteMe'
+
+" Language specific
+Plugin 'c.vim'
+
 """End Plugins
 
 call vundle#end()
