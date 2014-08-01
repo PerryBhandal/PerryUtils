@@ -110,6 +110,11 @@ autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 " END vim-ruby bundle
 
+" BEGIN NERDTREE
+Plugin 'scrooloose/nerdtree'
+map <a-p> :NERDTreeToggle<CR>
+"END NERD TREE
+
 " BEGIN SYNTASTIC
 Plugin 'scrooloose/syntastic'
 let g:syntastic_ruby_checkers = ['rubylint']
