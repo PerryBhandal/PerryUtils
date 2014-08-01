@@ -119,6 +119,7 @@ let g:syntastic_ruby_checkers = ['rubylint']
 call vundle#end()
 
 " Squelches ycm usage warnings when using global extra_conf
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 let g:ycm_extra_conf_globlist = ['~/.ycm_extra_conf.py']
 
 "}}}
