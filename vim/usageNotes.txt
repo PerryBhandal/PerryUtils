@@ -1,0 +1,1 @@
+1) Use :map <c-w> (or whatever the combo) to determine what a specific key is mapped to.
