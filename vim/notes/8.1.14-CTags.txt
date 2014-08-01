@@ -1,0 +1,10 @@
+CTAGS
+---
+
+Link to tutorial: http://usevim.com/2013/01/18/tags/
+
+ctags -R to generate tags.
+
+In vim you need to use the tag file, just do :set tags+=tags to tell it to use the ./tags file
+
+To jump to a definition use CTRL-]
