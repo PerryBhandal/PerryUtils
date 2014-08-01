@@ -91,6 +91,10 @@ Plugin 'bling/vim-airline'
 " Other
 Plugin 'Valloric/YouCompleteMe'
 
+"Ctrlp
+Plugin 'kien/ctrlp.vim'
+"END ctrlp
+
 "" Language specific
 Plugin 'c.vim'
 
