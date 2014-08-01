@@ -7,11 +7,8 @@ set nocompatible " Ensure this always remains at the top as it has side effects.
 
 "{{{General Hotkeys
 
-" Cycle through windows
-nnormemap <`> <c-W>
 
-" Quit on ctrl + w
-nnoremap <c-w> :q<cr>
+" TODO: Quit 
 
 " TODO: Save on ctrl + s
 
