@@ -124,7 +124,7 @@ let g:ycm_extra_conf_globlist = ['~/.ycm_extra_conf.py']
 
 "{{{ Folding
 
-set foldlevelstart=0
+set foldlevelstart=20
 
 "}}}
 
