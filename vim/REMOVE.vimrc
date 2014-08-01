@@ -11,6 +11,7 @@ set nocompatible " Ensure this always remains at the top as it has side effects.
 " TODO: Quit 
 
 " TODO: Save on ctrl + s
+nnoremap <c-b> <c-]>
 
 """ Begin Folding Hotkeys
 " Use z for fold toggling
