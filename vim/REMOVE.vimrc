@@ -7,6 +7,8 @@ set nocompatible " Ensure this always remains at the top as it has side effects.
 
 "{{{General Hotkeys
 
+" Jump between windows
+nnoremap ` <c-w>w
 
 " TODO: Quit 
 
@@ -96,6 +98,11 @@ Plugin 'Valloric/YouCompleteMe'
 "Ctrlp
 Plugin 'kien/ctrlp.vim'
 "END ctrlp
+
+"Tagbar
+Plugin 'majutsushi/tagbar'
+nnoremap <F8> :TagbarToggle<cr>
+"END tagbar
 
 "" Language specific
 Plugin 'c.vim'
