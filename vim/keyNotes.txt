@@ -1,0 +1,5 @@
+ctrl + w handles everything related to splits.
+
+ctrl + w cycles through them
+
+ctrl + w [LETGO] +/- to increase/decrease vertical size.
