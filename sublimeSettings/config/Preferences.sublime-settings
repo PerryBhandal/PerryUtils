@@ -9,7 +9,7 @@
     "highlight_line": true,
     "caret_extra_width": 1,
     "caret_style": "phase",
-    "word_wrap": false,
+    "word_wrap": true,
 
     //Code navigation in Ruby. This helps when doing go to for bang and precidate methods.
     "word_separators": "./\\()\"'-:,.;<>~@#$%^&*|+=[]{}`~"
