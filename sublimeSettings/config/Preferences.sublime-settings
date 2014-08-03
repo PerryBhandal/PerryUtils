@@ -6,20 +6,10 @@
     /*
     Predawn theme.
     */
-    "font_face": "Source Code Pro",
-    "font_size": 10,
-    "font_options": ["no_round"],
     "highlight_line": true,
     "caret_extra_width": 1,
     "caret_style": "phase",
     "word_wrap": false,
-    "theme": "predawn.sublime-theme",
-    "color_scheme": "Packages/Predawn/predawn.tmTheme",
-    "tabs_small": true,
-
-    //BeautifyRuby
-    "run_on_save": true,
-    "save_on_beautify": true,
 
     //Code navigation in Ruby. This helps when doing go to for bang and precidate methods.
     "word_separators": "./\\()\"'-:,.;<>~@#$%^&*|+=[]{}`~"
