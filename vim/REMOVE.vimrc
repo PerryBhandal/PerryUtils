@@ -125,7 +125,6 @@ map <a-p> :NERDTreeToggle<CR>
 
 " BEGIN SYNTASTIC
 Plugin 'scrooloose/syntastic'
-let g:syntastic_ruby_checkers = ['rubylint']
 " END SYNTASTIC
 
 """End Plugins
