@@ -2,10 +2,10 @@
 	"installed_packages":
 	[
 		"Git",
-		"SideBarGit",
 		"GitGutter",
-		"SublimeCodeIntel",
 		"Predawn",
-		"SideBarEnhancements"
+		"SideBarEnhancements",
+		"SideBarGit",
+		"SublimeCodeIntel"
 	]
 }
