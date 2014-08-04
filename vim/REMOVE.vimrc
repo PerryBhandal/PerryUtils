@@ -10,6 +10,12 @@ set nocompatible " Ensure this always remains at the top as it has side effects.
 " Jump between windows
 nnoremap ` <c-w>w
 
+" Use tab to cycle through buffers in a window (back and forth)
+nnoremap <tab> :bprevious<cr>
+nnoremap <s-tab> :bnext<cr>
+
+" Auto indent pastes to surrounding code
+nnoremap p pV`]=
 " TODO: Quit 
 
 " TODO: Save on ctrl + s
