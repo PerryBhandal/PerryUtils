@@ -90,7 +90,7 @@ call vundle#begin()
 """Begin Plugins
 
 " Appearance
-Plugin 'jgdavey/vim-railscasts'
+Plugin 'tomasr/molokai'
 
 " Source Control
 Plugin 'tpope/vim-fugitive'
@@ -176,7 +176,7 @@ augroup END
 
 "{{{ Appearance
 
-colorscheme railscasts
+colorscheme molokai
 
 " Remove toolbars in case we're running gvim
 set guioptions=aci
