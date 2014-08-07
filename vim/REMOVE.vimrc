@@ -105,6 +105,9 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'kien/ctrlp.vim'
 "END ctrlp
 
+Plugin 'tpope/vim-sensible'
+
+
 "Tagbar
 Plugin 'majutsushi/tagbar'
 nnoremap <F8> :TagbarToggle<cr>
