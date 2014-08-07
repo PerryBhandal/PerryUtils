@@ -106,7 +106,7 @@ Plugin 'kien/ctrlp.vim'
 "END ctrlp
 
 Plugin 'tpope/vim-sensible'
-
+Plugin 'tpope/vim-sleuth'
 
 "Tagbar
 Plugin 'majutsushi/tagbar'
@@ -171,7 +171,7 @@ augroup END
 
 augroup ft_ruby
 	au!
-	au FileType ruby setlocal foldmethod=syntax ts=2 sts=2 sw=2
+	au FileType ruby setlocal foldmethod=syntax 
 	au BufRead,BufNewFile Capfile setlocal filetype=ruby
 augroup END	
 
