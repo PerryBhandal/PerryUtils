@@ -11,3 +11,6 @@ git config --global user.email "perry.bhandal@gmail.com"
 
 alias fluxon="xflux -l 44.2312 -g -76.4860"
 alias fluxoff="pkill xflux"
+
+#Global gitignore
+git config --global core.excludesfile '~/.gitignore_global'
