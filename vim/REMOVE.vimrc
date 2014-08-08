@@ -68,7 +68,7 @@ augroup END
 set nobackup
 set noswapfile
 
-set relativenumber " Show them relatively.
+set number " Show them relatively.
 
 " Resize splits when our window is resized.
 au VimResized * :wincmd =
