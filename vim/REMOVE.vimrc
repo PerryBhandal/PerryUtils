@@ -5,15 +5,19 @@
 
 set nocompatible " Ensure this always remains at the top as it has side effects.
 
-nnoremap <f5> !ruby %<cr>
 "{{{General Hotkeys
 
 " Jump between windows
 nnoremap ` <c-w>w
 
+nnoremap <f5> !ruby %<cr>
+
 " Use tab to cycle through buffers and tabs 
 nnoremap <tab> :bnext<cr>
 nnoremap <s-tab> :tabnext<cr>
+
+" Open git status
+nnoremap <c-k> :Gstatus<cr>
 
 " Auto indent pastes to surrounding code
 nnoremap p pV`]=
