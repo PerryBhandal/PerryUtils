@@ -52,6 +52,10 @@ nnoremap <silent> <c-e> :Error<cr>
 nnoremap <silent> <a-e> :lclose<cr> " TODO: Fix this so we can eventually just use a single key (c-e) to toggle open and close).
 "}}}
 
+"{{{
+command InsertLineNumbers %s/^/\=(line('.')-line("'<")+0).'	'/
+"}}}
+
 "{{{ Basic Settings
 
 syntax enable
