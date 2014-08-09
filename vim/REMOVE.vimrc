@@ -185,6 +185,10 @@ augroup ft_ruby
 	au BufRead,BufNewFile Capfile setlocal filetype=ruby
 augroup END	
 
+augroup ft_dox 
+	au!
+	au FileType dox setlocal tabstop=8 shiftwidth=8 softtabstop=8
+augroup END
 "}}}
 
 "{{{ Appearance
