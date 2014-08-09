@@ -5,6 +5,7 @@
 
 set nocompatible " Ensure this always remains at the top as it has side effects.
 
+au FileType ruby setlocal nnoremap <f5> !ruby %<cr>
 "{{{General Hotkeys
 
 " Jump between windows
@@ -20,6 +21,9 @@ nnoremap p pV`]=
 
 " TODO: Save on ctrl + s
 nnoremap <c-b> <c-]>
+
+" TODO: Make this owrk for all languages, just doing ruby atm.
+nnoremap <f5> :!ruby %<cr>
 
 """ Begin Folding Hotkeys
 " Use z for fold toggling
@@ -107,6 +111,8 @@ Plugin 'kien/ctrlp.vim'
 
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-sleuth'
+
+Plugin 'airblade/vim-gitgutter'
 
 "Tagbar
 Plugin 'majutsushi/tagbar'
