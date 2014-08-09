@@ -5,7 +5,7 @@
 
 set nocompatible " Ensure this always remains at the top as it has side effects.
 
-au FileType ruby setlocal nnoremap <f5> !ruby %<cr>
+nnoremap <f5> !ruby %<cr>
 "{{{General Hotkeys
 
 " Jump between windows
