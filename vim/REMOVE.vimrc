@@ -111,7 +111,11 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 
 " Other
+"BEGIN YouCompleteMe
 Plugin 'Valloric/YouCompleteMe'
+" Auto close window once we're done selecting an autocompletion option
+let g:ycm_autoclose_preview_window_after_insertion = 1 
+" END YouCompleteMe
 
 "Ctrlp
 Plugin 'kien/ctrlp.vim'
