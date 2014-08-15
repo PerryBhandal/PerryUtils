@@ -10,7 +10,8 @@ set nocompatible " Ensure this always remains at the top as it has side effects.
 " Jump between windows
 nnoremap ` <c-w>w
 
-nnoremap <f5> !ruby %<cr>
+inoremap <c-s> <esc>:w<cr>
+nnoremap <c-s> :w<cr>
 
 " Use tab to cycle through buffers and tabs 
 nnoremap <tab> :bnext<cr>
@@ -25,9 +26,6 @@ nnoremap p pV`]=
 
 " TODO: Save on ctrl + s
 nnoremap <c-b> <c-]>
-
-" TODO: Make this owrk for all languages, just doing ruby atm.
-nnoremap <f5> :!ruby %<cr>
 
 """ Begin Folding Hotkeys
 " Use z for fold toggling
@@ -111,14 +109,17 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 
 " Other
+"BEGIN YouCompleteMe
 Plugin 'Valloric/YouCompleteMe'
+" Auto close window once we're done selecting an autocompletion option
+let g:ycm_autoclose_preview_window_after_insertion = 1 
+" END YouCompleteMe
 
 "Ctrlp
 Plugin 'kien/ctrlp.vim'
 "END ctrlp
 
 Plugin 'tpope/vim-sensible'
-Plugin 'tpope/vim-sleuth'
 
 Plugin 'airblade/vim-gitgutter'
 
@@ -148,6 +149,8 @@ map <a-p> :NERDTreeToggle<CR>
 
 " BEGIN SYNTASTIC
 Plugin 'scrooloose/syntastic'
+
+let g:syntastic_ruby_checkers = ['rubylint']
 " END SYNTASTIC
 
 """End Plugins
@@ -163,36 +166,6 @@ let g:ycm_extra_conf_globlist = ['~/.ycm_extra_conf.py']
 
 set foldlevelstart=20
 
-"}}}
-
-"{{{ File-Types
-augroup ft_vim
-	au!
-	au FileType vim setlocal foldmethod=marker
-	au FileType help setlocal textwidth=78
-	au BufWinEnter *.txt if &ft == 'help' | wincmd L | endif
-augroup END
-
-augroup ft_c
-	au!
-	au FileType c setlocal foldmethod=marker foldmarker={,}
-augroup END
-
-augroup ft_cpp
-	au!
-	au FileType cpp setlocal foldmethod=marker foldmarker={,}
-augroup END
-
-augroup ft_ruby
-	au!
-	au FileType ruby setlocal foldmethod=syntax tabstop=2 shiftwidth=2 softtabstop=2 
-	au BufRead,BufNewFile Capfile setlocal filetype=ruby
-augroup END	
-
-augroup ft_dox 
-	au!
-	au FileType dox setlocal tabstop=8 shiftwidth=8 softtabstop=8
-augroup END
 "}}}
 
 "{{{ Appearance
