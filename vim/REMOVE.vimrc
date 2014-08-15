@@ -10,8 +10,6 @@ set nocompatible " Ensure this always remains at the top as it has side effects.
 " Jump between windows
 nnoremap ` <c-w>w
 
-nnoremap <f5> !ruby %<cr>
-
 " Use tab to cycle through buffers and tabs 
 nnoremap <tab> :bnext<cr>
 nnoremap <s-tab> :tabnext<cr>
