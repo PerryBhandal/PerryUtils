@@ -4,16 +4,15 @@
 # to its starting point.
 ##
 
-XLOC = 4092
-YLOC = 951
+XLOC = 4827
+YLOC = 551
 MIDCLICKDELAY = 0.05
 
 def parseMousePos(mousePosStr)
 	xPos = mousePosStr.scan(/^x:(.*?) y/)
 	
 	yPos = mousePosStr.scan(/x:.*? y:(.*?) screen/)
-	
-	return [xPos, yPos]
+	[xPos[0][0].to_s, yPos[0][0].to_s]	
 end
 
 mousePosStr = `xdotool getmouselocation`
