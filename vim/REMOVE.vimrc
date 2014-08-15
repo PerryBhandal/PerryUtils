@@ -120,7 +120,6 @@ Plugin 'kien/ctrlp.vim'
 "END ctrlp
 
 Plugin 'tpope/vim-sensible'
-Plugin 'tpope/vim-sleuth'
 
 Plugin 'airblade/vim-gitgutter'
 
