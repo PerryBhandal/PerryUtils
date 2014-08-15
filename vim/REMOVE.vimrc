@@ -24,9 +24,6 @@ nnoremap p pV`]=
 " TODO: Save on ctrl + s
 nnoremap <c-b> <c-]>
 
-" TODO: Make this owrk for all languages, just doing ruby atm.
-nnoremap <f5> :!ruby %<cr>
-
 """ Begin Folding Hotkeys
 " Use z for fold toggling
 nnoremap z za
@@ -164,36 +161,6 @@ let g:ycm_extra_conf_globlist = ['~/.ycm_extra_conf.py']
 
 set foldlevelstart=20
 
-"}}}
-
-"{{{ File-Types
-augroup ft_vim
-	au!
-	au FileType vim setlocal foldmethod=marker
-	au FileType help setlocal textwidth=78
-	au BufWinEnter *.txt if &ft == 'help' | wincmd L | endif
-augroup END
-
-augroup ft_c
-	au!
-	au FileType c setlocal foldmethod=marker foldmarker={,}
-augroup END
-
-augroup ft_cpp
-	au!
-	au FileType cpp setlocal foldmethod=marker foldmarker={,}
-augroup END
-
-augroup ft_ruby
-	au!
-	au FileType ruby setlocal foldmethod=syntax tabstop=2 shiftwidth=2 softtabstop=2 
-	au BufRead,BufNewFile Capfile setlocal filetype=ruby
-augroup END	
-
-augroup ft_dox 
-	au!
-	au FileType dox setlocal tabstop=8 shiftwidth=8 softtabstop=8
-augroup END
 "}}}
 
 "{{{ Appearance
