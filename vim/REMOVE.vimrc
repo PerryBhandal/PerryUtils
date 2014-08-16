@@ -23,6 +23,8 @@ nnoremap <s-tab> :tabnext<cr>
 nnoremap <c-k> :ToggleGStatus<cr>
 nnoremap <a-k> :Gcommit -m "
 
+nnoremap <c-a> <esc>ggvG
+
 " Auto indent pastes to surrounding code
 nnoremap p pV`]=
 " TODO: Quit 
