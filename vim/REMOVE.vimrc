@@ -21,7 +21,7 @@ nnoremap <s-tab> :tabnext<cr>
 
 " Open git status
 nnoremap <c-k> :ToggleGStatus<cr>
-nnoremap <c-s-k> :Gcommit -m "
+nnoremap <a-k> :Gcommit -m "
 
 " Auto indent pastes to surrounding code
 nnoremap p pV`]=
