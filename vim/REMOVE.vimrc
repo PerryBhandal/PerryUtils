@@ -16,7 +16,7 @@ inoremap <c-s> <esc>:w<cr>
 nnoremap <c-s> :w<cr>
 
 " Use tab to cycle through buffers and tabs 
-nnoremap <tab> :bnext<cr>
+nnoremap <tab> :Bufferlist<cr>
 nnoremap <s-tab> :tabnext<cr>
 
 " Open git status
@@ -120,6 +120,8 @@ Plugin 'Valloric/YouCompleteMe'
 let g:ycm_autoclose_preview_window_after_insertion = 1 
 " END YouCompleteMe
 
+Plugin 'buffet.vim'
+
 "Ctrlp
 Plugin 'kien/ctrlp.vim'
 "END ctrlp
@@ -134,7 +136,7 @@ nnoremap <F8> :TagbarToggle<cr>
 "END tagbar
 
 "" Language specific
-Plugin 'c.vim'
+"DISABLED due to valueerror < 5 linec ompile Plugin 'c.vim'
 
 " Ruby
 Plugin 'endwise.vim'
