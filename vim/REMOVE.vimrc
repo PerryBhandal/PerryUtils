@@ -66,6 +66,10 @@ set autoindent
 set history=50
 set showcmd
 
+" This helps with preventing value errors from YCM when opening cpp files.
+" Squelches press enter.
+set cmdheight=2
+
 filetype on
 filetype plugin indent on
 filetype plugin on
@@ -136,7 +140,7 @@ nnoremap <F8> :TagbarToggle<cr>
 "END tagbar
 
 "" Language specific
-"DISABLED due to valueerror < 5 linec ompile Plugin 'c.vim'
+Plugin 'c.vim'
 
 " Ruby
 Plugin 'endwise.vim'
