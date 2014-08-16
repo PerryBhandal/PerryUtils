@@ -20,7 +20,7 @@ nnoremap <tab> :bnext<cr>
 nnoremap <s-tab> :tabnext<cr>
 
 " Open git status
-nnoremap <c-k> :Gstatus<cr>
+nnoremap <c-k> :ToggleGStatus<cr>
 
 " Auto indent pastes to surrounding code
 nnoremap p pV`]=
@@ -196,4 +196,15 @@ endw
 
 set timeout ttimeoutlen=50
 " END alt fix for terminal vim
+"}}}
+
+"{{{Functions
+function! ToggleGStatus()
+	if buflisted(bufname('.git/index'))
+		bd .git/index
+	else
+		Gstatus
+	endif
+endfunction
+command ToggleGStatus :call ToggleGStatus()
 "}}}
