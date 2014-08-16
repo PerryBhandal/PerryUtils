@@ -10,6 +10,8 @@ set nocompatible " Ensure this always remains at the top as it has side effects.
 " Jump between windows
 nnoremap ` <c-w>w
 
+nnoremap <c-w> :q<cr>
+
 inoremap <c-s> <esc>:w<cr>
 nnoremap <c-s> :w<cr>
 
