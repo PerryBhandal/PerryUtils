@@ -1,0 +1,4 @@
+Swap to windows based on their position
+--
+position`
+e.g. 2` moves to 2nd horizontal window.
