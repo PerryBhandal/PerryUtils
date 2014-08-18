@@ -55,7 +55,7 @@ nnoremap <silent> <c-e> :Error<cr>
 nnoremap <silent> <a-e> :lclose<cr> " TODO: Fix this so we can eventually just use a single key (c-e) to toggle open and close).
 "}}}
 
-"{{{
+"{{{Custom Functions
 command InsertLineNumbers %s/^/\=(line('.')-line("'<")+0).'	'/
 "}}}
 
@@ -216,4 +216,8 @@ function! ToggleGStatus()
 	endif
 endfunction
 command ToggleGStatus :call ToggleGStatus()
+"}}}
+
+"{{{Filetype Detection
+au BufNewFile,BufRead *.ctml set filetype=xml
 "}}}
