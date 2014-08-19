@@ -10,3 +10,4 @@
 /timer 10 join #rubyonrails
 /timer 10 join #sql
 /timer 10 join #vim
+/timer 10 join ##c++-general
