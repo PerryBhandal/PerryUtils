@@ -158,6 +158,8 @@ Plugin 'scrooloose/nerdtree'
 map <a-p> :NERDTreeToggle<CR>
 "END NERD TREE
 
+Plugin 'tpope/vim-sleuth'
+
 " BEGIN SYNTASTIC
 Plugin 'scrooloose/syntastic'
 
