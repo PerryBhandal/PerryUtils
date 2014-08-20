@@ -41,8 +41,9 @@ nnoremap z za
 vnoremap z za
 
 " Fold globally to a single level. TODO: Make this language sensitive.
-nnoremap <c-z> :%foldc<cr>
-nnoremap <a-z> :%foldo<cr>
+nnoremap <s-z> :set foldlevel=1<cr>
+nnoremap <c-z> :set foldlevel=2<cr>
+nnoremap <a-z> :set foldlevel=25<cr>
 
 "TODO: Add command to fold everything to a method-level.
 
