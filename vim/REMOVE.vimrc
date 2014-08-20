@@ -10,6 +10,9 @@ set nocompatible " Ensure this always remains at the top as it has side effects.
 " Jump between windows
 nnoremap ` <c-w>w
 
+nnoremap <c-n> :vnew<cr>
+nnoremap <a-n> :new<cr>
+
 nnoremap <c-w> :q<cr>
 
 inoremap <c-s> <esc>:w<cr>
@@ -82,6 +85,14 @@ augroup line_return
 				\     execute 'normal! g`"zvzz' |
 				\ endif
 augroup END
+
+" When we open a new split with vsplit or vnew it'll open to the right
+" (defaults to left)
+set splitright
+
+" When we open a new split with split or new it'll open at the bottom (defauts
+" to top).
+set splitbelow
 
 " Don't store backups (just :w constantly!)
 set nobackup
