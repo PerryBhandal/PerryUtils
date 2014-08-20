@@ -156,6 +156,8 @@ autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
 " BEGIN NERDTREE
 Plugin 'scrooloose/nerdtree'
 map <a-p> :NERDTreeToggle<CR>
+" Auto close side file window when we select a file.
+let NERDTreeQuitOnOpen=1
 "END NERD TREE
 
 
