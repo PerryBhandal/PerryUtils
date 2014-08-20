@@ -91,10 +91,6 @@ augroup END
 " (defaults to left)
 set splitright
 
-" When we open a new split with split or new it'll open at the bottom (defauts
-" to top).
-set splitbelow
-
 " Don't store backups (just :w constantly!)
 set nobackup
 set noswapfile
