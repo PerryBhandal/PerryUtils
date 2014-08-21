@@ -142,6 +142,9 @@ Plugin 'tpope/vim-sensible'
 
 Plugin 'airblade/vim-gitgutter'
 
+" Need this for preventing visual selection pastes feeding back into reigster
+Plugin 'YankRing.vim'
+
 "Tagbar
 Plugin 'majutsushi/tagbar'
 nnoremap <F8> :TagbarToggle<cr>
@@ -227,6 +230,12 @@ function! ToggleGStatus()
 	endif
 endfunction
 command ToggleGStatus :call ToggleGStatus()
+
+"Prevent pasting from overwriting register
+function! YRRunAfterMaps()                                                                                                      
+	" From Steve Losh, Preserve the yank post selection/put.    
+	vnoremap p :<c-u>YRPaste 'p', 'v'<cr>gv:YRYankRange 'v'<cr> 
+endfunction  
 "}}}
 
 "{{{Filetype Detection
