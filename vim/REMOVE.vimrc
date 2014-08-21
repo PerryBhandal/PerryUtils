@@ -35,15 +35,10 @@ nnoremap p pV`]=
 " TODO: Save on ctrl + s
 nnoremap <c-b> <c-]>
 
-""" Begin Folding Hotkeys
-" Use z for fold toggling
+" Folding hotkeys
+nnoremap <c-z> zM
+nnoremap <a-z> zR
 nnoremap z za
-vnoremap z za
-
-" Fold globally to a single level. TODO: Make this language sensitive.
-nnoremap <s-z> :set foldlevel=1<cr>
-nnoremap <c-z> :set foldlevel=2<cr>
-nnoremap <a-z> :set foldlevel=25<cr>
 
 "TODO: Add command to fold everything to a method-level.
 
