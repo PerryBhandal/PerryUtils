@@ -27,7 +27,7 @@ nnoremap <F3> :setlocal spell! spelllang=en_us<CR>
 nnoremap <c-k> :ToggleGStatus<cr>
 nnoremap <a-k> :Gcommit -m "
 
-nnoremap <c-a> <esc>ggvG
+nnoremap <c-a> <esc>ggvG<s-$>
 
 " Auto indent pastes to surrounding code
 nnoremap p pV`]=
@@ -238,7 +238,7 @@ endfunction
 au BufNewFile,BufRead *.ctml set filetype=xml
 "}}}
 
-"{{{
+"{{{VimEnter Hijack Fixes
 " Replace hijacked mappings
 autocmd VimEnter * nnoremap <c-n> :vnew<cr>
 "}}}
