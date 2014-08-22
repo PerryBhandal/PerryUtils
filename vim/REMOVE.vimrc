@@ -138,9 +138,6 @@ Plugin 'tpope/vim-sensible'
 
 Plugin 'airblade/vim-gitgutter'
 
-" Need this for preventing visual selection pastes feeding back into reigster
-Plugin 'YankRing.vim'
-
 "Tagbar
 Plugin 'majutsushi/tagbar'
 nnoremap <F8> :TagbarToggle<cr>
@@ -236,9 +233,4 @@ endfunction
 
 "{{{Filetype Detection
 au BufNewFile,BufRead *.ctml set filetype=xml
-"}}}
-
-"{{{VimEnter Hijack Fixes
-" Replace hijacked mappings
-autocmd VimEnter * nnoremap <c-n> :vnew<cr>
 "}}}
