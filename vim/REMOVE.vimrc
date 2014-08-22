@@ -22,6 +22,8 @@ nnoremap <c-s> :w<cr>
 nnoremap <tab> :Bufferlist<cr>
 nnoremap <s-tab> :tabnext<cr>
 
+map <F3> :setlocal spell! spelllang=en_us<CR>
+
 " Open git status
 nnoremap <c-k> :ToggleGStatus<cr>
 nnoremap <a-k> :Gcommit -m "
