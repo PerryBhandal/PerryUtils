@@ -30,7 +30,7 @@ nnoremap <a-k> :Gcommit -m "
 nnoremap <c-a> <esc>ggvG<s-$>
 
 " Auto indent pastes to surrounding code
-nnoremap p pV`]=
+vnoremap p "_dP
 " TODO: Quit 
 
 " TODO: Save on ctrl + s
