@@ -10,7 +10,6 @@ set nocompatible " Ensure this always remains at the top as it has side effects.
 " Jump between windows
 nnoremap ` <c-w>w
 
-nnoremap <c-n> :vnew<cr>
 nnoremap <a-n> :new<cr>
 
 nnoremap <c-w> :q<cr>
@@ -22,7 +21,7 @@ nnoremap <c-s> :w<cr>
 nnoremap <tab> :Bufferlist<cr>
 nnoremap <s-tab> :tabnext<cr>
 
-map <F3> :setlocal spell! spelllang=en_us<CR>
+nnoremap <F3> :setlocal spell! spelllang=en_us<CR>
 
 " Open git status
 nnoremap <c-k> :ToggleGStatus<cr>
@@ -237,4 +236,9 @@ endfunction
 
 "{{{Filetype Detection
 au BufNewFile,BufRead *.ctml set filetype=xml
+"}}}
+
+"{{{
+" Replace hijacked mappings
+autocmd VimEnter * nnoremap <c-n> :vnew<cr>
 "}}}
