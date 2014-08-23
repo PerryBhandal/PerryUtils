@@ -1,1 +1,3 @@
+[8/22]: When you need to do a reg ex, do it first using a search w/ incsearch (e.g. /() {\n, and then press enter. Once you do that, you can use that previous search in a reg ex by not passing a search pattern, e.g. :%s//meow/g -- that will rpelace everything matched by that last search with meow. Sweet!
+
 1) Use :map <c-w> (or whatever the combo) to determine what a specific key is mapped to.
