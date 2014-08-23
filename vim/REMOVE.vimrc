@@ -11,6 +11,7 @@ set nocompatible " Ensure this always remains at the top as it has side effects.
 nnoremap ` <c-w>w
 
 nnoremap <a-n> :new<cr>
+nnoremap <c-n> :vnew<cr>
 
 nnoremap <c-w> :q<cr>
 
