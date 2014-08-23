@@ -6,8 +6,3 @@ set shiftwidth=4
 
 set foldmethod=marker
 set foldmarker={,}
-q!<cr>
-inoremap {<cr> {<cr>}<c-o>O<tab>
-inoremap [<cr> [<cr>]<c-o>O<tab>
-inoremap (<cr> (<cr>)<c-o>O<tab>
-
