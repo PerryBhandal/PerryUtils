@@ -14,3 +14,5 @@ alias fluxoff="pkill xflux"
 
 #Global gitignore
 git config --global core.excludesfile '~/.gitignore_global'
+
+alias undo_last_local_git_commit="git reset --soft HEAD~1"
