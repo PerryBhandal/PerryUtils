@@ -11,6 +11,4 @@ fu! HELPER_NewlineParens()
 	%s/ {\n/\r{\r/g
 endfu
 
-fu! HELPER_addCommentBox()
-	:!boxes -d shell<cr>
-endfu
+vnoremap <f10> :!boxes -d shell<cr>
