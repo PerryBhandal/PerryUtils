@@ -7,6 +7,10 @@ set shiftwidth=4
 set foldmethod=marker
 set foldmarker={,}
 
-fu! NewlineParens()
+fu! HELPER_NewlineParens()
 	%s/ {\n/\r{\r/g
+endfu
+
+fu! HELPER_addCommentBox()
+	!boxes -d shell
 endfu
