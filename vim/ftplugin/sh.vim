@@ -6,3 +6,7 @@ set shiftwidth=4
 
 set foldmethod=marker
 set foldmarker={,}
+
+fu! NewlineParens()
+	%s/ {\n/\r{\r/g
+endfu
