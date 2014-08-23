@@ -12,5 +12,5 @@ fu! HELPER_NewlineParens()
 endfu
 
 fu! HELPER_addCommentBox()
-	!boxes -d shell
+	!boxes -d shell<cr>
 endfu
