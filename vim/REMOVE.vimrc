@@ -141,7 +141,7 @@ Plugin 'airblade/vim-gitgutter'
 
 "Tagbar
 Plugin 'majutsushi/tagbar'
-nnoremap <F8> :TagbarToggle<cr>
+nnoremap <s-p> :TagbarToggle<cr>
 "END tagbar
 
 "" Language specific
