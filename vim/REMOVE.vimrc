@@ -164,6 +164,7 @@ Plugin 'scrooloose/nerdtree'
 map <a-p> :NERDTreeToggle<CR>
 " Auto close side file window when we select a file.
 let NERDTreeQuitOnOpen=1
+let NERDTreeShowHidden=1
 "END NERD TREE
 
 
