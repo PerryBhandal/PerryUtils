@@ -13,6 +13,10 @@ nnoremap ` <c-w>w
 nnoremap <a-n> :tabnew<cr>
 nnoremap <c-n> :vnew<cr>
 
+" Big jump
+nnoremap <s-j> 20j
+nnoremap <s-k> 20k
+
 nnoremap <c-w> :q<cr>
 
 inoremap <c-s> <esc>:w<cr>
