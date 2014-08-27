@@ -19,12 +19,13 @@ nnoremap <s-k> 20k
 vnoremap <s-j> 20j
 vnoremap <s-k> 20k
 
-nnoremap <a-w> :q<cr>
+nnoremap <c-w> :q<cr>
 
 inoremap <c-s> <esc>:w<cr>
 nnoremap <c-s> :w<cr>
 
 " Use tab to cycle through buffers and tabs 
+nnoremap <tab> :Bufferlist<cr>
 nnoremap <s-tab> :tabnext<cr>
 
 nnoremap <F3> :setlocal spell! spelllang=en_us<CR>
@@ -127,19 +128,14 @@ Plugin 'tpope/vim-fugitive'
 " UI Elements
 Plugin 'bling/vim-airline'
 
-" WinTabs
-Plugin 'zefei/vim-wintabs'
-nnoremap <a-w> :WintabsOnly<cr>
-nnoremap <c-w> :WintabsCloseWindow<cr>
-nnoremap <tab> :WintabsNext<cr>
-" End WinTabs
-
 " Other
 "BEGIN YouCompleteMe
 Plugin 'Valloric/YouCompleteMe'
 " Auto close window once we're done selecting an autocompletion option
 let g:ycm_autoclose_preview_window_after_insertion = 1 
 " END YouCompleteMe
+
+Plugin 'buffet.vim'
 
 "Ctrlp
 Plugin 'kien/ctrlp.vim'
@@ -201,9 +197,7 @@ set foldlevelstart=20
 
 "{{{ Appearance
 
-Plugin 'desert.vim'
-
-colorscheme desert
+colorscheme molokai
 
 " Remove toolbars in case we're running gvim
 set guioptions=aci
