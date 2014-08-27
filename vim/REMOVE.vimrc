@@ -202,6 +202,7 @@ colorscheme molokai
 " Remove toolbars in case we're running gvim
 set guioptions=aci
 
+
 "}}}
 
 "{{{Clipboard
