@@ -201,7 +201,9 @@ set foldlevelstart=20
 
 "{{{ Appearance
 
-colorscheme molokai
+Plugin 'desert.vim'
+
+colorscheme desert
 
 " Remove toolbars in case we're running gvim
 set guioptions=aci
