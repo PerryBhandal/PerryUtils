@@ -1,0 +1,8 @@
+Fixing Luna crashes
+---
+
+Had this with Eclipse Luna on Mint 16 Cinnamon. Apparently related to GTK. Prepend your eclipse run call with SWT_GTK3=0.
+
+e.g.
+
+perry@perry-laptop ~/work/eclipse $ SWT_GTK3=0 ./eclipse
