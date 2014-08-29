@@ -147,7 +147,7 @@ Plugin 'airblade/vim-gitgutter'
 
 "Tagbar
 Plugin 'majutsushi/tagbar'
-nnoremap <s-p> :TagbarToggle<cr>
+nnoremap <s-t> :TagbarToggle<cr>
 let g:tagbar_autoclose = 1
 "END tagbar
 
