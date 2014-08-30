@@ -243,4 +243,5 @@ endfunction
 
 "{{{Filetype Detection
 au BufNewFile,BufRead *.ctml set filetype=xml
+au BufNewFile,BufRead *.txt set filetype=txt
 "}}}
