@@ -11,3 +11,4 @@
 /timer 10 join #sql
 /timer 10 join #vim
 /timer 10 join ##c++-general
+/timer 10 join ##c++-basic
