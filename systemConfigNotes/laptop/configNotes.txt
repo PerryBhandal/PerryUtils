@@ -58,3 +58,7 @@ Set alt + down to push snap down
 
 --
 Disable edge tiling and snapping in system settings > window tiling and edge flip
+
+Add more workspaces
+---
+Press ctrl + alt + up to go into Expo, then press the arrow to add 2 additional workspaces.
