@@ -8,3 +8,6 @@ set softtabstop=2
 set shiftwidth=2
 
 set foldmethod=syntax
+
+let g:syntastic_ruby_checkers = ['rubylint']
+

@@ -21,8 +21,8 @@ vnoremap <s-k> 20k
 
 nnoremap <c-w> :q<cr>
 
-inoremap <c-s> <esc>:w<cr>
-nnoremap <c-s> :w<cr>
+inoremap <c-s> <esc>:w<cr>:Errors<cr>
+nnoremap <c-s> :w<cr>:Errors<cr>
 
 " Use tab to cycle through buffers and tabs 
 nnoremap <tab> :Bufferlist<cr>
@@ -106,6 +106,7 @@ au VimResized * :wincmd =
 " Auto reload .vimrc on change.
 autocmd BufWritePost .vimrc source %
 
+
 "}}}
 
 "{{{ Spelling
@@ -175,8 +176,7 @@ let NERDTreeShowHidden=1
 
 " BEGIN SYNTASTIC
 Plugin 'scrooloose/syntastic'
-
-let g:syntastic_ruby_checkers = ['rubylint']
+let g:syntastic_always_populate_loc_list = 1
 " END SYNTASTIC
 
 """End Plugins
