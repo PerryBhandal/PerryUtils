@@ -21,8 +21,8 @@ vnoremap <s-k> 20k
 
 nnoremap <c-w> :q<cr>
 
-inoremap <c-s> <esc>:w<cr>:Errors<cr>
-nnoremap <c-s> :w<cr>:Errors<cr>
+inoremap <silent> <c-s> <esc>:w<cr>:Errors<cr>
+nnoremap <silent> <c-s> :w<cr>:Errors<cr>
 
 " Use tab to cycle through buffers and tabs 
 nnoremap <tab> :Bufferlist<cr>
