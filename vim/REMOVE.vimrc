@@ -153,6 +153,7 @@ let g:tagbar_autoclose = 1
 "END tagbar
 
 "" Language specific
+Plugin 'c.vim'
 
 " Ruby
 Plugin 'endwise.vim'
