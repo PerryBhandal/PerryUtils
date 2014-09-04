@@ -158,6 +158,8 @@ Plugin 'c.vim'
 " Ruby
 Plugin 'endwise.vim'
 
+Plugin 'tpope/vim-rails'
+
 " BEGIN Vim-ruby Bundle
 Bundle 'vim-ruby/vim-ruby'
 
