@@ -163,4 +163,10 @@ Now any time you want something on your SSD, you can just place it there and sym
 ===
 Install flux
 
+Download the 64 bit verison that supports multiple monitors
+
+http://justgetflux.com/linux.html
+
+Install it by unraring it and putting it into /usr/bin
+
 ====
