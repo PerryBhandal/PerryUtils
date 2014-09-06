@@ -102,6 +102,12 @@ Add workspace applet
 
 Right click panel, add applet, wrokspace switcher. Do this very far to the right so it shows in the right place.
 ==
+Get rid of desktop icons
+
+Menu --> preferences --> desktop settings.
+
+Uncheck everything excluding mounted volumes.
+==
 TODO: 
 
 1) ADD WINDOW SNAPPING (LEFT, RIGHT, TOP, BOTTOM) AND ASSOCIATED KEYS.
