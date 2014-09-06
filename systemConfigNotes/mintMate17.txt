@@ -151,7 +151,16 @@ PROBLEM: I can't get fn + f1 to work like I used to. So this is a somewhat messy
 ############################
 ##### DESKTOP ##############
 ###########################
+Set up git projects to work on SSD
 
+When installing, make sure you allocate your system in a way so that your SSD only has / and swap.
+
+Once installation is done, as root make a folder /workSSD  . (Note that's in the root dir of the system).
+Now chown that folder to perry: chown -R perry:perry /workSSD
+
+Now any time you want something on your SSD, you can just place it there and symlink it into your home. (e.g. git projects, etc).
+
+===
 Install flux
 
 ====
