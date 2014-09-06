@@ -45,6 +45,10 @@ Install browser plugins
 
 adblock, foxyproxy
 ==
+Rremove adblock filter
+
+adblock -> filter preferences --> uncheck enable unibtrusive advertising
+==
 Set firefox default search engine to Google
 
 Visit: http://www.linuxmint.com/searchengines/anse.php?sen=Google&c=y
@@ -54,6 +58,13 @@ Now go into search engine management, remove all, add Google.
 Set google to default home page
 ==
 Set up foxyproxy's remote site and patterns
+
+Proxy: 198.154.103.66:16500
+
+Filters
+
+pandora -> *pandora.com*
+cmyip -> *cmyip.com*
 
 ==
 Set up firefox sync
@@ -75,10 +86,17 @@ Log in to your github account, delete old key(s) for system, add new key.
 Set up global panel
 
 Right click panel, properties, set orientation to top.
+
 ==
-Install flux:
+Set up theme
 
+Open up appearance app, press Install to add new theme, then select AmbianceRefiend III's tarball.
 
+Next install the ubuntu icons: apt-get install ubuntu-mono
+==
+Fix menu icon
+
+Right click menu (text), preferences, don't show the icon and add a space before and after menu (for padding)
 ==
 TODO: 
 
@@ -97,10 +115,7 @@ apt-get install xbacklight
 
 Install new power manager (tlp):
 
-sudo add-apt-repository ppa:linrunner/tlp
-sudo apt-get update
-sudo apt-get install tlp tlp-rdw
-sudo tlp start
+sudo add-apt-repository ppa:linrunner/tlp; sudo apt-get update; sudo apt-get install tlp tlp-rdw; sudo tlp start
 
 ==
 Disable bluetooth
@@ -119,3 +134,6 @@ fn + f1 = xbacklight -set 10 (when done this make sure you unbind show the panel
 ##### DESKTOP ##############
 ###########################
 
+Install flux
+
+====
