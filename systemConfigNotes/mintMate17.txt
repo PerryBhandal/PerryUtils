@@ -131,11 +131,12 @@ Install new power manager (tlp):
 sudo add-apt-repository ppa:linrunner/tlp; sudo apt-get update; sudo apt-get install tlp tlp-rdw; sudo tlp start
 
 ==
-rc.local (disable bluetotoh, set screen brightness).
+rc.local (disable bluetotoh, set screen brightness). Add following to rc.local
 
-Add "rfkill block bluetooth" to /etc/rc.local
+rfkill block bluetooth
+chmod 777 /sys/class/backlight/acpi_video0/brightness
+echo 1 > /sys/class/backlight/acpi_video0/brightness
 
-xbacklight-set 10 (as well)
 ==
 Fix Mouse vert scrolling
 
