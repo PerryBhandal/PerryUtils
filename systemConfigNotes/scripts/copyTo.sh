@@ -11,3 +11,4 @@ chmod +x windowSnapper.rb
 popd > /dev/null
 
 cp snapWindow.sh ~/.scripts
+cp authKey.sh ~/.scripts
