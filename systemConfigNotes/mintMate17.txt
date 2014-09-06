@@ -118,6 +118,10 @@ Now go into keyboard shortcuts and add the following hotkeys:
 
 alt + left -> /home/perry/.scripts/snapWindow.sh left
 alt + right -> /home/perry/.scripts/snapWindow.sh right
+alt + up -> /home/perry/.scripts/snapWindow.sh nil top 
+alt + down -> /home/perry/.scripts/snapWindow.sh nil bottom
+
+
 ==
 Set up screen saver
 
