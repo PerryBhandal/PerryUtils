@@ -1,3 +1,5 @@
+rm -rf ~/.scripts
+
 mkdir -p ~/.scripts
 
 pushd ~/.scripts > /dev/null
@@ -7,3 +9,5 @@ wget https://raw.githubusercontent.com/PerryBhandal/WindowSnapper/master/windowS
 chmod +x windowSnapper.rb
 
 popd > /dev/null
+
+cp snapWindow.sh ~/.scripts
