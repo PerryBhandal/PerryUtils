@@ -123,7 +123,9 @@ Set up screen saver
 
 Go into screensaver, set it to turn on after 10 minutes and make sure it asks for a password on return. Screensaver is blank screen
 ==
+Remove show desktop icon
 
+Right click the show desktop icon, unlock it. Then youc an right click again and remove it.
 ==
 TODO: 
 
@@ -154,21 +156,6 @@ On battery:
 Never put computer to sleep when inactive. When laptop lid is closed or critically low power, hibernate.
 Check spin down hard disk swhen possible.
 Put display to sleep when inactive for 10 minutes.
-
-====
-Replace defalt battery icon:
-
-1) Get mate-battery-status
-
-https://github.com/cpicon92/mate-battery-status
-
-2) Install it.
-
-3) Add the battery applet from panel.
-
-4) Go into power opitons and make sure the default icon is never shown.
-
-5) Configure mate-battery-status to show time.
 
 ====
 Install new power manager (tlp):
