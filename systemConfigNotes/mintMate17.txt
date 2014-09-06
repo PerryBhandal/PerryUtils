@@ -4,7 +4,7 @@
 
 Install necessary apps:
 
-apt-get install git subversion gnome-do gnustep-gui-runtime curl xclip ruby xdotool xdpyinfo
+apt-get install git subversion gnome-do gnustep-gui-runtime curl xclip ruby xdotool xdpyinfo gnome-screenshot
 ======
 Set up gnome-do
 
@@ -18,7 +18,9 @@ mkdir -p /home/perry/work
 ==
 Custom hotkeys:
 
-ctrl + alt + w - gnome-open /home/perry/work
+ctrl + alt + w - gnome-open /home/perry/work [Open work folder]
+print - gnome-screenshot -a -c [Screenshot area to clipboard]
+alt + f1 - xbacklight -set 10 [Dim screen]
 
 ==
 Standard hotkeys:
@@ -119,12 +121,13 @@ alt + right -> /home/perry/.scripts/snapWindow.sh right
 ==
 Set up screen saver
 
-Go into screensaver, set it to turn on after 10 minutes and make sure it asks for a password on return. Screensaver is blank screen.
+Go into screensaver, set it to turn on after 10 minutes and make sure it asks for a password on return. Screensaver is blank screen
+==
+
 ==
 TODO: 
 
-1) ADD WINDOW SNAPPING (LEFT, RIGHT, TOP, BOTTOM) AND ASSOCIATED KEYS.
-2) TAKE SCREENSHOT OF AREA TO CLIPBOARD.
+1) ADD WINDOW SNAPPING (TOP, BOTTOM) AND ASSOCIATED KEYS.
 
 ############################
 ##### LAPTOP ##############
@@ -172,12 +175,6 @@ echo 1 > /sys/class/backlight/acpi_video0/brightness
 Fix Mouse vert scrolling
 
 Open mouse app and set scrolling to two-finger scrolling
-===
-Custom hotkeys:
-
-alt + f1 = xbacklight -set 10 (when done this make sure you unbind show the panel's main menu key)
-
-PROBLEM: I can't get fn + f1 to work like I used to. So this is a somewhat messy alternative.
 
 ############################
 ##### DESKTOP ##############
