@@ -98,6 +98,10 @@ Fix menu icon
 
 Right click menu (text), preferences, don't show the icon and add a space before and after menu (for padding)
 ==
+Add workspace applet
+
+Right click panel, add applet, wrokspace switcher. Do this very far to the right so it shows in the right place.
+==
 TODO: 
 
 1) ADD WINDOW SNAPPING (LEFT, RIGHT, TOP, BOTTOM) AND ASSOCIATED KEYS.
