@@ -108,6 +108,15 @@ Menu --> preferences --> desktop settings.
 
 Uncheck everything excluding mounted volumes.
 ==
+Get window snapping working
+
+Go into scripts, run copyTo.sh.
+
+Now go into keyboard shortcuts and add the following hotkeys:
+
+alt + left -> python ~/.scripts/stiler.py left
+alt + right -> python ~/.scripts/stiler.py right
+==
 TODO: 
 
 1) ADD WINDOW SNAPPING (LEFT, RIGHT, TOP, BOTTOM) AND ASSOCIATED KEYS.
