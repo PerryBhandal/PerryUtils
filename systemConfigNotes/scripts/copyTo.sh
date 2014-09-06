@@ -1,6 +1,6 @@
 mkdir -p ~/.scripts
 
-pushd "~/.scripts" > /dev/null
+pushd ~/.scripts > /dev/null
 
 wget https://raw.githubusercontent.com/PerryBhandal/WindowSnapper/master/windowSnapper.rb
 
