@@ -9,6 +9,9 @@ source ~/.rvm/scripts/rvm
 git config --global user.name "Perry Bhandal"
 git config --global user.email "perry.bhandal@gmail.com"
 
+# Switch to simple push mode (only pushes current branch)
+git config --global push.default simple
+
 alias fluxon="xflux -l 44.2312 -g -76.4860"
 alias fluxoff="pkill xflux"
 
