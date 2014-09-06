@@ -19,7 +19,7 @@ mkdir -p /home/perry/work
 Custom hotkeys:
 
 ctrl + alt + w - gnome-open /home/perry/work [Open work folder]
-print - gnome-screenshot -a -c [Screenshot area to clipboard]
+print - gnome-screenshot --area --clipboard [Screenshot area to clipboard]
 alt + f1 - xbacklight -set 10 [Dim screen]
 
 ==
