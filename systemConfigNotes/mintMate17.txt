@@ -129,6 +129,24 @@ TODO:
 Add laptop specific packages
 
 apt-get install xbacklight
+===
+Prevent auto screen dimming
+
+Go into power options.
+
+==
+Set hibernate sleep options
+
+On active power:
+
+never place it to sleep, and when the laptop lid is closed hibernate. Should not spin down hard disks.
+Set display to sleep when inactive for 10 minutes. Sets display brightness to 100%.
+
+On battery:
+
+Never put computer to sleep when inactive. When laptop lid is closed or critically low power, hibernate.
+Check spin down hard disk swhen possible.
+Put display to sleep when inactive for 10 minutes.
 
 ====
 Show battery icon
