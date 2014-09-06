@@ -170,3 +170,6 @@ http://justgetflux.com/linux.html
 Install it by unraring it and putting it into /usr/bin
 
 ====
+Get multi-monitors working
+
+Use the AMD drivers. The open-source AMD (fglrx, or something to that effect) ones have fan issues. You'll configure the monitors in amdcccle, but then in display you set your middle monitor as primary.
