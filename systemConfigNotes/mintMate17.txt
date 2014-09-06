@@ -118,9 +118,11 @@ Install new power manager (tlp):
 sudo add-apt-repository ppa:linrunner/tlp; sudo apt-get update; sudo apt-get install tlp tlp-rdw; sudo tlp start
 
 ==
-Disable bluetooth
+rc.local (disable bluetotoh, set screen brightness).
 
 Add "rfkill block bluetooth" to /etc/rc.local
+
+xbacklight-set 10 (as well)
 ==
 Fix Mouse vert scrolling
 
@@ -128,7 +130,9 @@ Open mouse app and set scrolling to two-finger scrolling
 ===
 Custom hotkeys:
 
-fn + f1 = xbacklight -set 10 (when done this make sure you unbind show the panel's main menu key)
+alt + f1 = xbacklight -set 10 (when done this make sure you unbind show the panel's main menu key)
+
+PROBLEM: I can't get fn + f1 to work like I used to. So this is a somewhat messy alternative.
 
 ############################
 ##### DESKTOP ##############
