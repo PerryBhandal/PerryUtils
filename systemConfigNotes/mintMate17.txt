@@ -156,9 +156,20 @@ Check spin down hard disk swhen possible.
 Put display to sleep when inactive for 10 minutes.
 
 ====
-Show battery icon
+Replace defalt battery icon:
 
-Open power preferences, general, always display icon.
+1) Get mate-battery-status
+
+https://github.com/cpicon92/mate-battery-status
+
+2) Install it.
+
+3) Add the battery applet from panel.
+
+4) Go into power opitons and make sure the default icon is never shown.
+
+5) Configure mate-battery-status to show time.
+
 ====
 Install new power manager (tlp):
 
