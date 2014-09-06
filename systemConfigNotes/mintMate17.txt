@@ -117,6 +117,10 @@ Now go into keyboard shortcuts and add the following hotkeys:
 alt + left -> python ~/.scripts/stiler.py left
 alt + right -> python ~/.scripts/stiler.py right
 ==
+Set up screen saver
+
+Go into screensaver, set it to turn on after 10 minutes and make sure it asks for a password on return. Screensaver is blank screen.
+==
 TODO: 
 
 1) ADD WINDOW SNAPPING (LEFT, RIGHT, TOP, BOTTOM) AND ASSOCIATED KEYS.
