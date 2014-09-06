@@ -1,0 +1,121 @@
+############################
+##### GLOBAL ##############
+###########################
+
+Install necessary apps:
+
+apt-get install git subversion gnome-do gnustep-gui-runtime curl xclip
+======
+Set up gnome-do
+
+Remove alt + f2 keybinding from central key binds.
+Set alt + f2 in gnome-do.
+Make gnome-do run on start, and hide first notification.
+==
+make /home/perry/work directory.
+
+mkdir -p /home/perry/work
+==
+Custom hotkeys:
+
+ctrl + alt + w - gnome-open /home/perry/work
+
+==
+Standard hotkeys:
+
+ctrl + alt + c - Open web browser
+ctrl + alt + z - toggle maximization state
+ctrl + alt + t - open a terminal
+
+==
+Fix Caja slowdown:
+
+Open /usr/bin/startcaja with a text editor and remove the sleep 3 line.
+==
+Set up your bash file
+
+Copy everything in the homeDotFiles directory into your home directory.
+==
+Install RVM
+
+\curl -sSL https://get.rvm.io | bash -s stable --ruby
+
+==
+Install browser plugins
+
+adblock, foxyproxy
+==
+Set firefox default search engine to Google
+
+Visit: http://www.linuxmint.com/searchengines/anse.php?sen=Google&c=y
+
+Now go into search engine management, remove all, add Google.
+==
+Set google to default home page
+==
+Set up foxyproxy's remote site and patterns
+
+==
+Set up firefox sync
+
+Delete all existing bookmarks, then sign into account 
+
+==
+Remove menu bar from firefox
+
+Right click top, uncheck menu bar.
+==
+Create a private key and authorize it with GitHub:
+
+Generate key: "ssh-keygen -t rsa" -- no ssh passphrase
+Add the key to our ssh agent: ssh-add ~/.ssh/id_rsa
+Copy the public key: xclip -sel clip < ~/.ssh/id_rsa.pub
+Log in to your github account, delete old key(s) for system, add new key.
+==
+Set up global panel
+
+Right click panel, properties, set orientation to top.
+==
+Install flux:
+
+
+==
+TODO: 
+
+1) ADD WINDOW SNAPPING (LEFT, RIGHT, TOP, BOTTOM) AND ASSOCIATED KEYS.
+2) TAKE SCREENSHOT OF AREA TO CLIPBOARD.
+
+############################
+##### LAPTOP ##############
+###########################
+
+Add laptop specific packages
+
+apt-get install xbacklight
+
+====
+
+Install new power manager (tlp):
+
+sudo add-apt-repository ppa:linrunner/tlp
+sudo apt-get update
+sudo apt-get install tlp tlp-rdw
+sudo tlp start
+
+==
+Disable bluetooth
+
+Add "rfkill block bluetooth" to /etc/rc.local
+==
+Fix Mouse vert scrolling
+
+Open mouse app and set scrolling to two-finger scrolling
+===
+Custom hotkeys:
+
+fn + f1 = xbacklight -set 10 (when done this make sure you unbind show the panel's main menu key)
+
+############################
+##### DESKTOP ##############
+###########################
+
