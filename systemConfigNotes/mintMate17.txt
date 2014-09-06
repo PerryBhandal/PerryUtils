@@ -4,7 +4,7 @@
 
 Install necessary apps:
 
-apt-get install git subversion gnome-do gnustep-gui-runtime curl xclip
+apt-get install git subversion gnome-do gnustep-gui-runtime curl xclip ruby xdotool xdpyinfo
 ======
 Set up gnome-do
 
@@ -114,8 +114,8 @@ Go into scripts, run copyTo.sh.
 
 Now go into keyboard shortcuts and add the following hotkeys:
 
-alt + left -> ruby ~/.scripts/windowSnapper.rb left
-alt + right -> ruby ~/.scripts/windowSnapper.rb right
+alt + left -> /home/perry/.scripts/snapWindow.sh left
+alt + right -> /home/perry/.scripts/snapWindow.sh right
 ==
 Set up screen saver
 
