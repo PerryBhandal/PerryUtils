@@ -114,8 +114,8 @@ Go into scripts, run copyTo.sh.
 
 Now go into keyboard shortcuts and add the following hotkeys:
 
-alt + left -> python ~/.scripts/stiler.py left
-alt + right -> python ~/.scripts/stiler.py right
+alt + left -> ruby ~/.scripts/windowSnapper.rb left
+alt + right -> ruby ~/.scripts/windowSnapper.rb right
 ==
 Set up screen saver
 
