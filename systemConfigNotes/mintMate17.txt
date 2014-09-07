@@ -4,7 +4,7 @@
 
 Install necessary apps:
 
-apt-get install git subversion gnome-do gnustep-gui-runtime curl xclip ruby xdotool xdpyinfo gnome-screenshot
+apt-get install git subversion gnome-do gnustep-gui-runtime curl xclip ruby xdotool gnome-screenshot
 ======
 Set up gnome-do
 
