@@ -204,4 +204,12 @@ Install it by unraring it and putting it into /usr/bin
 ====
 Get multi-monitors working
 
-Use the AMD drivers. The open-source AMD (fglrx, or something to that effect) ones have fan issues. You'll configure the monitors in amdcccle, but then in display you set your middle monitor as primary.
+Use the AMD drivers. The open-source AMD (fglrx, or something to that effect) ones have fan issues. 
+
+You'll also need to set scaling to 15% overscale for your two monitors connected via dvi (hdmi --> dvi, that is).
+
+You need to first configure the monitors (for overscan, and being a multi-monitor setup) in amdcccle, then reboot, then go into monitors in Mate and make sure you don't have "same image on all monitors" checked.
+===
+Add multiple panels
+
+Set the top panel to unlocked on whatever monitor it's on, then you can move it, and re-expand it. Then right click on an area not covered by a plugin, and create 2 new panels for your left and right monitors, respectively.
