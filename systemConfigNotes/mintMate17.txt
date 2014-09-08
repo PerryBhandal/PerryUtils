@@ -79,7 +79,7 @@ Right click top, uncheck menu bar.
 ==
 Create a private key and authorize it with GitHub:
 
-Generate key: "ssh-keygen -t rsa" -- no ssh passphrase
+Generate key: "ssh-keygen -t rsa" -- CREATE A PASSPHRASE! Your distro keyring will store it, so you won't need to enter it every time. 
 Add the key to our ssh agent: ssh-add ~/.ssh/id_rsa
 Copy the public key: xclip -sel clip < ~/.ssh/id_rsa.pub
 Log in to your github account, delete old key(s) for system, add new key.
