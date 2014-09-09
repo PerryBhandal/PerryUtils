@@ -187,6 +187,8 @@ sudo apt-get install -d --reinstall network-manager network-manager-gnome
 sudo apt-get install wicd-gtk
 sudo apt-get remove --purge network-manager-gnome network-manager
 
+In preferences, set that you want notifications on network connection events.
+
 ############################
 ##### DESKTOP ##############
 ###########################
