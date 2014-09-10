@@ -12,3 +12,4 @@ popd > /dev/null
 
 cp snapWindow.sh ~/.scripts
 cp authKey.sh ~/.scripts
+cp takeScreenShot.sh ~/.scripts
