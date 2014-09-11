@@ -222,3 +222,9 @@ You need to first configure the monitors (for overscan, and being a multi-monito
 Add multiple panels
 
 Set the top panel to unlocked on whatever monitor it's on, then you can move it, and re-expand it. Then right click on an area not covered by a plugin, and create 2 new panels for your left and right monitors, respectively.
+===
+Add printer:
+
+Use this make and model: Brother HL-2170W Foomatic/lj4dith
+
+NOTE: Do NOT use the generic driver it auto-recommends. Makes the printer incredibly slow.
