@@ -120,7 +120,12 @@ alt + right -> /home/perry/.scripts/snapWindow.sh right
 alt + up -> /home/perry/.scripts/snapWindow.sh nil top 
 alt + down -> /home/perry/.scripts/snapWindow.sh nil bottom
 
+==
+Get spotify Linux
 
+sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" > /etc/apt/sources.list.d/spotify.list'
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59
+sudo apt-get update && sudo apt-get install spotify-client-qt
 ==
 Set up screen saver
 
