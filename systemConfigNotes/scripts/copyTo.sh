@@ -4,9 +4,7 @@ mkdir -p ~/.scripts
 
 pushd ~/.scripts > /dev/null
 
-wget https://raw.githubusercontent.com/PerryBhandal/WindowSnapper/master/windowSnapper.rb
-
-chmod +x windowSnapper.rb
+git clone https://github.com/PerryBhandal/WindowSnapper.git
 
 popd > /dev/null
 
