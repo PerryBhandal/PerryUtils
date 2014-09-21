@@ -21,8 +21,8 @@ vnoremap <s-k> 20k
 
 nnoremap <c-w> :q<cr>
 
-inoremap <silent> <c-s> <esc>:w<cr>:Errors<cr>
-nnoremap <silent> <c-s> :w<cr>:Errors<cr>
+inoremap <silent> <c-s> <esc>:w<cr>
+nnoremap <silent> <c-s> :w<cr>
 
 " Use tab to cycle through buffers and tabs 
 nnoremap <tab> :Bufferlist<cr>
@@ -179,7 +179,7 @@ let NERDTreeShowHidden=1
 
 " BEGIN SYNTASTIC
 Plugin 'scrooloose/syntastic'
-let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_always_populate_loc_list = 1
 " END SYNTASTIC
 
 """End Plugins
