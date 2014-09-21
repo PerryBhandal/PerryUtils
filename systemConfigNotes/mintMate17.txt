@@ -135,6 +135,13 @@ Remove show desktop icon
 
 Right click the show desktop icon, unlock it. Then youc an right click again and remove it.
 ==
+
+Disable notifications:
+
+sudo apt-get purge mate-notification-daemon
+
+May also need to kill notification-area-applet. It's certainly possible that this step alone is all that's needed. Never checked.
+==
 TODO: 
 
 1) ADD WINDOW SNAPPING (TOP, BOTTOM) AND ASSOCIATED KEYS.
