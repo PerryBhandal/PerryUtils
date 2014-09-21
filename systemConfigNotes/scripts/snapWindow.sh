@@ -1,2 +1,2 @@
-/usr/bin/ruby /home/perry/.scripts/windowSnapper.rb $1 $2
+/usr/bin/ruby /home/perry/.scripts/WindowSnapper/src/window_snapper.rb $1
 
