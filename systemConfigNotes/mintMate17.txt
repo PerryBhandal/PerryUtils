@@ -135,6 +135,10 @@ Remove show desktop icon
 
 Right click the show desktop icon, unlock it. Then youc an right click again and remove it.
 ==
+Disable notifications
+
+Add "pkill notification-area-applet" to /etc/rc.local
+==
 TODO: 
 
 1) ADD WINDOW SNAPPING (TOP, BOTTOM) AND ASSOCIATED KEYS.
