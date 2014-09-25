@@ -44,7 +44,7 @@ Install RVM
 ==
 Install browser plugins
 
-adblock, foxyproxy
+abp, foxyproxy
 ==
 Rremove adblock filter
 
@@ -136,15 +136,11 @@ Remove show desktop icon
 Right click the show desktop icon, unlock it. Then youc an right click again and remove it.
 ==
 
-Disable notifications:
-
-sudo apt-get purge mate-notification-daemon
-
-May also need to kill notification-area-applet. It's certainly possible that this step alone is all that's needed. Never checked.
 ==
 TODO: 
 
 1) ADD WINDOW SNAPPING (TOP, BOTTOM) AND ASSOCIATED KEYS.
+2) Add notification disabling  approach.
 
 ############################
 ##### LAPTOP ##############
@@ -191,15 +187,6 @@ echo 1 > /sys/class/backlight/acpi_video0/brightness
 Fix Mouse vert scrolling
 
 Open mouse app and set scrolling to two-finger scrolling
-
-==
-Replace network manager with wicd
-
-sudo apt-get install -d --reinstall network-manager network-manager-gnome
-sudo apt-get install wicd-gtk
-sudo apt-get remove --purge network-manager-gnome network-manager
-
-In preferences, set that you want notifications on network connection events.
 
 ############################
 ##### DESKTOP ##############
