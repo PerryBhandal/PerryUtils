@@ -1,2 +1,2 @@
-sleep 0.02
+sleep 0.1
 gnome-screenshot --area --clipboard
