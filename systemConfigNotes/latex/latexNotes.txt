@@ -1,0 +1,5 @@
+To find packages you need ue apt-file search.
+
+E.g. if you want qtree, you would type apt-file search qtree.sty
+
+That'll list the packages which contain it -- you can install any of those.
