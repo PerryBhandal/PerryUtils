@@ -227,3 +227,44 @@ Add printer:
 Use this make and model: Brother HL-2170W Foomatic/lj4dith
 
 NOTE: Do NOT use the generic driver it auto-recommends. Makes the printer incredibly slow.
+
+############################
+##### TENSEGRITY LAB #######
+###########################
+
+Set your IPV4 settings:
+
+Mac Address: E8-40-F2-3C-13-0F
+IP: 130.15.3.140
+Method: Manual
+Subnet mask: 255.255.255.0
+Gateway: 130.15.3.1
+DNS: 130.15.3.33,130.15.1.100
+
+====
+Make a persistent Linux Mint Mate USB key
+
+http://tuxtweaks.com/2014/03/create-linux-mint-persistent-live-usb/
+====
+Create your perry user
+
+To keep things simple, just make a user named perry. You'll need to switch user each time after a reboot, but it'll keep everything else simple.
+
+So, to do this just add the user perry, but also make sure that you add it to the sudoers file.
+
+To do that you just add the following:
+
+perry ALL=(ALL) ALL
+====
+Mount your local HD to work
+
+Make a symlink from /home/perry to the local HD/PerryTemp
+
+You'll need to manually mount the drive for this step.
+
+ln -s /media/perry/E608409D08406F1D/PerryTemp work
+===
+
+General notes for tensegrity lab:
+
+Do NOT install Spotify. Something related to the spotify package causes the entire persistence volume to throw an IO error on reads. Really bizarre -- seen it twice now.
