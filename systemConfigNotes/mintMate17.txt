@@ -170,8 +170,6 @@ ResultActive=yes
 
 Exit sudo su
 
-Make sure hibernate is set in your power management settings, and disable the request for password on screen lock.
-
 ===
 Add laptop specific packages
 
