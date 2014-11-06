@@ -1,0 +1,4 @@
+Configure Maven to automatically download javadocs
+--
+
+Under the Maven option in windows --> preferences, set it to download artifact javadocs.
