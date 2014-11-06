@@ -146,6 +146,31 @@ TODO:
 ##### LAPTOP ##############
 ###########################
 
+Get Tuxonice working as hibernate software:
+
+Install TuxOnIce from the PPA:
+
+sudo add-apt-repository ppa:tuxonice/ppa; sudo apt-get update; sudo apt-get install tuxonice-userui linux-generic-tuxonice linux-headers-generic-tuxonice; sudo ln -s /usr/lib/tuxonice-userui/tuxoniceui /usr/local/sbin/tuxoniceui_text
+
+Now sudo -su
+
+sudo touch /etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla
+
+Add the following to that PKLA file
+
+[Re-enable hibernate by default in upower]
+Identity=unix-user:*
+Action=org.freedesktop.upower.hibernate
+ResultActive=yes
+
+[Re-enable hibernate by default in logind]
+Identity=unix-user:*
+Action=org.freedesktop.login1.hibernate
+ResultActive=yes
+
+Exit sudo su
+
+===
 Add laptop specific packages
 
 apt-get install xbacklight
