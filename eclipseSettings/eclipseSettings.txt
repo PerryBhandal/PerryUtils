@@ -1,3 +1,34 @@
+*** ECLIM ****
+
+==
+Install
+
+
+Follow this guide:
+
+http://eclim.org/install.html#installing-upgrading
+
+Notes:
+- Use the graphical installer section 
+
+====
+Starting everything up
+
+First open Eclipse, then go "Show view --> other --> eclimd console"
+
+This will begun running the eclim daemon.
+
+You can now launch vim normally. Type :PingEclim to verify that it can connect.
+
+====
+http://eclim.org/vim/java/index.html
+
+================
+================
+================
+================
+================
+================
 Configure Maven to automatically download javadocs and source.
 --
 
