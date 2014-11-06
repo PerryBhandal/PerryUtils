@@ -21,7 +21,18 @@ This will begun running the eclim daemon.
 You can now launch vim normally. Type :PingEclim to verify that it can connect.
 
 ====
+Java Eclim documentation:
+
 http://eclim.org/vim/java/index.html
+
+===
+Window Layout:
+
+The easiest way I've found so far is to put eclipse on the workspace to the left and set it to "always on visible workspace."
+
+Then in your main workspace just align Vim so it's on top of Eclipse, and set it to "always on top."
+
+When you want to use eclipse, just swap to left workspace.
 
 ================
 ================
