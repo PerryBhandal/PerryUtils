@@ -1,4 +1,4 @@
-Configure Maven to automatically download javadocs
+Configure Maven to automatically download javadocs and source.
 --
 
-Under the Maven option in windows --> preferences, set it to download artifact javadocs.
+Under the Maven option in windows --> preferences, set it to download artifact javadocs and artifact source.
