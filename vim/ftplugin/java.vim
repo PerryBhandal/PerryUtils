@@ -1,7 +1,7 @@
 " Indentation
 set tabstop=4
-set expandtab
-set softtabstop=2
-set shiftwidth=2
+set noexpandtab
+set softtabstop=4
+set shiftwidth=4
 
 let g:EclimCompletionMethod = 'omnifunc'
