@@ -16,8 +16,13 @@ nnoremap <c-n> :vnew<cr>
 " Big jump
 nnoremap <s-j> 20j
 nnoremap <s-k> 20k
+nnoremap <s-b> 10b
+nnoremap <s-w> 10w
+
 vnoremap <s-j> 20j
 vnoremap <s-k> 20k
+nnoremap <s-b> 10b
+nnoremap <s-w> 10w
 
 nnoremap <c-w> :q<cr>
 
