@@ -73,6 +73,9 @@ command InsertLineNumbers %s/^/\=(line('.')-line("'<")+0).'	'/
 
 "{{{ Basic Settings
 
+" Line highlighting
+set cursorline
+
 syntax enable
 set autoindent
 set history=50
