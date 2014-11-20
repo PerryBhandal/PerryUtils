@@ -20,3 +20,5 @@ git config --global core.excludesfile '~/.gitignore_global'
 
 alias undo_last_local_git_commit="git reset --soft HEAD~1"
 alias auth_key="/home/perry/work/git/PerryUtils/systemConfigNotes/scripts/authKey.sh"
+
+alias zipass="zip -e -r -T"
