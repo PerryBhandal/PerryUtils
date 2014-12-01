@@ -9,7 +9,8 @@ BLOCK_LIST = [
   "www.reddit.com",
   "www.cnn.com",
   "www.johnstonefitness.com",
-  "www.bbc.com"
+  "www.bbc.com",
+  "www.imgur.com"
 ]
 
 BASE_ENTRIES = [
