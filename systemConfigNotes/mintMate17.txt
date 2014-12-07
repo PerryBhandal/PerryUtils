@@ -58,7 +58,7 @@ Install chromium plugins:
 
 adblock
 foxyproxy
-Auto HD for YouTube
+ImprovedTube
 
 Install the dark horizon theme: https://chrome.google.com/webstore/detail/dark-horizon/ncjjeokpcnllmmbbipeaagmdpdpiadin?hl=en
 
