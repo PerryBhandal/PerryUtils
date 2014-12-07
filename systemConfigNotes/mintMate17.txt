@@ -44,7 +44,7 @@ Install RVM
 ==
 Install browser plugins
 
-abp, foxyproxy
+abp
 ==
 Rremove adblock filter
 
@@ -58,6 +58,22 @@ Now go into search engine management, remove all, add Google.
 ==
 Set google to default home page
 ==
+Set up firefox sync
+
+Delete all existing bookmarks, then sign into account 
+==
+Remove menu bar from firefox
+
+Right click top, uncheck menu bar.
+==
+Install chromium and plugins on it
+
+Only going to use this for Flash.
+
+Package name is chromium-browser. Also need to install the pepperflashplugin-nonfree package.
+
+Install foxyproxy and adblock in Chromium, then:
+
 Set up foxyproxy's remote site and patterns
 
 Proxy: 198.154.103.66:16500
@@ -66,16 +82,6 @@ Filters
 
 pandora -> *pandora.com*
 cmyip -> *cmyip.com*
-
-==
-Set up firefox sync
-
-Delete all existing bookmarks, then sign into account 
-
-==
-Remove menu bar from firefox
-
-Right click top, uncheck menu bar.
 ==
 Create a private key and authorize it with GitHub:
 
