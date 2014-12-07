@@ -42,37 +42,25 @@ Install RVM
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 
 ==
-Install browser plugins
+Install and configure Chromium:
 
-abp
-==
-Rremove adblock filter
+Install package chromium-browser
 
-adblock -> filter preferences --> uncheck enable unibtrusive advertising
-==
-Set firefox default search engine to Google
+Install pepperflashplugin-nonfree package -- this offers recent flash support.
 
-Visit: http://www.linuxmint.com/searchengines/anse.php?sen=Google&c=y
+Set up sync. Go into settings, sign into Google.
 
-Now go into search engine management, remove all, add Google.
-==
-Set google to default home page
-==
-Set up firefox sync
+Choose what to sync, sync everything but open tabs.
 
-Delete all existing bookmarks, then sign into account 
-==
-Remove menu bar from firefox
+Shouldn't have to do the below (should auto sync this) but it's here for completeness.
 
-Right click top, uncheck menu bar.
-==
-Install chromium and plugins on it
+Install chromium plugins:
 
-Only going to use this for Flash.
+adblock
+foxyproxy
+Auto HD for YouTube
 
-Package name is chromium-browser. Also need to install the pepperflashplugin-nonfree package.
-
-Install foxyproxy and adblock in Chromium, then:
+Install the dark horizon theme: https://chrome.google.com/webstore/detail/dark-horizon/ncjjeokpcnllmmbbipeaagmdpdpiadin?hl=en
 
 Set up foxyproxy's remote site and patterns
 
@@ -82,6 +70,10 @@ Filters
 
 pandora -> *pandora.com*
 cmyip -> *cmyip.com*
+==
+Remove firefox
+
+sudo apt-get purge firefox
 ==
 Create a private key and authorize it with GitHub:
 
