@@ -52,15 +52,17 @@ Set up sync. Go into settings, sign into Google.
 
 Choose what to sync, sync everything but open tabs.
 
-Shouldn't have to do the below (should auto sync this) but it's here for completeness.
+--- Shouldn't need to do this part, sync should auto do it:
 
-Install chromium plugins:
+Install chromium plugins (these should auto install from sync):
 
 adblock
 foxyproxy
 ImprovedTube
+NewTabRedirect
 
 Install the dark horizon theme: https://chrome.google.com/webstore/detail/dark-horizon/ncjjeokpcnllmmbbipeaagmdpdpiadin?hl=en
+-----
 
 Set up foxyproxy's remote site and patterns
 
@@ -70,6 +72,8 @@ Filters
 
 pandora -> *pandora.com*
 cmyip -> *cmyip.com*
+
+Set up new tab redirect to show about:blank on load.
 ==
 Remove firefox
 
