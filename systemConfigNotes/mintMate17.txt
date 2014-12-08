@@ -91,6 +91,10 @@ Set up global panel
 Right click panel, properties, set orientation to top.
 
 ==
+Remove auto word completion from LibreOffice Writer
+
+In writer, go tools --> autocorrect options. Select "Word Completion" and uncheck "Enable Word Completion."
+==
 Set up theme
 
 Open up appearance app, press Install to add new theme, then select AmbianceRefiend III's tarball.
