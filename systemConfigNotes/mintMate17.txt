@@ -71,9 +71,9 @@ Filters
 pandora -> *pandora.com*
 cmyip -> *cmyip.com*
 ==
-Remove firefox
+Set Chrome as your default browser.
 
-sudo apt-get purge firefox
+Leave firefox installed though. You can set chromium as default in menu > preferences > preferred applications.
 ==
 Create a private key and authorize it with GitHub:
 
