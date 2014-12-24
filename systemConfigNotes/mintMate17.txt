@@ -243,6 +243,8 @@ Install it by unraring it and putting it into /usr/bin
 ====
 Get multi-monitors working
 
+NOTE: This was modified on 12/24/14. I'm now using fglrx, seems fine on the fan stuff. I was getting issues with the catalyst ones causing window rendering to be slow when running Chrome. Not sure what was causing it, but for now fglrx seems to resolve it (presumably means AMD closed drivers had something to do with it).
+
 Use the AMD drivers. The open-source AMD (fglrx, or something to that effect) ones have fan issues. 
 
 You'll also need to set scaling to 15% overscale for your two monitors connected via dvi (hdmi --> dvi, that is).
