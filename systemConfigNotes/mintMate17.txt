@@ -151,8 +151,26 @@ TODO:
 1) ADD WINDOW SNAPPING (TOP, BOTTOM) AND ASSOCIATED KEYS.
 2) Add notification disabling  approach.
 
+###########################
+#### LENOVO LAPTOP #####
+##########################
+
+Get touchpad working:
+
+ Add following to rc.local:
+
+
+sudo modprobe -r psmouse
+sudo modprobe psmouse proto=imps
+
+---
+
+Set resolution to 1920x1080
+
+
+
 ############################
-##### LAPTOP ##############
+##### ENVY LAPTOP ##############
 ###########################
 
 Get Tuxonice working as hibernate software:
