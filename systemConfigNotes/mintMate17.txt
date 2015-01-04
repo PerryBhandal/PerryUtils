@@ -84,6 +84,8 @@ Generate key: "ssh-keygen -t rsa" -- CREATE A PASSPHRASE! Your distro keyring wi
 Add the key to our ssh agent: ssh-add ~/.ssh/id_rsa
 Copy the public key: xclip -sel clip < ~/.ssh/id_rsa.pub
 Log in to your github account, delete old key(s) for system, add new key.
+
+NOTE: For now just use the global ssh key from all your comps that's stored in e-mail. No need to issue a new one.
 ==
 Set up global panel
 
@@ -175,13 +177,15 @@ No dimming on each.
 On active power:
 
 never place it to sleep, and when the laptop lid is closed suspend. Should not spin down hard disks.
-Set display to sleep when inactive for 10 minutes. Sets display brightness to 100%.
+Set display to sleep when inactive for 10 minutes. Sets display brightness to 15%.
 
 On battery:
 
 Never put computer to sleep when inactive. When laptop lid is closed standby. When critically low power, hibernate.
 Check spin down hard disk swhen possible.
 Put display to sleep when inactive for 10 minutes.
+Set display brightness to 15% (this prevents the random insta fully bright problem).
+
 
 ====
 Install new power manager (tlp):
@@ -218,6 +222,15 @@ Set existing battery monitor to never show an icon.
 Add the battery monitor applet using the "add to panel" area.
 
 Set the battery monitor applet to be compact view, show time/percentage, show tim eremaining, warn at 15%.
+
+===
+
+Fonts and sizes
+
+- Set font DPI to 110 in appearnce/fonts/details. Still need to see if this will scale up in all applications, whether menu will fit post reboot, and how to up font size in Firefox.
+
+- Set Chromium's default zoom (advanced settings) to 110%.
+
 
 ############################
 ##### ENVY LAPTOP ##############
