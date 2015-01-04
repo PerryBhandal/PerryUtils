@@ -155,19 +155,58 @@ TODO:
 #### LENOVO LAPTOP #####
 ##########################
 
-Get touchpad working:
+Add laptop specific packages
 
- Add following to rc.local:
+apt-get install xbacklight
+===
+Prevent auto screen dimming
 
+Go into power options.
+==
+Add laptop specific hotkeys:
 
-sudo modprobe -r psmouse
-sudo modprobe psmouse proto=imps
+alt + f1 - xbacklight -set 10 [Dim screen]
+==
+Set sleep options
 
----
+No dimming on each.
+
+On active power:
+
+never place it to sleep, and when the laptop lid is closed suspend. Should not spin down hard disks.
+Set display to sleep when inactive for 10 minutes. Sets display brightness to 100%.
+
+On battery:
+
+Never put computer to sleep when inactive. When laptop lid is closed standby. When critically low power, hibernate.
+Check spin down hard disk swhen possible.
+Put display to sleep when inactive for 10 minutes.
+
+====
+Install new power manager (tlp):
+
+sudo add-apt-repository ppa:linrunner/tlp; sudo apt-get update; sudo apt-get install tlp tlp-rdw; sudo tlp start
+
+==
+rc.local (set screen brightness). Add following to rc.local
+
+chmod 777 /sys/class/backlight/acpi_video0/brightness
+echo 1 > /sys/class/backlight/acpi_video0/brightness
+
+==
+Fix Mouse vert scrolling
+
+Open mouse app and set scrolling to two-finger scrolling
+
+===
 
 Set resolution to 1920x1080
 
+===
 
+Fix wifi
+
+sudo echo '#added to enable WiFi on Yoga 2 Pro'>>/etc/modprobe.d/blacklist.conf; sudo echo 'blacklist ideapad_laptop'>>/etc/modprobe.d/blacklist.conf
 
 ############################
 ##### ENVY LAPTOP ##############
