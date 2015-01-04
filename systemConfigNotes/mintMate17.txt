@@ -231,6 +231,11 @@ Fonts and sizes
 
 - Set Chromium's default zoom (advanced settings) to 110%.
 
+====
+
+Keyboard backlight
+
+Use fn + space to toggle keyboard backlight.
 
 ############################
 ##### ENVY LAPTOP ##############
