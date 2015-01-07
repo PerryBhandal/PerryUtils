@@ -25,3 +25,4 @@ alias zipass="zip -e -r -T"
 
 alias hostEnable="sudo ruby ~/.scripts/HostsManager/hostsManager.rb enable"
 alias hostDisable="sudo ruby ~/.scripts/HostsManager/hostsManager.rb disable"
+alias wifiKeyboard="~/.scripts/wifiKeyboard.sh"
