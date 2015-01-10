@@ -132,9 +132,7 @@ alt + down -> /home/perry/.scripts/snapWindow.sh bottom
 ==
 Get spotify Linux
 
-sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" > /etc/apt/sources.list.d/spotify.list'
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59
-sudo apt-get update && sudo apt-get install spotify-client-qt
+sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" > /etc/apt/sources.list.d/spotify.list'; sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59; sudo apt-get update && sudo apt-get install spotify-client-qt
 
 Once spotify is downloaded, be sure to enable high quality streaming in preferences (have to do this for each new install).
 
