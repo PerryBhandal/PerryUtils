@@ -268,7 +268,9 @@ http://linrunner.de/en/tlp/docs/tlp-configuration.html
 
 Look at WIFI_PWR_ON_BAT
 
+Poss 2:
 
+This one was likely just a coincidence, but after installing the linux-firmware package, after rebooting I had fairly stable pings.
 
 
 ############################
