@@ -258,6 +258,19 @@ Currently testing fix by blocking bluetooth, do so by adding the following to /e
 
 blacklist btusb
 
+Doesn't look like the bluetooth disabling helped. Other possible culprits:
+
+Poss 1:
+
+tlp's wifi power on battery
+
+http://linrunner.de/en/tlp/docs/tlp-configuration.html
+
+Look at WIFI_PWR_ON_BAT
+
+
+
+
 ############################
 ##### ENVY LAPTOP ##############
 ###########################
