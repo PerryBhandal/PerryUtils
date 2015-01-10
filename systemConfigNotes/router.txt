@@ -1,0 +1,8 @@
+Had issues with the Nighthawk router on 2.4 ghz (random ping spikes).
+
+Made the following changes on router and it seems to have helped. Still had a few ping spikes, but fa rless frequent.
+
+Specific settings are (under advanced wireless):
+
+Fragmentation length = 2303
+RTS Threshold = 2304
