@@ -250,6 +250,16 @@ Keyboard backlight
 
 Use fn + space to toggle keyboard backlight.
 
+===
+
+TESTING: Fix 2.4 ghz wifi problems.
+
+Been having ping spikes even to new Nighthawk router. Issue may be related to Bluetooth as it runs on the same frequency (2.4 ghz).
+
+Currently testing fix by blocking bluetooth, do so by adding the following to /etc/modprobe.d/blacklist.conf
+
+blacklist btusb
+
 ############################
 ##### ENVY LAPTOP ##############
 ###########################
