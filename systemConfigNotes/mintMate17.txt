@@ -5,6 +5,11 @@
 Install necessary apps:
 
 apt-get install git subversion gnome-do gnustep-gui-runtime curl xclip ruby xdotool gnome-screenshot
+
+Here are misc apps that aren't core:
+
+apt-get install ctags
+
 ======
 Set up gnome-do
 
