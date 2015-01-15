@@ -6,10 +6,6 @@ Install necessary apps:
 
 apt-get install git subversion gnome-do gnustep-gui-runtime curl xclip ruby xdotool gnome-screenshot
 
-Here are misc apps that aren't core:
-
-apt-get install ctags
-
 ======
 Set up gnome-do
 
@@ -150,7 +146,9 @@ Remove show desktop icon
 
 Right click the show desktop icon, unlock it. Then youc an right click again and remove it.
 ==
+Vim peripheral packages 
 
+View the setup.txt doc in the vim folder, has more details.
 ==
 TODO: 
 

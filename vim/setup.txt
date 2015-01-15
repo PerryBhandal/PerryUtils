@@ -35,4 +35,12 @@ Ensure that the ruby-lint gem is installed in your core Ruby install.
 
 Tags
 --
-Ensure exhuberant tags is installed (need it for tagbar)
+Ensure exhuberant tags is installed (need it for tagbar). ctags is package name.
+
+evince
+--
+evince is needed for previewing PDFs (apt-get install evince)
+
+Packages
+--
+sudo apt-get install ctags evince texlive-full
