@@ -142,6 +142,8 @@ Plugin 'xuhdev/vim-latex-live-preview'
 " UI Elements
 Plugin 'bling/vim-airline'
 
+Plugin 'klen/python-mode'
+
 " Other
 "BEGIN YouCompleteMe
 Plugin 'Valloric/YouCompleteMe'
