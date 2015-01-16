@@ -1,1 +1,3 @@
 Install sniffer for automatic test running. (Need pip for this).
+
+Install pyflakes as well.
