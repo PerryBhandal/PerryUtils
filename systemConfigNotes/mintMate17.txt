@@ -150,10 +150,20 @@ Vim peripheral packages
 
 View the setup.txt doc in the vim folder, has more details.
 ==
+Disable popup notifications
+
+This one is messy, no easy way to just purge mate-notificaton-daemon.
+
+For now just run (as root):
+
+chmod 0000 /usr/lib/mate-notification-daemon
+
+Have to reboot after. The problem with this approach is that in some cases programs will give error messages about not being able to start mate-notification-daemon.
+===
 TODO: 
 
 1) ADD WINDOW SNAPPING (TOP, BOTTOM) AND ASSOCIATED KEYS.
-2) Add notification disabling  approach.
+2) Add notification disabling  approach. (Got a basic solution for now, come up with something cleaner).
 
 ###########################
 #### LENOVO LAPTOP #####
