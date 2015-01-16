@@ -159,6 +159,8 @@ For now just run (as root):
 chmod 0000 /usr/lib/mate-notification-daemon
 
 Have to reboot after. The problem with this approach is that in some cases programs will give error messages about not being able to start mate-notification-daemon.
+
+To re-enable  notifications can just chmod 755 the file.
 ===
 TODO: 
 
