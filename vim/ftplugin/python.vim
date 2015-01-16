@@ -5,6 +5,9 @@ map <buffer> <f5> :!python %<CR>
 let g:pymode_lint = 0
 let g:pymode_pyflakes = 0
 let g:pymode_doc = 0
+let g:pymode_rope_completion = 0
+let g:pymode_run = 0
+let g:pymode_syntax = 0
 
 " Indentation
 set tabstop=8
