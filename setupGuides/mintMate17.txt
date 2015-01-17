@@ -194,7 +194,7 @@ Go into power options.
 ==
 Add laptop specific hotkeys:
 
-alt + f1 - xbacklight -set 7 [Dim screen]
+alt + f1 - xbacklight -set 12 [Dim screen]
 ==
 Set sleep options
 
