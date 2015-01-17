@@ -12,7 +12,8 @@ BLOCK_LIST = [
   "www.cnn.com",
   "www.johnstonefitness.com",
   "www.bbc.com",
-  "www.imgur.com"
+  "www.imgur.com",
+  "www.twitch.tv"
 ]
 
 BASE_ENTRIES = 
@@ -24,4 +25,5 @@ BASE_ENTRIES =
 fe00::0 ip6-localnet
 ff00::0 ip6-mcastprefix
 ff02::1 ip6-allnodes
-ff02::2 ip6-allrouters"
+ff02::2 ip6-allrouters
+"
