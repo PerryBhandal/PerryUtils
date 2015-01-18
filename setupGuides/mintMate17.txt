@@ -6,6 +6,10 @@ Install necessary apps:
 
 apt-get install git subversion gnome-do gnustep-gui-runtime curl xclip ruby xdotool gnome-screenshot
 
+Install non-setup apps:
+
+apt-get install gitk
+
 ======
 Set up gnome-do
 
