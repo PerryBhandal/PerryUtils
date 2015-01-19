@@ -305,6 +305,14 @@ Poss 2:
 
 This one was likely just a coincidence, but after installing the linux-firmware package, after rebooting I had fairly stable pings.
 
+SOLUTION 1:
+
+One thing that seems to always work is switching the 2.4 ghz channel on your router.
+Usually bounce between channel 1 and 11. Not sure why that fixes it. Should try
+rebooting it in the future (on the same channel) and see if that helps. Another
+possible solution could be switching to DD-WRT (more a shot in the dark than
+anything though).
+
 
 ############################
 ##### ENVY LAPTOP ##############
