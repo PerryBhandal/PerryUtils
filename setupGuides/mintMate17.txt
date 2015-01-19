@@ -291,6 +291,8 @@ blacklist btusb
 
 Doesn't look like the bluetooth disabling helped. Other possible culprits:
 
+**UPDATE: It looks like bluetooth does actually exist on this system. So stick to doing the blacklist btusb stuff above**
+
 Poss 1:
 
 tlp's wifi power on battery
