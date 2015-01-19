@@ -103,7 +103,7 @@ In writer, go tools --> autocorrect options. Select "Word Completion" and unchec
 ==
 Set up theme
 
-Open up appearance app, press Install to add new theme, then select AmbianceRefiend III's tarball.
+Get the theme from PerryUtils/theme, run copyTo.sh
 
 Next install the ubuntu icons: apt-get install ubuntu-mono
 
@@ -113,7 +113,9 @@ Fix menu icon
 
 Right click menu (text), preferences, don't show the icon and add a space before and after menu (for padding)
 ==
-Add workspace applet
+Add applets.
+
+On laptops first add the battery monitor, then the workspace applet. Then set the battery monitor to show time.
 
 Right click panel, add applet, wrokspace switcher. Do this very far to the right so it shows in the right place.
 ==
@@ -186,6 +188,16 @@ Inner auth: MSCHAPV2
 Username: qcard login 
 pass: qcard pass
 
+===
+Disable battery notifications
+
+When you do the mate-notification-daemon changes that are listed above it's going to start showing alerts as regular windows whenever you unplug/plug in on your laptop. To fix that you need to
+
+- Install dconf-editor
+
+- Go into org > mate > power-manager. Ensure the following are not checked:
+
+notify-discharging, notify-low-capacity, notify-low-power, notify-sleep-failed
 ====
 
 Add laptop specific packages
