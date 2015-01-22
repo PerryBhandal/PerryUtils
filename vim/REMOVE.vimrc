@@ -82,7 +82,10 @@ set history=50
 set showcmd
 
 " Highlight our current line
-:set cursorline
+set cursorline
+
+" Break line after 80 characters
+set tw=80
 
 " This helps with preventing value errors from YCM when opening cpp files.
 " Squelches press enter.
