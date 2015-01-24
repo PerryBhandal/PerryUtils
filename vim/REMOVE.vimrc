@@ -199,7 +199,8 @@ let NERDTreeShowHidden=1
 Plugin 'scrooloose/syntastic'
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_aggregate_errors = 1
-let g:syntastic_auto_loc_list = 1
+" let g:syntastic_auto_loc_list = 1 <-- This line used to load the loc list on
+" save.
 " END SYNTASTIC
 
 """End Plugins
