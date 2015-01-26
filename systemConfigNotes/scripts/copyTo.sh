@@ -14,3 +14,4 @@ cp authKey.sh ~/.scripts
 cp takeScreenShot.sh ~/.scripts
 cp hostsManagerConfig.rb ~/.scripts/HostsManager/config.rb
 cp wifiKeyboard.sh ~/.scripts
+cp track_time.py ~/.scripts/
