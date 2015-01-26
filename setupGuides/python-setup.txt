@@ -1,3 +1,14 @@
 Install sniffer for automatic test running. (Need pip for this).
 
 Install pyflakes as well.
+---
+For debugging use pudb and ipdb.
+
+pudb has a decent terminal 'graphical' interface. It gives you the big picture.
+ipdb is just plain text.
+
+Can install both with pip.
+
+Here's a breakdown comparing them:
+
+https://zapier.com/engineering/debugging-python-boss/
