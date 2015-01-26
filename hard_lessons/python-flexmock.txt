@@ -1,0 +1,48 @@
+1) ERROR DURING AND_RAISE DUE TO NOT INSTANTIATING EXCEPTION
+
+When you're using flexmock to raise exceptions, you have to construct the
+exception in the parameter call. Look at the two following pieces of code:
+
+    def testGet404RaiseException(self):
+        flexmock(urllib2).should_receive('urlopen').and_raise(urllib2.URLError)
+
+        downloader = Downloader(self.URL, self.LOCAL_SAVE_PATH, self.LOCAL_SAVE_NAME)
+
+        with self.assertRaises(DownloaderError):
+            downloader.attemptDownload()
+
+    def testGet404RaiseException(self):
+        flexmock(urllib2).should_receive('urlopen').and_raise(urllib2.URLError("meow"))
+
+        downloader = Downloader(self.URL, self.LOCAL_SAVE_PATH, self.LOCAL_SAVE_NAME)
+
+        with self.assertRaises(DownloaderError):
+            downloader.attemptDownload()
+
+Notice how the top one just does 'and_raise(urllib2.URLError). That resulted in the
+following error:
+
+Did not find 'scent.py', running nose:
+....E....
+======================================================================
+ERROR: testGet404RaiseException (test.download.test_downloader.TestDownloader)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/perry/work/git/NTRTsim/bin/python_scripts/test/download/test_downloader.py", line 20, in testGet404RaiseException
+    downloader.attemptDownload()
+  File "/home/perry/work/git/NTRTsim/bin/python_scripts/src/download/downloader.py", line 25, in attemptDownload
+    urllib2.urlopen(self.targetURL, timeout=5)
+  File "/usr/local/lib/python2.7/dist-packages/flexmock.py", line 948, in mock_method
+    *return_value.value['kargs'], **return_value.value['kwargs'])
+TypeError: __init__() takes exactly 2 arguments (1 given)
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.041s
+
+FAILED (errors=1)
+Failed - Back to work!
+
+Solution:
+
+This is pretty easy, just make sure you're always using the second approach (i.e.,
+when using and_raise, make sure you're constructing the exception).hen using and_raise, make sure you're constructing the exception).hen using and_raise, make sure you're constructing the exception).hen using and_raise, make sure you're constructing the exception).
