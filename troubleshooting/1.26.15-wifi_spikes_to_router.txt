@@ -4,6 +4,18 @@ SUMMARY
 Wifi lag is related to channel. Had it on 11, persisted on 1, disappeared on 6.
 
 1.26.15 -> Channel 6 fixed it.
+
+1.26.15 -> Problems reappeared on channel 6.
+
+Now trying Wide HT40 (20+20 mhz) channel width on channel 11 again.
+
+Extension channel is lower.
+
+That didn't fix it.
+
+1.26.15 -> Reverted t0 2mhz channel width, wireless channel 6.
+
+Changed wireless network mode from Mixed to N-Only.
 ***
 FUTURE
 
