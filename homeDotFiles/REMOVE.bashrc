@@ -29,4 +29,5 @@ alias wifiKeyboard="~/.scripts/wifiKeyboard.sh"
 
 alias trackTime="python ~/.scripts/track_time.py"
 
-alias gitnocomment="git commit -a -m \".\""
+alias gitnocomment="~/.scripts/gitNoComment.sh"
+alias gitpnocomment="~/.scripts/gitNoComment.sh push"
