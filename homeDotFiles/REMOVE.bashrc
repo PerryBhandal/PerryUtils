@@ -28,3 +28,5 @@ alias hostDisable="sudo ruby ~/.scripts/HostsManager/hostsManager.rb disable"
 alias wifiKeyboard="~/.scripts/wifiKeyboard.sh"
 
 alias trackTime="python ~/.scripts/track_time.py"
+
+alias gitnocomment="git commit -a -m \".\""
