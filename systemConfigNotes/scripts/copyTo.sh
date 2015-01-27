@@ -16,3 +16,4 @@ cp hostsManagerConfig.rb ~/.scripts/HostsManager/config.rb
 cp wifiKeyboard.sh ~/.scripts
 cp track_time.py ~/.scripts/
 cp gitNoComment.sh ~/.scripts/
+cp commitJunkRepo.sh ~/.scripts/
