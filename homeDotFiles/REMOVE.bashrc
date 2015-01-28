@@ -29,7 +29,10 @@ alias wifiKeyboard="~/.scripts/wifiKeyboard.sh"
 
 alias trackTime="python ~/.scripts/track_time.py"
 
-export gitnocomment="~/.scripts/gitNoComment.sh"
-export gitpnocomment="~/.scripts/gitNoComment.sh push"
+alias gitnocomment="~/.scripts/gitNoComment.sh"
+alias gitpnocomment="~/.scripts/gitNoComment.sh push"
+
+export gitnocomment
+export gitpnocomment
 
 alias junkSync="~/.scripts/commitJunkRepo.sh"
