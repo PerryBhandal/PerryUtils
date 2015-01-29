@@ -36,3 +36,5 @@ export gitnocomment
 export gitpnocomment
 
 alias junkSync="~/.scripts/commitJunkRepo.sh"
+
+alias pyInit="echo > __init__.py"
