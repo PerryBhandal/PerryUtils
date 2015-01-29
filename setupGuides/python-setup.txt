@@ -2,7 +2,7 @@ Install sniffer for automatic test running. (Need pip for this).
 
 Disable the annoying notifications by patching out the broadcaster call:
 
-sudo sed --in-place=.bak -r 's/(broadcaster.success)/#\1/g' /usr/local/lib/python2.7/dist-packages/sniffer/runner.py; sudo sed --in-place=.bak -r 's/(broadcaster.failure)/#\1/g' /usr/local/lib/python2.7/dist-packages/sniffer/runner.py
+sudo sed --in-place=.bak -r 's/(broadcaster.success)/pass #\1/g' /usr/local/lib/python2.7/dist-packages/sniffer/runner.py; sudo sed --in-place=.bak -r 's/(broadcaster.failure)/pass #\1/g' /usr/local/lib/python2.7/dist-packages/sniffer/runner.py
 ---
 Install pyflakes as well.
 ---
