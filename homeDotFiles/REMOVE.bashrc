@@ -38,3 +38,5 @@ export gitpnocomment
 alias junkSync="~/.scripts/commitJunkRepo.sh"
 
 alias pyinit="echo > __init__.py"
+
+alias cloc="perl /home/perry/work/programmingSVN/Tools/CodeCount/cloc-1.58.pl"
