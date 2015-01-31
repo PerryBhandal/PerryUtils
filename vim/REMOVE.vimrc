@@ -147,6 +147,7 @@ Plugin 'klen/python-mode'
 " BEGIN
 Bundle 'joonty/vdebug'
 nnoremap <f1> :VdebugStart<CR>
+nnoremap <S-f5> :call DebugCommanderStart()<CR>
 " END
 
 " Other
