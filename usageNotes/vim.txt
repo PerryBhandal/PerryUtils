@@ -1,0 +1,3 @@
+To revert the file in your buffer type :!git checkout .
+
+

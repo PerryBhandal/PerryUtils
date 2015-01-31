@@ -144,6 +144,11 @@ Plugin 'bling/vim-airline'
 
 Plugin 'klen/python-mode'
 
+" BEGIN
+Bundle 'joonty/vdebug'
+nnoremap <f1> :VdebugStart<CR>
+" END
+
 " Other
 "BEGIN YouCompleteMe
 Plugin 'Valloric/YouCompleteMe'
