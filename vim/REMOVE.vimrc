@@ -160,6 +160,7 @@ Plugin 'buffet.vim'
 
 "Ctrlp
 Plugin 'kien/ctrlp.vim'
+set wildignore+=*.pyc,__init__.py
 "END ctrlp
 
 Plugin 'tpope/vim-sensible'
