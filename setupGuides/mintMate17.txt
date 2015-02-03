@@ -32,6 +32,7 @@ Standard hotkeys:
 ctrl + alt + c - Open web browser
 ctrl + alt + z - toggle maximization state
 ctrl + alt + t - open a terminal
+ctrl + alt + m - libreoffice desktop.odt or libreoffice laptop.odt (depending on system). Path should go to junk_repo, nothing on desktop.
 
 ==
 Fix Caja slowdown:
