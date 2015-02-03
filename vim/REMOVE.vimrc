@@ -266,6 +266,11 @@ function! YRRunAfterMaps()
 	" From Steve Losh, Preserve the yank post selection/put.    
 	vnoremap p :<c-u>YRPaste 'p', 'v'<cr>gv:YRYankRange 'v'<cr> 
 endfunction  
+
+
+function! IncrementByOne()
+	s/\d\+/\=(submatch(0)+1)/g
+endfunction
 "}}}
 
 "{{{Filetype Detection
