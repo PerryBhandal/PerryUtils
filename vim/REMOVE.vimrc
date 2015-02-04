@@ -274,7 +274,7 @@ endfunction
 
 
 function! DecrementByOne()
-	s/\d\+/\=(submatch(0)+1)/g
+	s/\d\+/\=(submatch(0)-1)/g
 endfunction
 
 "}}}
