@@ -271,6 +271,12 @@ endfunction
 function! IncrementByOne()
 	s/\d\+/\=(submatch(0)+1)/g
 endfunction
+
+
+function! DecrementByOne()
+	s/\d\+/\=(submatch(0)+1)/g
+endfunction
+
 "}}}
 
 "{{{Filetype Detection
