@@ -3,3 +3,4 @@ TEMPTEST.*
 .ropevim
 .ropeproject
 *.pyc
+.~lock*
