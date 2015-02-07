@@ -382,6 +382,19 @@ blacklist btusb
 gsettings set org.mate.power-manager notify-discharging false
 gsettings set org.mate.power-manager button-power nothing
 
+NOTE: The above gsettings stuff isn't working properly, look at the next command in the meantime.
+
+==
+
+Fix power settings
+
+Go into gsettings and search for org.mate.power-manager, set:
+
+notify-discharing to false
+button-power to nothing
+
+TODO: Change this eventually so it's done via the command line in rc.local (above)
+
 ==
 Fix Mouse vert scrolling
 
