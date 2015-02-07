@@ -375,12 +375,12 @@ Install new power manager (tlp):
 sudo add-apt-repository ppa:linrunner/tlp; sudo apt-get update; sudo apt-get install tlp tlp-rdw; sudo tlp start
 
 ==
-rc.local (disable bluetotoh, set screen brightness, disable battery notifications.). Add following to rc.local
+rc.local (Blacklist usb, disable discharging notifications and disable the power button).
 
 rfkill block bluetooth
-chmod 777 /sys/class/backlight/acpi_video0/brightness
-echo 1 > /sys/class/backlight/acpi_video0/brightness
+blacklist btusb
 gsettings set org.mate.power-manager notify-discharging false
+gsettings set org.mate.power-manager button-power nothing
 
 ==
 Fix Mouse vert scrolling
