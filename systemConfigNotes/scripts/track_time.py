@@ -1,4 +1,5 @@
 import time
+import sys
 
 class TrackTime:
     """
@@ -7,6 +8,9 @@ class TrackTime:
     """
 
     SECONDS_IN_MINUTE = 60
+
+    def __init__(self, taskName = None):
+        self.taskName = taskName
 
     def startTimer(self):
         """
@@ -38,9 +42,19 @@ class TrackTime:
 
     def __printTime(self):
         elapsedTime = self.__getTimeSince(self.startTime)
-        print "%02d:%02d" % (elapsedTime[0], elapsedTime[1])
+        if self.taskName:
+            print "%02d:%02d since starting%s" % (elapsedTime[0], elapsedTime[1], self.taskName)
+        else:
+            print "%02d:%02d" % (elapsedTime[0], elapsedTime[1])
+
 
     def __getUnixTimeStamp(self):
         return int(time.time())
 
-TrackTime().startTimer()
+if len(sys.argv) > 2:
+    jobName = ""
+    for i in range(1, len(sys.argv)):
+        jobName += " " + sys.argv[i]
+    TrackTime(jobName).startTimer()
+else:
+    TrackTime().startTimer()
