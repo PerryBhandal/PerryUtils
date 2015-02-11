@@ -51,7 +51,7 @@ class TrackTime:
     def __getUnixTimeStamp(self):
         return int(time.time())
 
-if len(sys.argv) > 2:
+if len(sys.argv) >= 2:
     jobName = ""
     for i in range(1, len(sys.argv)):
         jobName += " " + sys.argv[i]
