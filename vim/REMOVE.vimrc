@@ -144,6 +144,8 @@ Plugin 'bling/vim-airline'
 
 Plugin 'klen/python-mode'
 
+Plugin 'Glench/Vim-Jinja2-Syntax'
+
 " BEGIN
 Bundle 'joonty/vdebug'
 nnoremap <f1> :VdebugStart<CR>
