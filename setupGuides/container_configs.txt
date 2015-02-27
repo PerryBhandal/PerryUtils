@@ -1,0 +1,15 @@
+Slow SSH
+
+Can disable reverse DNS lookups if you're getting slow ssh responses. Particularly important for git servers.
+
+Do that by adding 
+
+UseDNS no
+
+To the end of /etc/ssh/sshd_config
+
+Then restart ssh (restart ssh)
+
+TODO: How safe is this?
+
+--
