@@ -18,5 +18,5 @@ Dir.chdir(OUT_DIR) do
   end
   logFile.close()
 
-  system("git add .; git commit -a -m \"Image commit.\"; git push")
+  system("git pull; git add .; git commit -a -m \"Image commit.\"; git push")
 end
