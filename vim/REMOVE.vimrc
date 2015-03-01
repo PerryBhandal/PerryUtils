@@ -163,7 +163,7 @@ Plugin 'buffet.vim'
 
 "Ctrlp
 Plugin 'kien/ctrlp.vim'
-set wildignore+=*.pyc,__init__.py
+set wildignore+=*.pyc,*/venv/*
 let g:ctrlp_prompt_mappings = {'PrtClearCache()': ['<c-s-r>']}
 "END ctrlp
 
