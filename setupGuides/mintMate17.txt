@@ -10,6 +10,10 @@ Install non-setup apps:
 
 apt-get install gitk
 
+Install cutycapt for screenshots:
+
+sudo apt-get install subversion libqt4-webkit libqt4-dev g++ cutycapt
+
 ======
 Set up gnome-do
 
