@@ -17,3 +17,4 @@ cp wifiKeyboard.sh ~/.scripts
 cp track_time.py ~/.scripts/
 cp gitNoComment.sh ~/.scripts/
 cp commitJunkRepo.sh ~/.scripts/
+cp site_snap.rb ~/.scripts/
