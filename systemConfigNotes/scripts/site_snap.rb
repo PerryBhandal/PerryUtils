@@ -6,7 +6,7 @@ OUT_DIR = "/home/perry/work/git/attractive_sites"
 OUT_NAME = "#{Time.now.to_i}"
 
 Dir.chdir(OUT_DIR) do
-  system("cutycapt --url=http://www.desk.com --out=#{Time.now.to_i}.jpg --min-width=1920 --min-height=1080")
+  system("cutycapt --url=#{ARGV[0]} --out=#{Time.now.to_i}.jpg --min-width=1920 --min-height=1080")
   logFile = File.new("#{OUT_NAME}.txt", "w+")
   logFile.puts("#{Time.now} - Took picture of #{ARGV[0]} and saved it to #{OUT_NAME}.jpg")
 
