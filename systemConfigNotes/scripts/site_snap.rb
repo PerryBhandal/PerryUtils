@@ -3,13 +3,12 @@ if ARGV[0] == nil
   exit
 end
 OUT_DIR = "/home/perry/work/git/attractive_sites"
-OUT_NAME = "#{Time.now.to_i}.jpg"
+OUT_NAME = "#{Time.now.to_i}"
 
 Dir.chdir(OUT_DIR) do
   system("cutycapt --url=http://www.desk.com --out=#{Time.now.to_i}.jpg --min-width=1920 --min-height=1080")
-  logFile = File.new("picture_log.txt", "w+")
-  logFile.puts("-- New Entry--")
-  logFile.puts("#{Time.now} - Took picture of #{ARGV[0]} and saved it to #{OUT_NAME}")
+  logFile = File.new("#{OUT_NAME}.txt", "w+")
+  logFile.puts("#{Time.now} - Took picture of #{ARGV[0]} and saved it to #{OUT_NAME}.jpg")
 
   if ARGV[1] != nil
     logFile.puts("Reason for pic: #{ARGV[1..-1].join(" ")}")
@@ -18,5 +17,5 @@ Dir.chdir(OUT_DIR) do
   end
   logFile.close()
 
-  system("git pull; git add .; git commit -a -m \"Image commit.\"; git push")
+  system("git pull; git add #{OUT_NAME}.*; git commit -a -m \"Image commit.\"; git push")
 end
