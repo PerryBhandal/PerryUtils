@@ -42,3 +42,5 @@ alias pyinit="echo > __init__.py"
 alias activate="source venv/bin/activate"
 
 alias sitesnap="ruby ~/.scripts/site_snap.rb"
+
+alias combinetopdf="rm /home/perry/desktop/combined.pdf; sudo libreoffice --headless --convert-to pdf *.odt; pdfunite *.pdf combined.pdf.hold; sudo rm *.pdf; mv combined.pdf.hold /home/perry/Desktop/combined.pdf; gopen /home/perry/Desktop/combined.pdf"
