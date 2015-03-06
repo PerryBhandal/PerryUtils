@@ -152,6 +152,8 @@ nnoremap <f1> :VdebugStart<CR>
 nnoremap <S-f5> :call DebugCommanderStart()<CR>
 " END
 
+au FileType xhtml,xml so ~/.vim/ftplugin/html_autoclosetag.vim
+
 " Other
 "BEGIN YouCompleteMe
 Plugin 'Valloric/YouCompleteMe'
