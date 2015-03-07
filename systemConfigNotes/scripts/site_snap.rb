@@ -3,21 +3,21 @@ if ARGV[0] == nil
   exit
 end
 RESOLUTIONS = 
-[
-  [1920,1080],
-  [1366, 768],
-  [720,1280],
-  [320,480]
+  [
+    [1920,1080],
+    [1366, 768],
+    [720,1280],
+    [320,480]
 ]
 
-OUT_DIR = "/home/perry/work/git/attractive_sites"
-OUT_NAME = "#{Time.now.to_i}"
+  #OUT_DIR = "/home/perry/work/git/attractive_sites"
+  OUT_DIR = "."
+  OUT_NAME = "#{Time.now.to_i}"
 
-def takeShot(folderName, xRes, yRes)
-  system("cutycapt --url=#{ARGV[0]} --out=#{folderName}/#{xRes}_#{yRes}.jpg --min-width=#{xRes} --min-height=#{yRes}")
-end
+  def takeShot(folderName, xRes, yRes)
+    system("cutycapt --url=#{ARGV[0]} --out=#{folderName}/#{xRes}_#{yRes}.jpg --min-width=#{xRes} --min-height=#{yRes}")
+  end
 
-Dir.chdir(OUT_DIR) do
   system("mkdir #{OUT_NAME}")
   logFile = File.new("#{OUT_NAME}/log.txt", "w+")
   logFile.puts("#{Time.now} - Took picture of #{ARGV[0]}")
@@ -33,5 +33,4 @@ Dir.chdir(OUT_DIR) do
   end
   logFile.close()
 
-  system("git pull; git add #{OUT_NAME}; git commit -a -m \"Image commit.\"; git push")
-end
+  system("git pull; git add #{OUT_NAME}; ~/.scripts/gitNoComment.sh push")
