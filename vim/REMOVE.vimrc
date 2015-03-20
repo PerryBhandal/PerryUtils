@@ -284,6 +284,9 @@ endfunction
 
 "{{{Filetype Detection
 au BufNewFile,BufRead *.ctml set filetype=xml
+au BufNewFile,BufRead *.ssl set filetype=458
+au BufNewFile,BufRead *.pt set filetype=458
+
 " TODO: Fix this, it's pretty hacky. Was having trouble with ERB indentation
 " on snippets. This isn't an ideal approach.
 au BufNewFile,BufRead *.erb set filetype=xml
