@@ -1,0 +1,23 @@
+// Assing parent to container, child to contained. Only height of parent needs to be specified.
+
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.parent {
+  height: 300px;
+  text-align: center;
+}
+.child {
+  display: inline-block;
+  @include vertical-align();
+}
+
+//sample html
+<div class="parent">
+  <a class="child">hi</a>
+</div>
