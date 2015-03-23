@@ -8,7 +8,7 @@ apt-get install git subversion gnome-do gnustep-gui-runtime curl xclip ruby xdot
 
 Install non-setup apps:
 
-apt-get install gitk cloc
+apt-get install gitk cloc gpick
 
 Install cutycapt for screenshots:
 
