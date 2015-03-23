@@ -1,0 +1,9 @@
+If you get issues with your HDMI monitor looking bad, you need to go into picture settings and adjust "HDMI Black level" to normal.
+
+other settingsdL:
+
+100 brightness
+80 contrast
+60 sharpness
+magic bright: game
+
