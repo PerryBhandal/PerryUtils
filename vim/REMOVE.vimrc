@@ -56,7 +56,6 @@ nnoremap z za
 "TODO: Add command to fold everything to a method-level.
 
 """ Begin Git hotkeys
-nnoremap <s-k> :Gdiff<cr>
 "TODO: Add for Gstatus and Gcommit here (and add, potentially)
 
 "Reload .vimrc file manually
