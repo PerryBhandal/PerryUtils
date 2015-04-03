@@ -173,6 +173,15 @@ Have to reboot after. The problem with this approach is that in some cases progr
 
 To re-enable  notifications can just chmod 755 the file.
 ===
+Get rid of hexchat, install xchat and configure:
+
+sudo apt-get purge hexchat
+sudo apt-get install xchat
+
+Now open xchat and set your user (Symbiosisz). CLose xchat.
+
+Put your auto start xchat script into ~/.xchat2/  (this is located in your utils folder/xchat)
+===
 TODO: 
 
 1) ADD WINDOW SNAPPING (TOP, BOTTOM) AND ASSOCIATED KEYS.
