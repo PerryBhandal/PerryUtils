@@ -18,3 +18,5 @@ cp track_time.py ~/.scripts/
 cp gitNoComment.sh ~/.scripts/
 cp commitJunkRepo.sh ~/.scripts/
 cp site_snap.rb ~/.scripts/
+cp gen_base.rb ~/.scripts/
+cp -r doc_base ~/.scripts/

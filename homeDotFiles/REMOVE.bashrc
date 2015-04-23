@@ -46,3 +46,5 @@ alias sitesnap="ruby ~/.scripts/site_snap.rb"
 alias combinetopdf="rm /home/perry/Desktop/combined.pdf; sudo libreoffice --headless --convert-to pdf *.odt; pdfunite *.pdf combined.pdf.hold; sudo rm *.pdf; mv combined.pdf.hold /home/perry/Desktop/combined.pdf; gopen /home/perry/Desktop/combined.pdf"
 
 export CHROME_BIN="/usr/bin/chromium-browser"
+
+alias genbase="ruby ~/.scripts/gen_base.rb"
