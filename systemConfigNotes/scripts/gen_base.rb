@@ -6,7 +6,7 @@ if ARGV.length != 1
 end
 
 todayDate = Date.today
-title = "#{todayDate.month}.#{todayDate.day}.#{todayDate.year.to_s[2..-1]}-#{ARGV[0]}.odt"
+title = "#{todayDate.month}.#{todayDate.day}.#{todayDate.year.to_s[2..-1]}-#{ARGV[0]}.docx"
 
 if File.exist?(title)
   puts "File already exists with name #{title}"
