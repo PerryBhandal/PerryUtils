@@ -130,6 +130,8 @@ call vundle#begin()
 
 """Begin Plugins
 
+Plugin 'davidhalter/jedi-vim'
+
 " Appearance
 Plugin 'tomasr/molokai'
 
