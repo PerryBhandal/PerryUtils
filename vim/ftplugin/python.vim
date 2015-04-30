@@ -18,6 +18,8 @@ let g:pymode_syntax = 0
 " is that it sets nowrap.
 let g:pymode_options = 0
 
+let g:jedi#documentation_command = ""
+
 " Indentation
 set tabstop=8
 set expandtab
