@@ -72,6 +72,12 @@ NewTabRedirect
 
 Install the dark horizon theme: https://chrome.google.com/webstore/detail/dark-horizon/ncjjeokpcnllmmbbipeaagmdpdpiadin?hl=en
 -----
+Chromium additional settings:
+
+Make the audio symbol a mute button:
+
+chrome://flags/#enable-tab-audio-muting
+--
 
 Set up foxyproxy's remote site and patterns
 
