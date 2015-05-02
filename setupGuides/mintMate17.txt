@@ -188,6 +188,10 @@ Now open xchat and set your user (Symbiosisz). CLose xchat.
 
 Put your auto start xchat script into ~/.xchat2/  (this is located in your utils folder/xchat)
 ===
+Install Pencil (for mocking/wireframes):
+
+http://pencil.evolus.vn/Default.html
+===
 TODO: 
 
 1) ADD WINDOW SNAPPING (TOP, BOTTOM) AND ASSOCIATED KEYS.
