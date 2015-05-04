@@ -408,6 +408,13 @@ gsettings set org.mate.power-manager button-power nothing
 NOTE: The above gsettings stuff isn't working properly, look at the next command in the meantime.
 
 ==
+Disable webcam
+
+Add the following to rc.local
+
+modprobe -r uvcvideo
+
+==
 
 Fix power settings
 
