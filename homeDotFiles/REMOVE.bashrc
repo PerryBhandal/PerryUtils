@@ -2,7 +2,7 @@ cd /home/perry/work
 alias gopen="gnome-open"
 
 #Config RVM
-export PATH="$PATH:$HOME/.rvm/bin:/opt/caslab/bin" # Add RVM to PATH for scriptin
+export PATH="$PATH:$HOME/.rvm/bin:/opt/caslab/bin:$HOME/local_bin" # Add RVM to PATH for scriptin
 source ~/.rvm/scripts/rvm
 
 #Set git info
