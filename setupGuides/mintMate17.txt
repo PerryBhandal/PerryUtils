@@ -148,6 +148,11 @@ alt + up -> /home/perry/.scripts/snapWindow.sh top
 alt + down -> /home/perry/.scripts/snapWindow.sh bottom
 
 ==
+Set up window resizing hotkey.
+
+Set it to alt + z instead of alt + f8.
+
+==
 Get spotify Linux
 
 sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" > /etc/apt/sources.list.d/spotify.list'; sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59; sudo apt-get update && sudo apt-get install spotify-client-qt
