@@ -4,8 +4,7 @@ map <buffer> <f5> :!python %<CR>
 let g:syntastic_python_checkers = ['pyflakes']
 
 " Rope-mode
-"" Disabling rope is temporary. It has a weird hang issue currently.
-let g:pymode_rope = 0
+let g:pymode_rope = 1
 let g:pymode_lint = 0
 let g:pymode_pyflakes = 0
 let g:pymode_doc = 0
