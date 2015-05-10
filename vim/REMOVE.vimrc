@@ -145,7 +145,7 @@ Plugin 'bling/vim-airline'
 
 Plugin 'klen/python-mode'
 
-Plugin 'Glench/Vim-Jinja2-Syntax'
+Plugin 'mitsuhiko/vim-jinja'
 
 " BEGIN
 Bundle 'joonty/vdebug'
