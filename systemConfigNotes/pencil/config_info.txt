@@ -1,0 +1,5 @@
+Once pencil is installed, add the bootstrap extensions for it. You can find the github repo here:
+
+https://github.com/nathanielw/Bootstrap-Pencil-Stencils
+
+Also included it as a zip in this folder. To use the zip just go to tools, install, and install the zip file.
