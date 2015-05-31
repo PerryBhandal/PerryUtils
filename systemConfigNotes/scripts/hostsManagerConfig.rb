@@ -13,7 +13,12 @@ BLOCK_LIST = [
   "www.johnstonefitness.com",
   "www.bbc.com",
   "www.imgur.com",
-  "www.twitch.tv"
+  "www.twitch.tv",
+  "www.craigslist.ca",
+  "www.craigslist.com",
+  "www.arenajunkies.com",
+  "www.worldofwarcraft.com",
+  "www.johnstonefitness.com"
 ]
 
 BASE_ENTRIES = 
