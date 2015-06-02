@@ -4,3 +4,4 @@ TEMPTEST.*
 .ropeproject
 *.pyc
 .~lock*
+venv/
