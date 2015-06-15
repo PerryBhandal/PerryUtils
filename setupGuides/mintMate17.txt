@@ -229,6 +229,13 @@ When you do the mate-notification-daemon changes that are listed above it's goin
 notify-discharging, notify-low-capacity, notify-low-power, notify-sleep-failed
 ====
 
+Install linux-firmware
+
+sudo apt-get linux-firmware
+
+REVIEW: This looks like ti resolved the wifi issues.
+
+===
 Add laptop specific packages
 
 apt-get install xbacklight
