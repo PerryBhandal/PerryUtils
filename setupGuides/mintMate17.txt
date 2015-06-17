@@ -229,11 +229,17 @@ When you do the mate-notification-daemon changes that are listed above it's goin
 notify-discharging, notify-low-capacity, notify-low-power, notify-sleep-failed
 ====
 
-Install linux-firmware
+Fix wifi connect speed.
 
-sudo apt-get linux-firmware
+Answer from here:http://askubuntu.com/questions/119578/how-to-fix-slow-wireless-on-machines-with-intel-wireless-cards
 
-REVIEW: This looks like ti resolved the wifi issues.
+Solution is to run
+
+sudo gvim gedit /etc/modprobe.d/iwlwifi-disable11n.conf
+
+In there put options iwlwifi 11n_disable=1
+
+Reboot.
 
 ===
 Add laptop specific packages
