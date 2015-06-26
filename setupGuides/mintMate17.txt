@@ -39,6 +39,24 @@ ctrl + alt + t - open a terminal
 ctrl + alt + m - libreoffice desktop.odt or libreoffice laptop.odt (depending on system). Path should go to junk_repo, nothing on desktop.
 
 ==
+Set up pencil
+
+The repo version doesn't work for exporting to single page. You need to compile it yourself and run it as a Firefox extension.
+
+Here's the repo: https://github.com/prikhi/pencil
+
+Pull the most recent tagged version. Run
+
+cd build
+./build.sh xpi
+firefox Outputs/Pencil*.xpi
+
+This'll open up firefox with the install prompt, click okay. Install finishes.
+
+Add it to the main bar by hitting the options button, select customize, drag Pencil into that menu bar.
+
+TODO: Fix this so you can do it standalone, rather than relying on FF.
+==
 Fix Caja slowdown:
 
 Open /usr/bin/startcaja with a text editor and remove the sleep 3 line.
@@ -192,10 +210,6 @@ sudo apt-get install xchat
 Now open xchat and set your user (Symbiosisz). CLose xchat.
 
 Put your auto start xchat script into ~/.xchat2/  (this is located in your utils folder/xchat)
-===
-Install Pencil (for mocking/wireframes):
-
-http://pencil.evolus.vn/Default.html
 ===
 TODO: 
 
