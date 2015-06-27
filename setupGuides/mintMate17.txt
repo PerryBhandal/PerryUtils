@@ -55,6 +55,12 @@ This'll open up firefox with the install prompt, click okay. Install finishes.
 
 Add it to the main bar by hitting the options button, select customize, drag Pencil into that menu bar.
 
+Once done, add the Bootstrap stencils:
+
+https://github.com/nathanielw/Bootstrap-Pencil-Stencils
+
+The way you install this is to download the repo. It's going to contain everything within a single named folder. Zip up everything within that named folder (but not the naemd folder itself, so it'll have icons, etc) and then you can hit tools > import collection and select the zip you created.
+
 TODO: Fix this so you can do it standalone, rather than relying on FF.
 ==
 Fix Caja slowdown:
