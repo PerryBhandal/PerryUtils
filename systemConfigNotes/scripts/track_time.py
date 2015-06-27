@@ -47,6 +47,8 @@ class TrackTime:
         else:
             print "%02d:%02d" % (elapsedTime[0], elapsedTime[1])
 
+        minsSince = elapsedTime[0]
+        sys.stdout.write("\x1b]2;%d minute(s)\x07" % minsSince)
 
     def __getUnixTimeStamp(self):
         return int(time.time())
