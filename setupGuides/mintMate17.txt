@@ -481,13 +481,15 @@ Now chown that folder to perry: chown -R perry:perry /workSSD
 Now any time you want something on your SSD, you can just place it there and symlink it into your home. (e.g. git projects, etc).
 
 ===
-Install flux
+Install redshift
 
-Download the 64 bit verison that supports multiple monitors
+sudo apt-get install redshift
 
-http://justgetflux.com/linux.html
+I like 2750 for night, and 6500 for normal use.
 
-Install it by unraring it and putting it into /usr/bin
+Can specify a color temperature using: redshift -O 2500
+
+^ Above is a O, not a 0.
 
 ====
 Get multi-monitors working
