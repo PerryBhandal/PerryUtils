@@ -15,7 +15,7 @@ git config --global push.default simple
 alias fluxon="xflux -l 44.2312 -g -76.4860"
 alias fluxoff="pkill xflux"
 
-alias rshiftOn="redshift -O 2750"
+alias rshiftOn="redshift -O 2500"
 alias rshiftOff="redshift -O 6500"
 
 #Global gitignore
