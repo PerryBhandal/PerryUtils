@@ -216,6 +216,8 @@ sudo apt-get install xchat
 Now open xchat and set your user (Symbiosisz). CLose xchat.
 
 Put your auto start xchat script into ~/.xchat2/  (this is located in your utils folder/xchat)
+
+Also be sure to open xchat, set it to not show the network list on startup, and click "edit" on FreeNode and set it to auto join on startup.
 ===
 TODO: 
 
