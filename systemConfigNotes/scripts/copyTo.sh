@@ -4,7 +4,7 @@ mkdir -p ~/.scripts
 
 pushd ~/.scripts > /dev/null
 
-git clone https://github.com/PerryBhandal/WindowSnapper.git
+git clone git://github.com/ssokolow/quicktile
 git clone https://github.com/PerryBhandal/HostsManager.git
 
 popd > /dev/null

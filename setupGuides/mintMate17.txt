@@ -166,10 +166,16 @@ Go into scripts, run copyTo.sh.
 
 Now go into keyboard shortcuts and add the following hotkeys:
 
-alt + left -> /home/perry/.scripts/snapWindow.sh left
-alt + right -> /home/perry/.scripts/snapWindow.sh right
-alt + up -> /home/perry/.scripts/snapWindow.sh top 
-alt + down -> /home/perry/.scripts/snapWindow.sh bottom
+NOTE: This is being done using quicktile now, not your original script
+
+alt + left > /home/perry/.scripts/quicktile/quicktile.py left
+Do alt + left, up, down, right and replace the parameter to quicktile with the correct value.
+
+The bindings above will only handle snappings that are vertically maximized. To have it take up 1/4 a screen, use
+
+shift + alt + f1 > /home/perry/.scripts/quicktile/quicktile.py top-left 
+
+Do shift + alt + f1, f2, f3, f4 with values top-left, bottom-left, top-right, bottom-right, respectively.
 
 ==
 Set up window resizing hotkey.
