@@ -166,6 +166,10 @@ Go into scripts, run copyTo.sh.
 
 Now go into keyboard shortcuts and add the following hotkeys:
 
+If you get anerror on loading wnck module, run:
+
+sudo apt-get install python-wnck
+
 NOTE: This is being done using quicktile now, not your original script
 
 alt + left > /home/perry/.scripts/quicktile/quicktile.py left
