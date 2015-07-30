@@ -4,7 +4,7 @@
 
 Install necessary apps:
 
-apt-get install git subversion gnome-do gnustep-gui-runtime curl xclip ruby xdotool gnome-screenshot sqlitebrowser
+apt-get install git subversion gnome-do gnustep-gui-runtime curl xclip ruby xdotool gnome-screenshot sqlitebrowser silversearcher-ag
 
 NOTE: SQLiteBrowser from repo is version 2.0, at time of writing this the most recent version is 3.5 Might want to compile it directly or use the PPA if you need its features.
 
