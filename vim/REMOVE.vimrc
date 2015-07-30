@@ -138,6 +138,9 @@ Plugin 'tomasr/molokai'
 " Source Control
 Plugin 'tpope/vim-fugitive'
 
+" Ag vim
+Plugin 'rking/ag.vim'
+
 Plugin 'xuhdev/vim-latex-live-preview'
 
 " UI Elements
