@@ -18,6 +18,8 @@ alias fluxoff="pkill xflux"
 alias rshiftOn="redshift -O 2500"
 alias rshiftOff="redshift -O 6500"
 
+alias ping="ping -O"
+
 #Global gitignore
 git config --global core.excludesfile '~/.gitignore_global'
 
