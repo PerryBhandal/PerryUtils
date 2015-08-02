@@ -38,6 +38,7 @@ nnoremap <F3> :setlocal spell! spelllang=en_us<CR>
 " Open git status
 nnoremap <c-k> :ToggleGStatus<cr>
 nnoremap <a-k> :Gcommit -m "
+nnoremap <c-l> :Gdiff
 
 nnoremap <c-a> <esc>ggvG<s-$>
 
