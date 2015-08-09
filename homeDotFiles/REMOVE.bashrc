@@ -29,6 +29,8 @@ alias auth_key="/home/perry/work/git/PerryUtils/systemConfigNotes/scripts/authKe
 alias zipass="zip -e -r -T"
 
 alias hostEnable="sudo ruby ~/.scripts/HostsManager/hostsManager.rb enable"
+alias hostDisable="sudo ruby ~/.scripts/HostsManager/hostsManager.rb disable"
+
 alias wifiKeyboard="~/.scripts/wifiKeyboard.sh"
 
 alias trackTime="python ~/.scripts/track_time.py"
