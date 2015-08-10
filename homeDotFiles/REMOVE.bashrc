@@ -1,10 +1,6 @@
 cd /home/perry/work
 alias gopen="gnome-open"
 
-#Config RVM
-export PATH="$PATH:$HOME/.rvm/bin:/opt/caslab/bin:$HOME/local_bin" # Add RVM to PATH for scriptin
-source ~/.rvm/scripts/rvm
-
 #Set git info
 git config --global user.name "Perry Bhandal"
 git config --global user.email "perry.bhandal@gmail.com"
