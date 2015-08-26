@@ -142,6 +142,8 @@ Plugin 'tpope/vim-fugitive'
 " Ag vim
 Plugin 'rking/ag.vim'
 
+Plugin 'toyamarinyon/vim-swift'
+
 Plugin 'xuhdev/vim-latex-live-preview'
 
 " UI Elements
@@ -296,6 +298,8 @@ au BufNewFile,BufRead *.pt set filetype=458
 " on snippets. This isn't an ideal approach.
 au BufNewFile,BufRead *.erb set filetype=xml
 au BufNewFile,BufRead *.txt set filetype=txt
+au BufNewFile,BufRead *.swift set filetype=swift
+"
 "}}}
 
 " Commenting, Can do ,cc to comment lines and ,cu to uncomment.
