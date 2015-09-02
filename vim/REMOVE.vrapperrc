@@ -14,7 +14,4 @@ vnoremap <s-k> 20k
 nnoremap <s-b> 10b
 nnoremap <s-w> 10w
 
-inoremap <silent> <c-s> <esc>:w<cr>
-nnoremap <silent> <c-s> :w<cr>
-
-
+map <c-s> <esc>
