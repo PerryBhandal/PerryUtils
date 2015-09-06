@@ -34,8 +34,7 @@ nnoremap <c-a> <esc>ggvG<s-$>
 
 " TODO: Save on ctrl + s
 
-" Folding hotkeys
-nnoremap <c-z> zM
-nnoremap <a-z> zR
-nnoremap z za
+vnoremap p "_dP
 
+" Use system clipboard
+set clipboard+=unnamed
