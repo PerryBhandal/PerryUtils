@@ -1,0 +1,8 @@
+Set imports to be automatic:
+
+GO to file, settings, editor, general, auto import, java and set
+
+Insert imports on paste to ALL
+Add unambiguous improts ont eh fly to True
+
+
