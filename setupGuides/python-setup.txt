@@ -1,3 +1,5 @@
+Install bugjar from pip, it's a debugger.
+
 Install sniffer for automatic test running. (Need pip for this).
 
 Disable the annoying notifications by patching out the broadcaster call:
