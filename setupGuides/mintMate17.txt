@@ -210,15 +210,7 @@ View the setup.txt doc in the vim folder, has more details.
 ==
 Disable popup notifications
 
-This one is messy, no easy way to just purge mate-notificaton-daemon.
-
-For now just run (as root):
-
-chmod 0000 /usr/lib/mate-notification-daemon
-
-Have to reboot after. The problem with this approach is that in some cases programs will give error messages about not being able to start mate-notification-daemon.
-
-To re-enable  notifications can just chmod 755 the file.
+GOt a new method for this: rename /usr/share/dbus-1/services/org.freedesktop.Mate.Notifications.Service by adding DISABLED to the end. Notifications won't occur anymore.
 ===
 Get rid of hexchat, install xchat and configure:
 

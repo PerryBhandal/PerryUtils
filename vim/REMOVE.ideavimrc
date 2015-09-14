@@ -1,0 +1,40 @@
+"""
+" .vimrc
+" Author: Perry Bhandal
+"""
+
+set nocompatible " Ensure this always remains at the top as it has side effects.
+
+"{{{General Hotkeys
+
+" Jump between windows
+nnoremap ` <c-w>w
+
+nnoremap <a-n> :tabnew<cr>
+nnoremap <c-n> :vnew<cr>
+
+" Big jump
+nnoremap <s-j> 20j
+nnoremap <s-k> 20k
+nnoremap <s-b> 10b
+nnoremap <s-w> 10w
+
+vnoremap <s-j> 20j
+vnoremap <s-k> 20k
+nnoremap <s-b> 10b
+nnoremap <s-w> 10w
+
+nnoremap <c-w> :q<cr>
+
+inoremap <silent> <c-s> <esc>:w<cr>
+nnoremap <silent> <c-s> :w<cr>
+
+
+nnoremap <c-a> <esc>ggvG<s-$>
+
+" TODO: Save on ctrl + s
+
+vnoremap p "_dP
+
+" Use system clipboard
+set clipboard+=unnamed

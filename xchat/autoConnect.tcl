@@ -12,3 +12,6 @@
 /timer 40 join #vim
 /timer 40 join ##c++-general
 /timer 40 join ##c++-basic
+/timer 40 join #android-dev
+/timer 40 join #android
+

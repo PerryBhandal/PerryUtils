@@ -49,13 +49,6 @@ vnoremap p "_dP
 " TODO: Save on ctrl + s
 nnoremap <c-b> <c-]>
 
-" Folding hotkeys
-nnoremap <c-z> zM
-nnoremap <a-z> zR
-nnoremap z za
-
-"TODO: Add command to fold everything to a method-level.
-
 """ Begin Git hotkeys
 "TODO: Add for Gstatus and Gcommit here (and add, potentially)
 
@@ -227,9 +220,7 @@ let g:ycm_extra_conf_globlist = ['~/.ycm_extra_conf.py']
 "}}}
 
 "{{{ Folding
-
-set foldlevelstart=20
-
+set foldlevel=20
 "}}}
 
 "{{{ Appearance
