@@ -1,7 +1,6 @@
-Install bugjar from pip, it's a debugger.
+Install pudb and vim-pudb.
 
-sudo pip install bugjar 
-sudo apt-get install idle python-tk
+Can use vim one to set breakpoint, then run them in pudb itself. Both on pip.
 
 ----
 
