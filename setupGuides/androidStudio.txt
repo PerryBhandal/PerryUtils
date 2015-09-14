@@ -1,8 +1,3 @@
-Set imports to be automatic:
+Set up to remove s and m prefixes:
 
-GO to file, settings, editor, general, auto import, java and set
-
-Insert imports on paste to ALL
-Add unambiguous improts ont eh fly to True
-
-
+Go into settings, code style, java, code generation and then add m prefix for instance vars and s prefix for static vars.
