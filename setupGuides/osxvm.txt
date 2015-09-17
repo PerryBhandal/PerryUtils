@@ -3,3 +3,5 @@ Did in vbox 5.0
 On HZ OS X Yosemite.
 
 On boot, hit f8, get into boot flags and add -v. Will hang at BT completion then go into installer.
+
+http://www.macbreaker.com/2015/01/virtualbox-yosemite-zone.html
