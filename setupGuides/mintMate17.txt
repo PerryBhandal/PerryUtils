@@ -8,6 +8,16 @@ sudo apt-get install git subversion gnome-do gnustep-gui-runtime curl xclip ruby
 
 =====
 
+Install VirtualBox 5.0 directly from Oracle
+
+https://www.virtualbox.org/wiki/Linux_Downloads
+
+wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install virtualbox-5.0
+
+=====
+
 Install SQLiteBrowser.
 
 Have to do this via PPA as default repos have a very old version:
