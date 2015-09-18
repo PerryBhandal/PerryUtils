@@ -1,0 +1,14 @@
+Was getting a problem building the kernel modules. Below fix resolved it:
+
+# - as root user
+$ cd /usr/lib/vmware/modules/source
+$ tar -xvf vmnet.tar
+# - edit the file vmnet-only/netif.c and replace the line that looks like
+    dev = alloc_netdev(sizeof *netIf, deviceName, VNetNetIfSetup);
+to
+    dev = alloc_netdev(sizeof *netIf, deviceName, NET_NAME_UNKNOWN, VNetNetIfSetup);
+$ tar -cvf vmnet.tar vmnet-only/
+$ rm -rf vmnet-only/
+
+Found here: http://askubuntu.com/questions/414783/unable-to-run-vmware-failed-to-build-vmnet
+
