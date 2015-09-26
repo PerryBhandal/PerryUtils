@@ -54,3 +54,9 @@ alias genbase="ruby ~/.scripts/gen_base.rb"
 
 # Prevent commands prefixed by a space from showing in Bash history.
 export HISTCONTROL=ignorespace
+
+alias idea="/home/perry/work/applications/idea/bin/idea.sh"
+alias android="/home/perry/work/applications/android-studio/bin/studio.sh"
+
+export idea
+export android
