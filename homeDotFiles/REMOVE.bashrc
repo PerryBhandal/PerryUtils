@@ -29,7 +29,9 @@ alias hostDisable="sudo ruby ~/.scripts/HostsManager/hostsManager.rb disable"
 
 alias wifiKeyboard="~/.scripts/wifiKeyboard.sh"
 
-alias trackTime="python ~/.scripts/track_time.py"
+alias tracktime="python ~/.scripts/track_time.py"
+alias trackwork="python ~/.scripts/track_time.py Work"
+alias trackbreak="python ~/.scripts/track_time.py Leisure"
 
 alias gitnocomment="~/.scripts/gitNoComment.sh"
 alias gitpnocomment="~/.scripts/gitNoComment.sh push"
