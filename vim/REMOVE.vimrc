@@ -14,13 +14,13 @@ nnoremap <a-n> :tabnew<cr>
 nnoremap <c-n> :vnew<cr>
 
 " Big jump
-nnoremap <s-j> 20j
-nnoremap <s-k> 20k
+nnoremap <s-j> 10j
+nnoremap <s-k> 10k
 nnoremap <s-b> 10b
 nnoremap <s-w> 10w
 
-vnoremap <s-j> 20j
-vnoremap <s-k> 20k
+vnoremap <s-j> 10j
+vnoremap <s-k> 10k
 nnoremap <s-b> 10b
 nnoremap <s-w> 10w
 
