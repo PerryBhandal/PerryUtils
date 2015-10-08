@@ -262,6 +262,20 @@ function! ToggleGStatus()
 endfunction
 command ToggleGStatus :call ToggleGStatus()
 
+function! StartProfiling()
+	profile start profile.log
+	profile func *
+	profile file *
+endfunction
+command StartProfiling :call StartProfiling()
+
+function! StopProfiling()
+	profile pause
+	noautocmd qall!
+endfunction
+command StopProfiling :call StopProfiling()
+
+
 "Prevent pasting from overwriting register
 function! YRRunAfterMaps()                                                                                                      
 	" From Steve Losh, Preserve the yank post selection/put.    
