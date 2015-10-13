@@ -62,3 +62,6 @@ alias android="/home/perry/work/applications/android-studio/bin/studio.sh"
 
 export idea
 export android
+
+alias wifitoggle="sudo rfkill block wifi; sudo rfkill unblock wifi"
+export wifitoggle
