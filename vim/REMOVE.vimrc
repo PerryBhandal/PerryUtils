@@ -142,7 +142,10 @@ Plugin 'xuhdev/vim-latex-live-preview'
 " UI Elements
 Plugin 'bling/vim-airline'
 
-Plugin 'klen/python-mode'
+" 10/25/15: Removed python-mode for now. After profiling shows that its
+" folding is causing lag on AC. Maybe use python rope and pylint on their own?
+" See python-rope/ropevim
+" Plugin 'klen/python-mode'
 
 Plugin 'mitsuhiko/vim-jinja'
 
