@@ -1,6 +1,8 @@
 cd /home/perry/work
 alias gopen="gnome-open"
 
+PATH="${PATH}:/home/perry/local_bin"
+
 #Set git info
 git config --global user.name "Perry Bhandal"
 git config --global user.email "perry.bhandal@gmail.com"
