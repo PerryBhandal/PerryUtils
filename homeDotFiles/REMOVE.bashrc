@@ -61,6 +61,7 @@ export HISTCONTROL=ignorespace
 
 alias idea="/home/perry/work/applications/idea/bin/idea.sh"
 alias android="/home/perry/work/applications/android-studio/bin/studio.sh"
+alias eclipse="/home/perry/work/applications/eclipse/eclipse"
 
 export idea
 export android
