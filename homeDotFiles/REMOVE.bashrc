@@ -58,7 +58,7 @@ alias combinetopdf="rm /home/perry/Desktop/combined.pdf; sudo libreoffice --head
 export CHROME_BIN="/usr/bin/chromium-browser"
 
 alias genbase="ruby ~/.scripts/gen_base.rb"
-alias genebase="ruby ~/.scripts/gen_base.rb e"
+#alias genebase="ruby ~/.scripts/gen_base.rb e"
 
 
 # Prevent commands prefixed by a space from showing in Bash history.
