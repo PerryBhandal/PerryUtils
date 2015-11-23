@@ -146,6 +146,8 @@ Plugin 'klen/python-mode'
 
 Plugin 'mitsuhiko/vim-jinja'
 
+Plugin 'jaxbot/browserlink.vim'
+
 " BEGIN
 Bundle 'joonty/vdebug'
 nnoremap <f1> :VdebugStart<CR>
