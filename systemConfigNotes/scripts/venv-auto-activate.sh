@@ -29,16 +29,14 @@ _virtualenv_auto_activate() {
           # Check to see if already activated to avoid redundant activating
           if [ "$VIRTUAL_ENV" = "" ]; then
               _VENV_NAME=$(basename `pwd`)
-              echo Activating virtualenv \"$_VENV_NAME\"...
               VIRTUAL_ENV_DISABLE_PROMPT=1
               source venv/bin/activate
               _OLD_VIRTUAL_PS1="$PS1"
-              PS1="($_VENV_NAME)$PS1"
+              PS1="(v)$PS1"
               export PS1
            fi
      else
        if [ "$VIRTUAL_ENV" != "" ]; then
-         echo deactivating VirtualEnv
          deactivate
        fi
      fi
