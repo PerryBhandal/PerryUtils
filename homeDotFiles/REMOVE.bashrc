@@ -46,10 +46,7 @@ alias junkSync="~/.scripts/commitJunkRepo.sh"
 alias pyinit="echo > __init__.py"
 
 alias activate="source venv/bin/activate"
-alias init_env="virtualenv -p python venv; activate; pip install -r requirements/dev.txt"
-
-alias init_env3="virtualenv -p python3 venv; activate; pip3 install -r requirements/dev.txt"
-
+alias init_env="virtualenv -p python venv; source ~/perry/.scripts/venv-auto-activate.sh ; pip install -r requirements/dev.txt"
 
 alias sitesnap="ruby ~/.scripts/site_snap.rb"
 
