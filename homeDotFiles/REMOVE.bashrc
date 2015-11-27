@@ -73,3 +73,6 @@ export android
 
 alias wifitoggle="sudo rfkill block wifi; sudo rfkill unblock wifi"
 export wifitoggle
+
+# Script for activating venv on directory entry.
+source /home/perry/.scripts/venv-auto-activate.sh

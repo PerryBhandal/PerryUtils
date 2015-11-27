@@ -20,3 +20,6 @@ cp commitJunkRepo.sh ~/.scripts/
 cp site_snap.rb ~/.scripts/
 cp gen_base.rb ~/.scripts/
 cp -r doc_base ~/.scripts/
+
+# Above cp calls are redundant now.
+cp *.sh ~/.scripts/
