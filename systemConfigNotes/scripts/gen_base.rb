@@ -1,7 +1,5 @@
 require 'date'
 
-puts ARGV.inspect
-
 class FileGenerator
 
   def generate()
