@@ -28,6 +28,9 @@ class FileGenerator
       elsif switch == "-e"
         @title = ARGV[1]
         @prefix = get_date_prefix()
+      elsif switch == "-n"
+        @title = ARGV[1]
+        @prefix = nil 
       else
         fail
       end
@@ -40,7 +43,11 @@ class FileGenerator
 def create_file()
   # TODO [0]: Add check for file existence.
 
-  file_name = "%s-%s.docx" % [@prefix, @title]
+  if @prefix
+    file_name = "%s-%s.docx" % [@prefix, @title]
+  else
+    file_name = "%s.docx" % [@title]
+  end
   if File.exist?(file_name)
     puts "File already exists with name #{file_name}"
     fail
