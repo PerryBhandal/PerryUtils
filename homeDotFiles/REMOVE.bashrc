@@ -3,6 +3,9 @@ alias gopen="gnome-open"
 
 PATH="${PATH}:/home/perry/local_bin"
 
+ANDROID_HOME=/home/perry/work/applications/android-sdk-linux
+export ANDROID_HOME
+
 #Set git info
 git config --global user.name "Perry Bhandal"
 git config --global user.email "perry.bhandal@gmail.com"
