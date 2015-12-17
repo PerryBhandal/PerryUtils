@@ -1,0 +1,49 @@
+Make sure you have xdotool installed then customize and run the script below.
+
+--Begin Script--
+
+echo "Close all unnecessary windows in this workspace then press enter to begin restoring your workspace."
+read ENTERINPUT
+
+
+# TODO[4]: Remove the hard coding of this at some point. 
+WORK_PATH=/home/perry/work/git/rc_create/rc_iris
+export WORK_PATH
+
+# Add pause here waiting for any key
+
+# TODO[4]: DRY the commands below into helpers that all use. Too many duplicate actions here.
+
+# Open terminal in left monitor.
+xdotool mousemove 0 0
+xdotool key "ctrl+alt+t"
+sleep 1; xdotool type "cd ${WORK_PATH}"; xdotool key "Return"
+
+
+### Start each component and add a tab new call for every tab but the first.
+
+# Sniffer
+xdotool type 'sniffer'
+xdotool key "Return"
+sleep 1
+
+
+# RPC Server
+xdotool key "ctrl+shift+t"
+sleep 1; xdotool type "cd ${WORK_PATH}"; xdotool key "Return"
+xdotool type "python rpc_server.py"
+xdotool key "Return"
+
+# Guard (live reload)
+xdotool key "ctrl+shift+t"
+sleep 1; xdotool type "cd ${WORK_PATH}"; xdotool key "Return"
+xdotool type "guard"
+xdotool key "Return"
+
+# Now bind right top
+xdotool key "shift+alt+F3"
+
+sleep 1
+
+# TAb back to main tab
+xdotool key "ctrl+Page_Down"
