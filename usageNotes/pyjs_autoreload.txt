@@ -1,6 +1,12 @@
-Run launch_compiler.sh for auto rebuilds on pyjs, and then run sniffer in the same dir (it'll handle  Have sniffer which is monitoring local fs and re-generating on change toHTML/CSS.
+Auto reload steps:
 
-The output file from that generation (Application.html) can be loaded via file://, (do it in FF). Each time a change is made, that'll hit the gen script which results in Firefox auto reloading it.
+run sniffer for auto rebuilds
+
+run the rpc_server
+
+Access the static/application.html file in FF.
+
+Now each time a SCSS/HTML file changes it's going to auto reload in FF. (**HAS TO BE FF**)
 
 == TODO ==
 
