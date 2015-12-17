@@ -1,13 +1,30 @@
-Auto reload steps:
+** Install necessary components
+
+Do a sys wide installation of guard-livereload (sudo gem install guard):
+
+sudo gem install guard-livereload
+
+Install the LiveReload plugin in Chromium: https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en
+
+** Prep the project for LiveReload
+
+In the pyjs root dir run "guard init livereload"
+
+Go into the Guardfile and add the following to the bottom (well, after everything but 'end'):
+
+watch(%r{static/.+\.html})
+watch(%r{static/.+\.css})
+
+** Start up guard
+
+In the root dir call guard. It'll list errors, ignore them -- still works.
+
+** Get compilation/server watcher running
 
 run sniffer for auto rebuilds
 
 run the rpc_server
 
-Access the static/application.html file in FF.
+** Issues
 
-Now each time a SCSS/HTML file changes it's going to auto reload in FF. (**HAS TO BE FF**)
-
-== TODO ==
-
-In the auto reload FF plugin use autoreload in order to make get requests hit the rpc server (as opposed to being run locally).
+Currently does double refresh on changes to any file, but that's not a big deal.
