@@ -1,0 +1,4 @@
+Have sniffer which is monitoring local fs and re-generating on change to
+HTML/CSS.
+
+The output file from that generation (Application.html) can be loaded via file://. Each time a change is made, that'll hit the gen script which results in Firefox auto reloading it.
