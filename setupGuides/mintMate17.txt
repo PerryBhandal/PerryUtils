@@ -226,6 +226,15 @@ Disable popup notifications
 
 GOt a new method for this: rename /usr/share/dbus-1/services/org.freedesktop.Mate.Notifications.Service by adding DISABLED to the end. Notifications won't occur anymore.
 ===
+Install Java JDK
+// Obviously replace this with correct version at current time.
+
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+sudo apt-get install oracle-java8-set-default
+
+===
 Get rid of hexchat, install xchat and configure:
 
 sudo apt-get purge hexchat
