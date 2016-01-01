@@ -24,6 +24,8 @@ nnoremap <s-b> 10b
 nnoremap <s-w> 10w
 
 nnoremap <c-w> :q<cr>
+nnoremap <c-s> :w<cr>
+inoremap <c-s> <Esc>:w<cr>
 
 nnoremap <c-a> <esc>ggvG<s-$>
 
