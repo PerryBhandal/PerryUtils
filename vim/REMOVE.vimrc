@@ -222,9 +222,7 @@ let g:ycm_extra_conf_globlist = ['~/.ycm_extra_conf.py']
 "}}}
 
 "{{{ Folding
-Plugin 'simplefold'
-map <c-z> <Leader>f
-map <a-z> zn
+set foldlevel=100
 "}}}
 
 "{{{ Appearance
