@@ -1,7 +1,7 @@
 " Run command
 map <buffer> <f5> :!python %<CR>
 
-let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_python_checkers = ['pyflakes']
 
 " Rope-mode
 let g:pymode_rope = 0
