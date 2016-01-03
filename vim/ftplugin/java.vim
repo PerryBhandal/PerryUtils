@@ -24,7 +24,3 @@ endfunction
 
 " Import laodinmg
 map <buffer> <C-S-o> :JavaImportOrganize<CR>
-
-Plugin 'simplefold'
-map <c-z> <Leader>f
-map <a-z> zn
