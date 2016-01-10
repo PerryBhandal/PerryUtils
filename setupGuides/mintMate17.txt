@@ -302,6 +302,10 @@ Good source for info: https://help.ubuntu.com/community/AsusZenbook
 
 TODO : Needa  better solution for touchpad hits while typing -- touchpad is huge on this thing. Maybe look into disable touchpad on type if you can avoid the big delay it previously had.
 
+PROBLEMS:
+
+1) Right click via tap is a bit of a pain. Any way to make it more responsive?
+
 QUESTIONS:
 
 1) Do I need to do the SSD instructions? Seems odd to recommend those changes for all zenbooks when their hardware can vary so drastically. Go without it for now.
@@ -309,7 +313,7 @@ QUESTIONS:
 ===
 Fix touchpad:
 
-* first install focaltech dkms
+Install focaltech dkms
 
 https://github.com/hanipouspilot/focaltech-dkms
 
@@ -317,33 +321,11 @@ Got a copy of the repo stored ni setupGuides/zenbook. Note that it says it's jus
 
 To install it go into setupGuides/zenbook, run dkms add ./focaltech-dkms
 
-Now run dkms install -m focaltech -v 1.5
+Now go into the focaltech-dkms folder and run 'sudo dkms add .'
 
-Now reboot. Once you're back in, you should be able to use synclient.
+Now run sudo dkms install -m focaltech -v 1.5
 
-QUESTION: Do I need to install synaptics? (note the s, without the s it's referring to apt).
-
-In your rc.local file add:
-
-# higher sensitivity
-synclient FingerLow=9 FingerHigh=12
-
-# faster speed and acceleration
-synclient MinSpeed=1.5 MaxSpeed=3.5 AccelFactor=0.1
-
-# 2 fingers scroll (can be also enabled in System Settings)
-synclient VertTwoFingerScroll=1 HorizTwoFingerScroll=1
-
-# faster coasting
-synclient CoastingSpeed=10
-
-# enable tap to click (2 fingers for middle click, 3 fingers for right click)
-synclient TapButton1=1 TapButton2=3 TapButton3=2
-
-# continue dragging movement when reaching the edge of the touchpad
-synclient EdgeMotionMinZ=30 EdgeMotionMaxZ=40 EdgeMotionMinSpeed=100 EdgeMotionMaxSpeed=400
-
-May want to modify some of those, this is just what was recommended. Verify that you have two finger tap right working.
+Now reboot, once you go back into mouse the touchpad option should now be visible.
 
 ############################
 ##### DESKTOP ##############
