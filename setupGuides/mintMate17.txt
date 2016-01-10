@@ -20,16 +20,6 @@ Install the ext pack after:
 
 https://www.virtualbox.org/wiki/Downloads
 
-=====
-
-Install SQLiteBrowser.
-
-Have to do this via PPA as default repos have a very old version:
-
-sudo add-apt-repository ppa:linuxgndu/sqlitebrowser
-sudo apt-get update
-sudo apt-get install SQLiteBrowser
-
 ======
 Set up gnome-do
 
@@ -54,31 +44,7 @@ ctrl + alt + z - toggle maximization state
 ctrl + alt + t - open a terminal
 ctrl + alt + m - libreoffice desktop.odt or libreoffice laptop.odt (depending on system). Path should go to junk_repo, nothing on desktop.
 
-==
-Set up pencil
-
-The repo version doesn't work for exporting to single page. You need to compile it yourself and run it as a Firefox extension.
-
-Here's the repo: https://github.com/prikhi/pencil
-
-Pull the most recent tagged version. Run
-
-cd build
-./build.sh xpi
-firefox Outputs/Pencil*.xpi
-
-This'll open up firefox with the install prompt, click okay. Install finishes.
-
-Add it to the main bar by hitting the options button, select customize, drag Pencil into that menu bar.
-
-Once done, add the Bootstrap stencils:
-
-https://github.com/nathanielw/Bootstrap-Pencil-Stencils
-
-The way you install this is to download the repo. It's going to contain everything within a single named folder. Zip up everything within that named folder (but not the naemd folder itself, so it'll have icons, etc) and then you can hit tools > import collection and select the zip you created.
-
-TODO: Fix this so you can do it standalone, rather than relying on FF.
-==
+=====
 Fix Caja slowdown:
 
 Open /usr/bin/startcaja with a text editor and remove the sleep 3 line.
@@ -86,10 +52,6 @@ Open /usr/bin/startcaja with a text editor and remove the sleep 3 line.
 Set up your bash file
 
 Copy everything in the homeDotFiles directory into your home directory.
-==
-Install RVM
-
-\curl -sSL https://get.rvm.io | bash -s stable --ruby
 ==
 Install and configure Chromium:
 
@@ -198,11 +160,6 @@ shift + alt + f1 > /home/perry/.scripts/quicktile/quicktile.py top-left
 Do shift + alt + f1, f2, f3, f4 with values top-left, bottom-left, top-right, bottom-right, respectively.
 
 ==
-Set up window resizing hotkey.
-
-Set it to alt + z instead of alt + f8.
-
-==
 Get spotify Linux
 
 sudo sh -c 'echo "deb http://repository.spotify.com stable non-free" > /etc/apt/sources.list.d/spotify.list'; sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59; sudo apt-get update && sudo apt-get install spotify-client-qt
@@ -245,14 +202,35 @@ Now open xchat and set your user (Symbiosisz). CLose xchat.
 Put your auto start xchat script into ~/.xchat2/  (this is located in your utils folder/xchat)
 
 Also be sure to open xchat, set it to not show the network list on startup, and click "edit" on FreeNode and set it to auto join on startup.
-===
-TODO: 
 
-1) ADD WINDOW SNAPPING (TOP, BOTTOM) AND ASSOCIATED KEYS.
-2) Add notification disabling  approach. (Got a basic solution for now, come up with something cleaner).
+===
+Install redshift
+
+sudo apt-get install redshift
+
+I like 2750 for night, and 6500 for normal use.
+
+Can specify a color temperature using: redshift -O 2500
+
+^ Above is a O, not a 0.
+
+
+#####
+## All laptops ###
+####
+
+Disable battery notifications
+
+When you do the mate-notification-daemon changes that are listed above it's going to start showing alerts as regular windows whenever you unplug/plug in on your laptop. To fix that you need to
+
+- Install dconf-editor
+
+- Go into org > mate > power-manager. Ensure the following are not checked:
+
+notify-discharging, notify-low-capacity, notify-low-power, notify-sleep-failed
 
 ###########################
-#### LENOVO LAPTOP #####
+#### Laptop Global #####
 ##########################
 
 Set up campus wifi
@@ -265,30 +243,6 @@ PEAP version: Automatic
 Inner auth: MSCHAPV2
 Username: qcard login 
 pass: qcard pass
-
-===
-Disable battery notifications
-
-When you do the mate-notification-daemon changes that are listed above it's going to start showing alerts as regular windows whenever you unplug/plug in on your laptop. To fix that you need to
-
-- Install dconf-editor
-
-- Go into org > mate > power-manager. Ensure the following are not checked:
-
-notify-discharging, notify-low-capacity, notify-low-power, notify-sleep-failed
-====
-
-Fix wifi connect speed.
-
-Answer from here:http://askubuntu.com/questions/119578/how-to-fix-slow-wireless-on-machines-with-intel-wireless-cards
-
-Solution is to run
-
-sudo gvim gedit /etc/modprobe.d/iwlwifi-disable11n.conf
-
-In there put options iwlwifi 11n_disable=1
-
-Reboot.
 
 ===
 Add laptop specific packages
@@ -319,12 +273,6 @@ Check spin down hard disk swhen possible.
 Put display to sleep when inactive for 10 minutes.
 Set display brightness to 15% (this prevents the random insta fully bright problem).
 
-
-====
-Install new power manager (tlp):
-
-sudo add-apt-repository ppa:linrunner/tlp; sudo apt-get update; sudo apt-get install tlp tlp-rdw; sudo tlp start
-
 ==
 rc.local (set screen brightness). Add following to rc.local
 
@@ -338,16 +286,6 @@ Open mouse app and set scrolling to two-finger scrolling
 
 ===
 
-Set resolution to 1920x1080
-
-===
-
-Fix wifi
-
-sudo echo '#added to enable WiFi on Yoga 2 Pro'>>/etc/modprobe.d/blacklist.conf; sudo echo 'blacklist ideapad_laptop'>>/etc/modprobe.d/blacklist.conf
-
-===
-
 Add battery monitor
 
 Set existing battery monitor to never show an icon.
@@ -355,7 +293,6 @@ Set existing battery monitor to never show an icon.
 Add the battery monitor applet using the "add to panel" area.
 
 Set the battery monitor applet to be compact view, show time/percentage, show tim eremaining, warn at 15%.
-
 ===
 
 Fonts and sizes
@@ -364,138 +301,19 @@ Fonts and sizes
 
 - Set Chromium's default zoom (advanced settings) to 110%.
 
-====
-
-Keyboard backlight
-
-Use fn + space to toggle keyboard backlight.
-
 ===
-
-TESTING: Fix 2.4 ghz wifi problems.
-
-Been having ping spikes even to new Nighthawk router. Issue may be related to Bluetooth as it runs on the same frequency (2.4 ghz).
-
-Currently testing fix by blocking bluetooth, do so by adding the following to /etc/modprobe.d/blacklist.conf
-
-blacklist btusb
-
-Doesn't look like the bluetooth disabling helped. Other possible culprits:
-
-**UPDATE: It looks like bluetooth does actually exist on this system. So stick to doing the blacklist btusb stuff above**
-
-Poss 1:
-
-tlp's wifi power on battery
-
-http://linrunner.de/en/tlp/docs/tlp-configuration.html
-
-Look at WIFI_PWR_ON_BAT
-
-Poss 2:
-
-This one was likely just a coincidence, but after installing the linux-firmware package, after rebooting I had fairly stable pings.
-
-SOLUTION 1:
-
-One thing that seems to always work is switching the 2.4 ghz channel on your router.
-Usually bounce between channel 1 and 11. Not sure why that fixes it. Should try
-rebooting it in the future (on the same channel) and see if that helps. Another
-possible solution could be switching to DD-WRT (more a shot in the dark than
-anything though).
-
 
 ############################
-##### ENVY LAPTOP ##############
+##### Zenbook ##############
 ###########################
 
-Get Tuxonice working as hibernate software:
+TODO: Do you need to use 2.4 ghz or 5.0 ghz at home? 5 is having slow connects. How about 2.4, are you still getting the spikes?
 
-Install TuxOnIce from the PPA:
+TODO: Should I disable BT on start?
 
-sudo add-apt-repository ppa:tuxonice/ppa; sudo apt-get update; sudo apt-get install tuxonice-userui linux-generic-tuxonice linux-headers-generic-tuxonice; sudo ln -s /usr/lib/tuxonice-userui/tuxoniceui /usr/local/sbin/tuxoniceui_text
+TODO: Do I need any additional power managemnt tools like tlp, laptop mode tools etc? Can get 4.1 watt idle with stock 3.19.
 
-Now sudo -su
 
-sudo touch /etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla
-
-Add the following to that PKLA file
-
-[Re-enable hibernate by default in upower]
-Identity=unix-user:*
-Action=org.freedesktop.upower.hibernate
-ResultActive=yes
-
-[Re-enable hibernate by default in logind]
-Identity=unix-user:*
-Action=org.freedesktop.login1.hibernate
-ResultActive=yes
-
-Exit sudo su
-
-===
-Add laptop specific packages
-
-apt-get install xbacklight
-===
-Prevent auto screen dimming
-
-Go into power options.
-==
-Add laptop specific hotkeys:
-
-alt + f1 - xbacklight -set 10 [Dim screen]
-==
-Set hibernate sleep options
-
-On active power:
-
-never place it to sleep, and when the laptop lid is closed hibernate. Should not spin down hard disks.
-Set display to sleep when inactive for 10 minutes. Sets display brightness to 100%.
-
-On battery:
-
-Never put computer to sleep when inactive. When laptop lid is closed or critically low power, hibernate.
-Check spin down hard disk swhen possible.
-Put display to sleep when inactive for 10 minutes.
-
-====
-Install new power manager (tlp):
-
-sudo add-apt-repository ppa:linrunner/tlp; sudo apt-get update; sudo apt-get install tlp tlp-rdw; sudo tlp start
-
-==
-rc.local (Blacklist usb, disable discharging notifications and disable the power button).
-
-rfkill block bluetooth
-blacklist btusb
-gsettings set org.mate.power-manager notify-discharging false
-gsettings set org.mate.power-manager button-power nothing
-
-NOTE: The above gsettings stuff isn't working properly, look at the next command in the meantime.
-
-==
-Disable webcam
-
-Add the following to rc.local
-
-modprobe -r uvcvideo
-
-==
-
-Fix power settings
-
-Go into gsettings and search for org.mate.power-manager, set:
-
-notify-discharing to false
-button-power to nothing
-
-TODO: Change this eventually so it's done via the command line in rc.local (above)
-
-==
-Fix Mouse vert scrolling
-
-Open mouse app and set scrolling to two-finger scrolling
 
 ############################
 ##### DESKTOP ##############
@@ -509,16 +327,6 @@ Now chown that folder to perry: chown -R perry:perry /workSSD
 
 Now any time you want something on your SSD, you can just place it there and symlink it into your home. (e.g. git projects, etc).
 
-===
-Install redshift
-
-sudo apt-get install redshift
-
-I like 2750 for night, and 6500 for normal use.
-
-Can specify a color temperature using: redshift -O 2500
-
-^ Above is a O, not a 0.
 
 ====
 Get multi-monitors working
@@ -541,43 +349,4 @@ Use this make and model: Brother HL-2170W Foomatic/lj4dith
 
 NOTE: Do NOT use the generic driver it auto-recommends. Makes the printer incredibly slow.
 
-############################
-##### TENSEGRITY LAB #######
-###########################
 
-Set your IPV4 settings:
-
-Mac Address: E8-40-F2-3C-13-0F
-IP: 130.15.3.140
-Method: Manual
-Subnet mask: 255.255.255.0
-Gateway: 130.15.3.1
-DNS: 130.15.3.33,130.15.1.100
-
-====
-Make a persistent Linux Mint Mate USB key
-
-http://tuxtweaks.com/2014/03/create-linux-mint-persistent-live-usb/
-====
-Create your perry user
-
-To keep things simple, just make a user named perry. You'll need to switch user each time after a reboot, but it'll keep everything else simple.
-
-So, to do this just add the user perry, but also make sure that you add it to the sudoers file.
-
-To do that you just add the following:
-
-perry ALL=(ALL) ALL
-====
-Mount your local HD to work
-
-Make a symlink from /home/perry to the local HD/PerryTemp
-
-You'll need to manually mount the drive for this step.
-
-ln -s /media/perry/E608409D08406F1D/PerryTemp work
-===
-
-General notes for tensegrity lab:
-
-Do NOT install Spotify. Something related to the spotify package causes the entire persistence volume to throw an IO error on reads. Really bizarre -- seen it twice now.
