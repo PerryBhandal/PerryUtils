@@ -267,3 +267,18 @@ ln -s /media/perry/E608409D08406F1D/PerryTemp work
 General notes for tensegrity lab:
 
 Do NOT install Spotify. Something related to the spotify package causes the entire persistence volume to throw an IO error on reads. Really bizarre -- seen it twice now.
+
+===
+====
+Set up campus wifi
+
+Security: WPA & WPA2 Enterprise
+Authentication: Protected EAP (PEAP)
+Anonymous Identity: Empty
+CA Certiifcate: None
+PEAP version: Automatic
+Inner auth: MSCHAPV2
+Username: qcard login 
+pass: qcard pass
+
+

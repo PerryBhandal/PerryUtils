@@ -215,9 +215,9 @@ Can specify a color temperature using: redshift -O 2500
 ^ Above is a O, not a 0.
 
 
-#####
-## All laptops ###
-####
+###########################
+#### Laptop Global #####
+##########################
 
 Disable battery notifications
 
@@ -228,21 +228,6 @@ When you do the mate-notification-daemon changes that are listed above it's goin
 - Go into org > mate > power-manager. Ensure the following are not checked:
 
 notify-discharging, notify-low-capacity, notify-low-power, notify-sleep-failed
-
-###########################
-#### Laptop Global #####
-##########################
-
-Set up campus wifi
-
-Security: WPA & WPA2 Enterprise
-Authentication: Protected EAP (PEAP)
-Anonymous Identity: Empty
-CA Certiifcate: None
-PEAP version: Automatic
-Inner auth: MSCHAPV2
-Username: qcard login 
-pass: qcard pass
 
 ===
 Add laptop specific packages
