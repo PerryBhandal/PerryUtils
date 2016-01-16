@@ -21,6 +21,12 @@ Install the ext pack after:
 https://www.virtualbox.org/wiki/Downloads
 
 ======
+
+Set up Python 3
+
+sudo apt-get install python-virtualenv python3-pip python3-dev
+
+======
 Set up gnome-do
 
 Remove alt + f2 keybinding from central key binds.
