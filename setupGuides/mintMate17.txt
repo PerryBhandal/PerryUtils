@@ -235,6 +235,15 @@ When you do the mate-notification-daemon changes that are listed above it's goin
 
 notify-discharging, notify-low-capacity, notify-low-power, notify-sleep-failed
 
+
+==
+
+Install new power manager (tlp):
+
+sudo add-apt-repository ppa:linrunner/tlp; sudo apt-get update; sudo apt-get install tlp tlp-rdw; sudo tlp start
+
+Still has significant benefit, even on the UX305 (got down to ~3.2 watts from 4.8).
+
 ===
 Add laptop specific packages
 
