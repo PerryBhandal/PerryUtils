@@ -335,6 +335,12 @@ Now run sudo dkms install -m focaltech -v 1.5
 
 Now reboot, once you go back into mouse the touchpad option should now be visible.
 
+==
+Set synclient for touchpad
+
+synclient MaxSpeed=1
+synclient AccelFactor=0.15
+
 ############################
 ##### DESKTOP ##############
 ###########################
