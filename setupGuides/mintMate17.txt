@@ -315,6 +315,15 @@ synclient AccelFactor=0.15
 
 exit 0
 #END
+--
+
+Wirelesx fix attemp:
+
+Run the shell commands below, this seems to (at least so far) resolve the slow connecting speed. Only need to run it once.
+
+modprobe -r iwlwifi
+modprobe iwlwifi 11n_disable=1
+echo "options iwlwifi bt_coex_active=N swcrypto=1 11n_disable=1" | sudo tee /etc/modprobe.d/iwlwifi.conf
 ---
 Use this as your info source instead of the launchpad page: https://wiki.archlinux.org/index.php/ASUS_Zenbook_UX303 <-- Refers to the same model family as your system.
 
