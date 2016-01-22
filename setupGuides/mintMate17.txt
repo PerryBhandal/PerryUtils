@@ -307,6 +307,15 @@ Fonts and sizes
 ##### Zenbook ##############
 ###########################
 
+Set this in rc.local:
+
+#START
+synclient MaxSpeed=1
+synclient AccelFactor=0.15
+
+exit 0
+#END
+---
 Use this as your info source instead of the launchpad page: https://wiki.archlinux.org/index.php/ASUS_Zenbook_UX303 <-- Refers to the same model family as your system.
 
 TODO: Do you need to use 2.4 ghz or 5.0 ghz at home? 5 is having slow connects. How about 2.4, are you still getting the spikes?
