@@ -21,6 +21,12 @@ Install the ext pack after:
 https://www.virtualbox.org/wiki/Downloads
 
 ======
+
+Set up Python 3
+
+sudo apt-get install python-virtualenv python3-pip python3-dev
+
+======
 Set up gnome-do
 
 Remove alt + f2 keybinding from central key binds.
@@ -229,6 +235,15 @@ When you do the mate-notification-daemon changes that are listed above it's goin
 
 notify-discharging, notify-low-capacity, notify-low-power, notify-sleep-failed
 
+
+==
+
+Install new power manager (tlp):
+
+sudo add-apt-repository ppa:linrunner/tlp; sudo apt-get update; sudo apt-get install tlp tlp-rdw; sudo tlp start
+
+Still has significant benefit, even on the UX305 (got down to ~3.2 watts from 4.8).
+
 ===
 Add laptop specific packages
 
@@ -292,6 +307,24 @@ Fonts and sizes
 ##### Zenbook ##############
 ###########################
 
+Set this in rc.local:
+
+#START
+synclient MaxSpeed=1
+synclient AccelFactor=0.15
+
+exit 0
+#END
+--
+
+Wirelesx fix attemp:
+
+Run the shell commands below, this seems to (at least so far) resolve the slow connecting speed. Only need to run it once.
+
+modprobe -r iwlwifi
+modprobe iwlwifi 11n_disable=1
+echo "options iwlwifi bt_coex_active=N swcrypto=1 11n_disable=1" | sudo tee /etc/modprobe.d/iwlwifi.conf
+---
 Use this as your info source instead of the launchpad page: https://wiki.archlinux.org/index.php/ASUS_Zenbook_UX303 <-- Refers to the same model family as your system.
 
 TODO: Do you need to use 2.4 ghz or 5.0 ghz at home? 5 is having slow connects. How about 2.4, are you still getting the spikes?
@@ -328,6 +361,12 @@ Now go into the focaltech-dkms folder and run 'sudo dkms add .'
 Now run sudo dkms install -m focaltech -v 1.5
 
 Now reboot, once you go back into mouse the touchpad option should now be visible.
+
+==
+Set synclient for touchpad
+
+synclient MaxSpeed=1
+synclient AccelFactor=0.15
 
 ############################
 ##### DESKTOP ##############
