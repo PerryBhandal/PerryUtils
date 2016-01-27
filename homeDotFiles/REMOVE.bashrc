@@ -60,7 +60,7 @@ export CHROME_BIN="/usr/bin/chromium-browser"
 
 alias genbase="ruby ~/.scripts/gen_base.rb"
 #alias genebase="ruby ~/.scripts/gen_base.rb e"
-
+alias genwatch="cp ~/.scripts/workspace_prepare/wsp_example.sh prep_workspace.sh"
 
 # Prevent commands prefixed by a space from showing in Bash history.
 export HISTCONTROL=ignorespace
