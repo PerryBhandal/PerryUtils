@@ -6,7 +6,7 @@ pushd ~/.scripts > /dev/null
 
 git clone git://github.com/ssokolow/quicktile
 git clone https://github.com/PerryBhandal/HostsManager.git
-
+git clone git@github.com:PerryBhandal/workspace_prepare.git
 popd > /dev/null
 
 cp snapWindow.sh ~/.scripts
