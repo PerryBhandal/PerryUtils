@@ -148,6 +148,11 @@ Plugin 'mitsuhiko/vim-jinja'
 
 Plugin 'jaxbot/browserlink.vim'
 
+" JAVASCRIPT BEGIN
+Plugin 'pangloss/vim-javascript'
+" JAVASCRIPT END
+
+
 " BEGIN
 Bundle 'joonty/vdebug'
 nnoremap <f1> :VdebugStart<CR>
@@ -165,7 +170,7 @@ Plugin 'buffet.vim'
 
 "Ctrlp
 Plugin 'kien/ctrlp.vim'
-set wildignore+=*.pyc,*/venv/*
+set wildignore+=*.pyc,*/venv/*,*/node_modules/*
 let g:ctrlp_prompt_mappings = {'PrtClearCache()': ['<c-s-r>']}
 "END ctrlp
 
