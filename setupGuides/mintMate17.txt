@@ -235,6 +235,14 @@ When you do the mate-notification-daemon changes that are listed above it's goin
 
 notify-discharging, notify-low-capacity, notify-low-power, notify-sleep-failed
 
+==
+Fix wifi slow connect:
+
+After TLP is installed, go to /etc/defaults/tlp, find
+
+WIFI_PWR_ON_BAT (and ac) to 1 -- means no power saving. Default value for ac is 1, and for battery it's 5 (5 meaning it consumes less power).
+
+RESTORE_DEVICE_STATE_ON_STARTUP: Set this to 1.
 
 ==
 

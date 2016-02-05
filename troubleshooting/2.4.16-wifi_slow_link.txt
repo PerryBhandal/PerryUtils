@@ -7,3 +7,5 @@ Trying now by just editing the value directly in /etc/default/tlp
 ** Above on its own didn't fix it. Made following modificaiton to tlp default:
 
 RESTORE_DEVICE_STATE_ON_STARTUP=1
+
+Above has worked so far. Added it to the set up guide.
