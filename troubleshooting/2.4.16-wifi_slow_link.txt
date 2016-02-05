@@ -1,0 +1,5 @@
+Slow connect may be result of TLP's wifi power saving.
+
+See here: http://linrunner.de/en/tlp/docs/tlp-configuration.html
+
+Trying now by just editing the value directly in /etc/default/tlp
