@@ -40,9 +40,6 @@ The way you install this is to download the repo. It's going to contain everythi
 TODO: Fix this so you can do it standalone, rather than relying on FF.
 ==
 ==
-Install RVM
-
-\curl -sSL https://get.rvm.io | bash -s stable --ruby
 
 
 ==
