@@ -76,3 +76,7 @@ alias wifitoggle="sudo rfkill block wifi; sudo rfkill unblock wifi"
 export wifitoggle
 
 alias bs="source /home/perry/.bashrc; rm -f /tmp/cur_shot.png; gnome-screenshot -a -f /tmp/cur_shot.png; xclip -i -selection c -t image/png /tmp/cur_shot.png; exit 0"
+
+# RVM
+source ~/.rvm/scripts/rvm
+type rvm | head -n 1 > /dev/null
