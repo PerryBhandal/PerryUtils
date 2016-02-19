@@ -44,3 +44,33 @@ evince is needed for previewing PDFs (apt-get install evince)
 Packages
 --
 sudo apt-get install ctags evince texlive-full
+
+--
+
+Add javascript auto completion
+
+Don't recall the exact order I did this in. I know it's some combo of the steps below (but not all of them potentially, try it sequentially and after each change check if ac works)
+
+Ensure npm and nodejs are installed.
+
+Do plugininstall (to install ternjs/tern_for_vim', then go to ~/.vim/bundle/tern and run npm install. This will install tern.
+
+Right now I have "autocmd FileType javascript setlocal omnifunc=tern#Complete" in my .vimrc. Should move that to the ftplugin for js eventually.
+
+Check now whether it works. If it doesn't you should go into ~/.vim/bundle/YouCompleteMe and run ./install.py --clang-completer --tern-completer
+
+For above instruction, see a bit down in YCM's readme.
+
+Now again check if it works.
+
+Ensure that within your folder you have a .tern-project file, here's one for a node app:
+
+{
+	"libs":["jquery", "browser"],
+
+	"plugins": {
+	"node": {}
+	}
+
+}
+
