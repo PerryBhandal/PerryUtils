@@ -74,6 +74,22 @@ Ensure that within your folder you have a .tern-project file, here's one for a n
 
 }
 
+Here is a more complete tern project file
+
+{
+  "defs": [
+    "browser",
+    "ecma5",
+    "ecma6"
+  ],
+  "dontLoad": [
+    "node_modules/**"
+  ],
+  "plugins": {
+    "node": true
+  }
+}
+
 --
 
 Add javascript linting/hinting
