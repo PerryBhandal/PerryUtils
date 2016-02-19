@@ -74,3 +74,10 @@ Ensure that within your folder you have a .tern-project file, here's one for a n
 
 }
 
+--
+
+Add javascript linting/hinting
+
+Run sudo npm install -g jshint
+
+Should work with syntastic right out of the box.

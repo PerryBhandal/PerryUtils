@@ -19,6 +19,8 @@ nnoremap <s-k> 10k
 nnoremap <s-b> 10b
 nnoremap <s-w> 10w
 
+
+
 vnoremap <s-j> 10j
 vnoremap <s-k> 10k
 nnoremap <s-b> 10b
@@ -119,8 +121,16 @@ set dictionary=/usr/share/dict/words
 
 "{{{ Plugins
 
+
+
+
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
+autocmd FileType javascript setlocal omnifunc=tern#Complete
+Plugin 'ternjs/tern_for_vim'
+
 
 """Begin Plugins
 
