@@ -1,7 +1,7 @@
 cd /home/perry/work
 alias gopen="gnome-open"
 
-PATH="${PATH}:/home/perry/local_bin"
+PATH="${PATH}:/home/perry/local_bin:/home/perry/.scripts/pathed_scripts"
 
 ANDROID_HOME=/home/perry/work/applications/android-sdk-linux
 export ANDROID_HOME
