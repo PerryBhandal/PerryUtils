@@ -9,3 +9,9 @@ Trying now by just editing the value directly in /etc/default/tlp
 RESTORE_DEVICE_STATE_ON_STARTUP=1
 
 Above has worked so far. Added it to the set up guide.
+
+---
+
+5ghz vs 2.4 ghz
+
+Only been using 2.4 ghz for a few minutes but every conect has worked without a wifi reset. Could the problem be isolated to the 5ghz case and not the 2.4ghz case? 
