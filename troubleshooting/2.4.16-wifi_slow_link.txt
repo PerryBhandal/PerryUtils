@@ -15,3 +15,9 @@ Above has worked so far. Added it to the set up guide.
 5ghz vs 2.4 ghz
 
 Only been using 2.4 ghz for a few minutes but every conect has worked without a wifi reset. Could the problem be isolated to the 5ghz case and not the 2.4ghz case? 
+
+---
+
+2.4 ghz seemed to work, but you're still getting those massive spikes you had when you were previously at 2.4 ghz.
+
+New fix attempt: no longer combining the two 5 ghz radios into a single access point. Using two separate broadcasts on either ends of the channel spectrum (believe ch 36 and ch 149, respectively).
