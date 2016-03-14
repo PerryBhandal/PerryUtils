@@ -21,3 +21,5 @@ Only been using 2.4 ghz for a few minutes but every conect has worked without a 
 2.4 ghz seemed to work, but you're still getting those massive spikes you had when you were previously at 2.4 ghz.
 
 New fix attempt: no longer combining the two 5 ghz radios into a single access point. Using two separate broadcasts on either ends of the channel spectrum (believe ch 36 and ch 149, respectively).
+
+3/13/16: So far, so good! Not having any issues connecting when the radios are split and the secondary radio runs on channel 161 @ 5 ghz.
