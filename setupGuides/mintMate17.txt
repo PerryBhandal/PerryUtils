@@ -382,6 +382,14 @@ Set synclient for touchpad
 synclient MaxSpeed=1
 synclient AccelFactor=0.15
 
+===
+
+Fixing incorrect battery charge readout
+
+Had a case where energy when full was 4x the true value. It's apparently related to upowerd. Killing upowerd via killall then rebooting appears to have fixed it. Still need to see if the problem reappears after subsqeuent resumes.
+
+Source: https://bugs.launchpad.net/ubuntu/+source/upower/+bug/583271
+
 ############################
 ##### DESKTOP ##############
 ###########################
