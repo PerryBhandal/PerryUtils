@@ -337,10 +337,6 @@ noremap <silent> ,cc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<C
 noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
 
 
-" Enable JS highlighting in Java files, used for JSNI.
-au BufNewFile,BufRead *.java set filetype=java.javascript
-
-
 " Add the virtualenv's site-packages to vim path
 if has('python')
 py << EOF
