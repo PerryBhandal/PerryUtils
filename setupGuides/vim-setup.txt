@@ -104,3 +104,20 @@ EOF
 endif
 
 Above has to go into .vimrc (not into the python ftplugin file). Already have it in there, but also dumping it here given how important it is.
+
+-- 
+
+neovim
+
+Install it from unstable ppa: https://github.com/neovim/neovim/wiki/Installing-Neovim
+
+Symlink your vim config to neovim
+
+To start the transition, link your previous configuration so Nvim can use
+it:
+
+mkdir -p ${XDG_CONFIG_HOME:=$HOME/.config}; ln -s ~/.vim $XDG_CONFIG_HOME/nvim; ln -s ~/.vimrc $XDG_CONFIG_HOME/nvim/init.vim
+
+add python support for nvim:
+
+pip install neovim
