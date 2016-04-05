@@ -1,0 +1,5 @@
+When using Eclipse with Eclim and GWT you should tune your auto imports so you don't hit *shared* on GWT, or some of the default awt imports. See this guide:
+
+http://blog.firdau.si/2010/07/07/limit-your-access-to-java-api-for-more-productivity/
+
+TODO: Create a pattern list and store it here.
