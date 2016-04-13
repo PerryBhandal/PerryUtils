@@ -162,7 +162,7 @@ Plugin 'jaxbot/browserlink.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 au BufNewFile,BufRead *.js set filetype=javascript.jsx
-au BufNewFile,BufRead *.js.py set filetype=python.javascript
+au BufNewFile,BufRead *.py set filetype=python.javascript
 " JAVASCRIPT END
 
 
