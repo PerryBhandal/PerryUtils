@@ -193,7 +193,9 @@ View the setup.txt doc in the vim folder, has more details.
 ==
 Disable popup notifications
 
-GOt a new method for this: rename /usr/share/dbus-1/services/org.freedesktop.Mate.Notifications.Service by adding DISABLED to the end. Notifications won't occur anymore.
+GOt a new method for this: 
+
+mv org.freedesktop.mate.Notifications.service DISABLEDorg.freedesktop.mate.Notifications.service 
 ===
 Install Java JDK
 // Obviously replace this with correct version at current time.

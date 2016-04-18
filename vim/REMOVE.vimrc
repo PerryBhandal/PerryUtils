@@ -176,6 +176,9 @@ nnoremap <S-f5> :call DebugCommanderStart()<CR>
 Plugin 'Valloric/YouCompleteMe'
 " Auto close window once we're done selecting an autocompletion option
 let g:ycm_autoclose_preview_window_after_insertion = 1 
+" Attempting to fix YCM import error. Presumably due to it attemptig to load
+" the script in python 3 instead of python 2.
+let g:ycm_server_python_interpreter = "/usr/bin/python"
 " END YouCompleteMe
 
 Plugin 'buffet.vim'
