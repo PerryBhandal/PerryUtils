@@ -26,6 +26,18 @@ Install RVM
 
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 
+Install ruby 1.9 in your RVM:
+
+rvm install ruby-1.9.3.-p125
+
+(Not doing the above gives you an error when you try to load guard).
+
+====
+
+Install guard live reload
+
+sudo gem install guard guard-livereload
+
 ===
 
 Set up Python 3
