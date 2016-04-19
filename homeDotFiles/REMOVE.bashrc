@@ -78,6 +78,14 @@ export wifitoggle
 
 alias bs="sleep 1; source /home/perry/.bashrc; rm -f /tmp/cur_shot.png; gnome-screenshot -a -f /tmp/cur_shot.png; xclip -i -selection c -t image/png /tmp/cur_shot.png; exit 0"
 
+kill_guard_procs () {
+for KILLPID in `ps ax | grep 'guard' | awk ' { print $1;}'`; do 
+  kill -9 $KILLPID;
+done
+}
+
+alias killguard="kill_guard_procs"
+
 # RVM
 source ~/.rvm/scripts/rvm
 type rvm | head -n 1 > /dev/null
