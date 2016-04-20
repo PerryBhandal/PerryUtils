@@ -113,6 +113,10 @@ Chromium additional settings:
 Make the audio symbol a mute button:
 
 chrome://flags/#enable-tab-audio-muting
+
+Make it so extension settings are not synced
+
+I believe this requires unchecking both "Extensions" and "settings" in Chromium settings, but verify whether extensions needs to be unchecked (not sure if it means sync extension settings, or if it's just sync your extensions but not your settings).
 --
 
 Set up foxyproxy's remote site and patterns
@@ -125,6 +129,12 @@ pandora -> *pandora.com*
 cmyip -> *cmyip.com*
 
 Set up new tab redirect to show about:blank on load.
+
+--
+
+Set up SmoothScroll
+
+For laptop it's: step size 50, all others default. Only feature is "enable touchpad support."
 ==
 Set Chrome as your default browser.
 
