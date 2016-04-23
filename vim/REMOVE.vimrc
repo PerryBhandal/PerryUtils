@@ -28,8 +28,9 @@ nnoremap <s-w> 10w
 
 nnoremap <c-w> :q<cr>
 
-inoremap <silent> <c-s> <esc>:w<cr>
-nnoremap <silent> <c-s> :w<cr>
+inoremap <silent> <c-s> <esc>:w<cr>:call SyntasticCheck()<cr>
+nnoremap <silent> <c-s> :w<cr>:call SyntasticCheck()<cr>
+
 
 " Use tab to cycle through buffers and tabs 
 nnoremap <tab> :Bufferlist<cr>
