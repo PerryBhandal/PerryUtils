@@ -9,7 +9,7 @@ let g:EclimCompletionMethod = 'omnifunc'
 nnoremap <s-E> :call QuickfixToggle()<cr>
 
 let g:quickfix_is_open = 0
-let g:ycm_auto_trigger = 1
+let g:ycm_auto_trigger = 0
 
 function! QuickfixToggle()
     if g:quickfix_is_open
@@ -25,3 +25,6 @@ endfunction
 
 " Import laodinmg
 map <buffer> <C-S-o> :JavaImportOrganize<CR>
+
+inoremap <silent> <c-s> <esc>:w<cr>
+nnoremap <silent> <c-s> :w<cr>

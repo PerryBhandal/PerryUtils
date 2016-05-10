@@ -28,14 +28,8 @@ nnoremap <s-w> 10w
 
 nnoremap <c-w> :q<cr>
 
-" May 9th, 2016: Removed the syntastic check call on save, slowing down eclim
-" too much.
-" inoremap <silent> <c-s> <esc>:w<cr>:call SyntasticCheck()<cr>
-" nnoremap <silent> <c-s> :w<cr>:call SyntasticCheck()<cr>
-
-inoremap <silent> <c-s> <esc>:w<cr>
-nnoremap <silent> <c-s> :w<cr>
-
+inoremap <silent> <c-s> <esc>:w<cr>:call SyntasticCheck()<cr>
+nnoremap <silent> <c-s> :w<cr>:call SyntasticCheck()<cr>
 
 " Use tab to cycle through buffers and tabs 
 nnoremap <tab> :Bufferlist<cr>
