@@ -121,3 +121,9 @@ mkdir -p ${XDG_CONFIG_HOME:=$HOME/.config}; ln -s ~/.vim $XDG_CONFIG_HOME/nvim; 
 add python support for nvim:
 
 pip install neovim
+
+***** Misc fixes
+
+*Tern
+
+- Make sure you have tern installed system wide. Also go into ~/.vim/bundle/tern_for_vim and run npm install
