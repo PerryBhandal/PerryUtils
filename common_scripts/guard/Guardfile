@@ -1,0 +1,10 @@
+
+# NOTE: The grace period is there so compiles have time to finish before
+# the refresh fires. This resolves the "1 messages are hidden by filters" hang up you wer experiencing.
+
+guard 'livereload', :grace_period => 0.5 do
+  watch(%r{Application.html})
+  watch(%r{static/.+\.js})
+  watch(%r{.+\.py})
+  watch(%r{static/bundle.js})
+end
