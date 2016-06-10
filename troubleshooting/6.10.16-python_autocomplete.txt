@@ -1,0 +1,25 @@
+Having issues with YCM's auto complete being done from pwd. For example:
+
+Have this layout:
+
+Application.py
+esl/
+	SomeClass
+	net/
+		json_helpers.py
+
+
+Suppose json_helpers.py contains a function "to_json".
+
+In Application.py if we do from esl.net it's going to autocomplete json helpers and show to_json as an autocomplete option which is *not* done simply based on ID -- i.e. it's not simply pulling the ID from some buffer, instead it actually views those IDs as their appropriate types.
+
+Now if SomeClass were to attempt the same import ("from esl.net") it's not going to show any intelligent autocompletion, it'll simply show IDs from buffers.
+
+I think the reason it works in the case of Application is because the import we do is relative to the file itself. So if you ever do an import from your base directory (Application is in the base) that relative path you provide (relative to the src root, that is) YCM hits the right file. On the other hand, in the case of SomeClass we need to do imports relative to its location to get autocomplete working. So if SomeClass does "from esl.net" it's attempting to load from esl/esl/net which is, of course, not a valid path.
+
+
+** Possible solution (6/10/16)
+
+When you do your imports as relative to a file itself the autocomplete works. E.g. in admin_pages if you do "esl.net" it maps to pages/esl/net which isn't valid, so autocomplete does not work. If, however, you do "import ..esl.net" it then works because that maps to "../esl/net". Given that admin_pages is in pages we need to go up one directory, thne go into esl/net,that's what the relative import lets us do.
+
+
