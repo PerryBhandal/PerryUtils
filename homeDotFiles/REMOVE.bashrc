@@ -89,3 +89,6 @@ alias killguard="kill_guard_procs"
 # RVM
 source ~/.rvm/scripts/rvm
 type rvm | head -n 1 > /dev/null
+
+alias gvim="vim -g"
+export gvim
