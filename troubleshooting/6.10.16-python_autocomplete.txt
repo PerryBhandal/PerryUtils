@@ -22,4 +22,26 @@ I think the reason it works in the case of Application is because the import we 
 
 When you do your imports as relative to a file itself the autocomplete works. E.g. in admin_pages if you do "esl.net" it maps to pages/esl/net which isn't valid, so autocomplete does not work. If, however, you do "import ..esl.net" it then works because that maps to "../esl/net". Given that admin_pages is in pages we need to go up one directory, thne go into esl/net,that's what the relative import lets us do.
 
+The solution is still messy because absolute paths are preferable. Is there any way to make this work regardless of directory structure?
 
+** Attempted fix 1: Add the client folder into your path when launching vim.
+
+This doesn't work. Verified that I was in the client directory for all windows (using lcd) but autocomplete still didn't work in admin_pages but continued working in Application.
+
+** Attempted fix 2: Create a symlink to the relevant folders inside the venv's site-packages.
+
+This didn't work either.
+
+
+** Attempted fix 3: Make a reference to the files relative to the src folder.
+
+[THIS WORKS!]
+
+from esl.net.data_service import DataService
+from client.esl.net.data_service import DataService
+
+The top one (with no client prefix) doesn't work, the one below (with the client prefix) does.
+
+So for now to fix this just fully qualify your package imports relative to the src directory (or, well, at least in cases like Swatch where you have client and server split into separate packages from the same base directory (src/).
+
+TODO [0]: Why does this work? How does YCM realize that the client folder is relative to source?
