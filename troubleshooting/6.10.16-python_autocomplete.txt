@@ -45,3 +45,16 @@ The top one (with no client prefix) doesn't work, the one below (with the client
 So for now to fix this just fully qualify your package imports relative to the src directory (or, well, at least in cases like Swatch where you have client and server split into separate packages from the same base directory (src/).
 
 TODO [0]: Why does this work? How does YCM realize that the client folder is relative to source?
+
+
+****** Far better solution.
+
+This is almost certainly related to a path issue. The problem appears as soon as esl isn't in our root path (via site-packages) and it disappears once we add everything from inside src into the site-packages.
+
+So begin symlinking everything from src in, here's an example:
+
+(venv)perry@perry-zenbook ~/work/git/swatch/venv/lib/python2.7/site-packages $ ln -s  ../../../../src/* .
+
+So notice that you're in the venv site-packages folder. In there you run that symbolic link command (recall that the path is relative to where the symlink will be located).
+
+Only downside with this is you need to do it each time you create a new folder in src (only at that top directory, nested ones are fine [e.g. src/client/new_directory would not need to be added explicitly) but src/new_directory would.
