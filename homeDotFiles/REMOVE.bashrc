@@ -92,3 +92,8 @@ type rvm | head -n 1 > /dev/null
 
 alias gvim="vim -g"
 export gvim
+
+alias cpu_performance="sudo cpufreq-set -r -g performance #-r"
+alias cpu_powersave="sudo cpufreq-set -r -g powersave #-r"
+export cpu_performance
+export cpu_powersave
