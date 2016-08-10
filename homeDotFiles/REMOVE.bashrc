@@ -101,5 +101,13 @@ export cpu_powersave
 # Disable XON/XOFF flow control. Ensures ctrl + s doesn't hang your terminal (previously had to ctrl + q to re-enable terminal when ctrl +s froze it).
 stty -ixon
 
+
+# Commands for laptop connected to projector.
 alias vnc_connect="vncviewer 192.168.1.10:5900"
 export vnc_connect
+
+alias vol_up="amixer -D pulse ssetmaster 5%+"
+alias vol_down="amixer -D pulse ssetmaster 5%-"
+
+export vol_up
+export vol_down
