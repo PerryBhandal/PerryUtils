@@ -1,0 +1,14 @@
+### Install via the PPA, defaults to 1.8
+
+sudo apt-get update; sudo apt-get install -y python-software-properties software-properties-common; sudo add-apt-repository -y ppa:pi-rho/dev; sudo apt-get update; sudo apt-get install -y tmux=2.0-1~ppa1~t
+
+## Install TPM plugin manager (https://github.com/tmux-plugins/tpm)
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+## Download your tmux plugins:
+
+Open tmux, do prefix + I. Then re-source tmux (or kill it and re-open).
+
+prefix + U - updates
+
