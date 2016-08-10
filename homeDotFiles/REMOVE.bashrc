@@ -104,5 +104,5 @@ stty -ixon
 alias vnc_connect="vncviewer 192.168.1.10:5900"
 export vnc_connect
 
-alias tmux_kill="killall tmux"
+alias tmux_kill="pkill -f tmux"
 export tmux_kill
