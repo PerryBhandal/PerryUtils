@@ -97,3 +97,9 @@ alias cpu_performance="sudo cpufreq-set -r -g performance #-r"
 alias cpu_powersave="sudo cpufreq-set -r -g powersave #-r"
 export cpu_performance
 export cpu_powersave
+
+# Disable XON/XOFF flow control. Ensures ctrl + s doesn't hang your terminal (previously had to ctrl + q to re-enable terminal when ctrl +s froze it).
+stty -ixon
+
+alias vnc_connect="vncviewer 192.168.1.10:5900"
+export vnc_connect
