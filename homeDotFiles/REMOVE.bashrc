@@ -106,3 +106,5 @@ export vnc_connect
 
 alias tmux_kill="pkill -f tmux"
 export tmux_kill
+
+export TERM=xterm-256color
