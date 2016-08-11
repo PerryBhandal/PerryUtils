@@ -165,6 +165,11 @@ Get the theme from PerryUtils/theme, run copyTo.sh
 Next install the ubuntu icons: apt-get install ubuntu-mono
 
 Set terminal to be white on black background. 
+
+Set the terminal scheme to match vim's theme if you plan to use vim via tmux:
+
+Uncheck use colors from system theme, then hit background color and put #121212 (first hit blac on white so that's your starting point). For the built in scheme I selected Tango unchanged.
+
 ==
 Fix menu icon
 
