@@ -203,6 +203,8 @@ shift + alt + f1 > /home/perry/.scripts/quicktile/quicktile.py top-left
 
 Do shift + alt + f1, f2, f3, f4 with values top-left, bottom-left, top-right, bottom-right, respectively.
 
+Set toggle full screen state to ctrl + alt + x
+
 ==
 Get spotify Linux
 
