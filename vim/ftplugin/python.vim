@@ -4,7 +4,12 @@ map <buffer> <f5> :!python %<CR>
 let g:syntastic_python_checkers = ['pyflakes']
 
 " Rope-mode
-let g:pymode_rope = 0
+
+if exists('rope_enable')
+	let g:pymode_rope = 1
+else
+	let g:pymode_rope = 0
+endif
 let g:pymode_lint = 0
 let g:pymode_pyflakes = 0
 let g:pymode_doc = 0
