@@ -1,0 +1,17 @@
+Connecting to laptop via VNC gives this error on the viewer:
+
+perry@perry-zenbook ~/work $ vnc_connect
+Connected to RFB server, using protocol version 3.8
+Enabling TightVNC protocol extensions
+No authentication needed
+Authentication successful
+
+Do the following (on laptop) to fix the above error.
+
+- Run x11vnc
+
+-Configure the first screen, wait for the second screen then apply that as well.
+
+- Should now have x11vnc in your taskbar, right click it, go into properties and enable "accept connections."
+
+- Now connect on your client.
