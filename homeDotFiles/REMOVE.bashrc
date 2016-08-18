@@ -101,7 +101,7 @@ export cpu_powersave
 # Disable XON/XOFF flow control. Ensures ctrl + s doesn't hang your terminal (previously had to ctrl + q to re-enable terminal when ctrl +s froze it).
 stty -ixon
 
-alias vnc_connect="vncviewer 192.168.1.10:5905"
+alias vnc_connect="vncviewer 192.168.1.10:5900"
 export vnc_connect
 
 alias tmux_kill="pkill -f tmux"
