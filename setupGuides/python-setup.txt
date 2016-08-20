@@ -22,3 +22,10 @@ Can install both with pip.
 Here's a breakdown comparing them:
 
 https://zapier.com/engineering/debugging-python-boss/
+
+---
+Install mypy
+
+Recall that mypy needs python3. Use the following (ensure it's not in a venv):
+
+sudo pip3 install mypy-lang typing
