@@ -12,3 +12,10 @@ Open tmux, do prefix + I. Then re-source tmux (or kill it and re-open).
 
 prefix + U - updates
 
+---
+
+Set up tmuxp via pip (sudo pip install it so it's global).
+
+http://tmuxp.readthedocs.io/en/latest/
+
+Use this for loading sessions.
