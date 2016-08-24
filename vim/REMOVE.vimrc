@@ -55,7 +55,7 @@ nnoremap <c-b> <c-]>
 "TODO: Add for Gstatus and Gcommit here (and add, potentially)
 
 "Reload .vimrc file manually
-nnoremap <f12> :source ~/.vimrc<cr>
+nnoremap <f12> :source /home/perry/.vimrc<cr>
 
 " Syntastic hotkeys
 nnoremap <silent> <c-e> :Error<cr>
@@ -63,7 +63,7 @@ nnoremap <silent> <a-e> :lclose<cr> " TODO: Fix this so we can eventually just u
 "}}}
 
 "{{{Custom Functions
-command InsertLineNumbers %s/^/\=(line('.')-line("'<")+0).'	'/
+command! InsertLineNumbers %s/^/\=(line('.')-line("'<")+0).'	'/
 "}}}
 
 "{{{ Basic Settings
@@ -109,10 +109,6 @@ set number " Show them relatively.
 " Resize splits when our window is resized.
 au VimResized * :wincmd =
 
-" Auto reload .vimrc on change.
-autocmd BufWritePost .vimrc source %
-
-
 "}}}
 
 "{{{ Spelling
@@ -131,8 +127,10 @@ call vundle#begin()
 autocmd FileType javascript setlocal omnifunc=tern#Complete
 Plugin 'ternjs/tern_for_vim'
 
+let mapleader = ","
 
 """Begin Plugins
+Plugin 'scrooloose/nerdcommenter'
 
 Plugin 'davidhalter/jedi-vim'
 
@@ -282,20 +280,20 @@ function! ToggleGStatus()
 		Gstatus
 	endif
 endfunction
-command ToggleGStatus :call ToggleGStatus()
+command! ToggleGStatus :call ToggleGStatus()
 
 function! StartProfiling()
 	profile start profile.log
 	profile func *
 	profile file *
 endfunction
-command StartProfiling :call StartProfiling()
+command! StartProfiling :call StartProfiling()
 
 function! StopProfiling()
 	profile pause
 	noautocmd qall!
 endfunction
-command StopProfiling :call StopProfiling()
+command! StopProfiling :call StopProfiling()
 
 
 "Prevent pasting from overwriting register
@@ -328,16 +326,6 @@ au BufNewFile,BufRead *.txt set filetype=txt
 au BufNewFile,BufRead *.swift set filetype=swift
 "
 "}}}
-
-" Commenting, Can do ,cc to comment lines and ,cu to uncomment.
-autocmd FileType c,cpp,java,scala let b:comment_leader = '// '
-autocmd FileType sh,ruby,python   let b:comment_leader = '# '
-autocmd FileType conf,fstab       let b:comment_leader = '# '
-autocmd FileType tex              let b:comment_leader = '% '
-autocmd FileType mail             let b:comment_leader = '> '
-autocmd FileType vim              let b:comment_leader = '" '
-noremap <silent> ,cc :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
-noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
 
 
 " Add the virtualenv's site-packages to vim path
