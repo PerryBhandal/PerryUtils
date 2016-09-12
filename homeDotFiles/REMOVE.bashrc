@@ -105,3 +105,5 @@ alias vnc_connect="vncviewer 192.168.1.10:5900"
 export vnc_connect
 
 export TERM=xterm-256color
+
+export ag="ag -f"
