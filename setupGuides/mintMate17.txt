@@ -139,6 +139,15 @@ For laptop it's: step size 50, all others default. Only feature is "enable touch
 Set Chrome as your default browser.
 
 Leave firefox installed though. You can set chromium as default in menu > preferences > preferred applications.
+
+==
+
+Install LiveReload in FireFox:
+
+https://addons.mozilla.org/en-US/firefox/addon/livereload/?src=search
+
+Above works with Guard-LiveReload. Using this temporarily until Chromium 52 issues can be fixed.
+
 ==
 Create a private key and authorize it with GitHub:
 
