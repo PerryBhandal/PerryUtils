@@ -1,0 +1,8 @@
+# Rename files recursively.
+
+find -name \*py* | rename -v "s/rem/add/g"
+
+# Recursively sed.
+
+to_run.cmd("""find "." -type f -name "%s" -print0 | xargs -0 sed -i 's/%s/%s/g'"""  % (file_selector, to_find, replace_with))
+
