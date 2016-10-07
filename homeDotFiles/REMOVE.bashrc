@@ -107,3 +107,6 @@ export vnc_connect
 export TERM=xterm-256color
 
 export ag="ag -f"
+
+alias ls="ls --color"
+export ls
