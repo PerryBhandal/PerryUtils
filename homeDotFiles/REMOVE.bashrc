@@ -112,3 +112,6 @@ alias ls="ls --color"
 export ls
 
 source ~/.git-completion.bash
+
+PYTHONPATH="${PYTHONPATH}:/home/perry/work/git/pyriel/src/:/home/perry/work/git/rclib/tools/actions/"
+export PYTHONPATH
