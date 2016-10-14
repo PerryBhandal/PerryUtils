@@ -26,12 +26,6 @@ Install RVM
 
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 
-Install ruby 1.9 in your RVM:
-
-rvm install ruby-1.9.3.-p125
-
-(NOTE: You should change the above to version 2+ of Ruby)
-
 (Not doing the above gives you an error when you try to load guard).
 
 Create a gem set
