@@ -110,3 +110,5 @@ export ag="ag -f"
 
 alias ls="ls --color"
 export ls
+
+source ~/.git-completion.bash
