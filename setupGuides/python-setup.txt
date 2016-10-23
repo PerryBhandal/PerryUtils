@@ -1,3 +1,9 @@
+Install other versions of Python (3.5, what else?)
+
+http://askubuntu.com/questions/682869/how-do-i-install-newer-python-versions-using-apt-get
+
+sudo add-apt-repository ppa:fkrull/deadsnakes; sudo apt-get update; sudo apt-get install python3.5
+----
 Install pudb and vim-pudb.
 
 Can use vim one to set breakpoint, then run them in pudb itself. Both on pip.
@@ -29,3 +35,5 @@ Install mypy
 Recall that mypy needs python3. Use the following (ensure it's not in a venv):
 
 sudo pip3 install mypy-lang typing
+
+---
