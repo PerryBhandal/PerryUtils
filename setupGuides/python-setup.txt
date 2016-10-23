@@ -2,7 +2,7 @@ Install other versions of Python (3.5, what else?)
 
 http://askubuntu.com/questions/682869/how-do-i-install-newer-python-versions-using-apt-get
 
-sudo add-apt-repository ppa:fkrull/deadsnakes; sudo apt-get update; sudo apt-get install python3.5
+sudo add-apt-repository ppa:fkrull/deadsnakes; sudo apt-get update; sudo apt-get install python3.5 python3.5-dev
 ----
 Install pudb and vim-pudb.
 
