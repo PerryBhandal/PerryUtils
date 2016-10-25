@@ -1,0 +1,9 @@
+Using PySide with Qt4 on Python 3.4 (*not* 3.5).
+
+Based on: http://pyside.readthedocs.io/en/latest/building/linux.html
+
+# Get build deps:
+
+sudo apt-get install build-essential git cmake libqt4-dev libphonon-dev python2.7-dev python3.4-dev libxml2-dev libxslt1-dev qtmobility-dev libqtwebkit-dev
+
+Now once you install pyside (so far only tried it outside of a virtual environment) it'll automatically compile Qt4.
