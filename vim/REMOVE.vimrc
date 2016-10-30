@@ -194,6 +194,14 @@ Plugin 'tpope/vim-sensible'
 
 Plugin 'airblade/vim-gitgutter'
 
+" Typescript
+Plugin 'HerringtonDarkholme/yats'
+Plugin 'Quramy/tsuquyomi'
+au BufNewFile,BufRead *.ts set filetype=typescript
+
+"
+" End typescript
+
 "Tagbar
 Plugin 'majutsushi/tagbar'
 nnoremap <s-t> :TagbarToggle<cr>
