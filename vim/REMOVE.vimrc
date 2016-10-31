@@ -197,6 +197,7 @@ Plugin 'airblade/vim-gitgutter'
 " Typescript
 Plugin 'HerringtonDarkholme/yats'
 Plugin 'Quramy/tsuquyomi'
+au BufNewFile,BufRead *.tsx set filetype=typescript.jsx
 au BufNewFile,BufRead *.ts set filetype=typescript
 
 "
