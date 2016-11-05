@@ -159,6 +159,10 @@ pip install neovim
 
 - Make sure you have tern installed system wide. Also go into ~/.vim/bundle/tern_for_vim and run npm install
 
+---
+
+Ensure vimproc is installed for typescript specific tools. To install it go into ~/.vim/bundle/vimproc.vim and run make. Note, have to do this after you've done PluginInstall.
+
 ******************************
 DEPRECATED
 
