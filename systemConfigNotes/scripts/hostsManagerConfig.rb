@@ -17,6 +17,9 @@ BLOCK_LIST = [
   "www.arenajunkies.com",
   "www.worldofwarcraft.com",
   "www.johnstonefitness.com",
+  "redcache.slack.com",
+  "www.slack.com",
+  "www.facebook.com"
 ]
 
 BASE_ENTRIES = 
