@@ -7,3 +7,4 @@ let g:ycm_semantic_triggers['typescript'] = ['.']
 " lags on save. Add it back once you update to Vim 8.
 let g:syntastic_typescript_checkers = ['tslint', 'tsc']
 
+let g:tsuquyomi_disable_quickfix = 1
