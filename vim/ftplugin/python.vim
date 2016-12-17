@@ -2,7 +2,7 @@
 map <buffer> <f5> :!python %<CR>
 
 let g:syntastic_python_checkers = ['pyflakes']
-
+let g:jedi#use_splits_not_buffers = "right"
 " Rope-mode
 
 if exists('rope_enable')
