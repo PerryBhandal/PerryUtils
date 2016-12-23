@@ -3,3 +3,11 @@ http://stackoverflow.com/questions/33332394/angular-2-typescript-cant-find-names
 Above fixes issue when you have typescriptORM errors during builds via tsc. Specifically "npm install @types/core-js"
 
 Also ensure that you have your target set to es6 in your tsconfig.
+
+--
+
+Using nodejs modules from the command line:
+
+Within the dir that you run from run
+
+npm install node @types/node typescript-require
