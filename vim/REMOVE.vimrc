@@ -182,7 +182,7 @@ let g:ycm_server_python_interpreter = "/usr/bin/python"
 Plugin 'buffet.vim'
 
 " Ignore for nerd tree
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.pyc$', '__pycache__']
 
 "Ctrlp
 Plugin 'kien/ctrlp.vim'
