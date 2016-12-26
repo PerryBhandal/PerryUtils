@@ -58,6 +58,11 @@ TODO [0]: Can we just upgrade a single package or do we need to do apt-get upgra
 
 3) Now you can compile the YCM completer using Python. In the YCM dir run python3.5 (or whatever python you want to use) install.py --all. 
 
+4) The final step (this is already done in your stored vimrc) is to specify that python3 be used as your interpreter for YCM:
+
+let g:ycm_python_binary_path = 'python3'
+
+This step solves the "dynamic module does not define init function (PyInit_ycm_core)" error.
 
 **** Install YCM auto completion
 
