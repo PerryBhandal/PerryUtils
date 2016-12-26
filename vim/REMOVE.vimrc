@@ -176,7 +176,7 @@ Plugin 'Valloric/YouCompleteMe'
 let g:ycm_autoclose_preview_window_after_insertion = 1 
 " Attempting to fix YCM import error. Presumably due to it attemptig to load
 " the script in python 3 instead of python 2.
-let g:ycm_server_python_interpreter = "/usr/bin/python"
+let g:ycm_server_python_interpreter = "/usr/bin/python3"
 " END YouCompleteMe
 
 Plugin 'buffet.vim'
