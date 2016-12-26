@@ -52,7 +52,7 @@ To resolve it you need to:
 
 2) Upgrade your cmake from ~2.8 to ~3.2 (otherwise you'll get an error about python include dirs). Use this PPA for the cmake portion:
 
-sudo apt-get install software-properties-common; sudo add-apt-repository ppa:george-edison55/cmake-3.x; sudo apt-get upgrade cmake
+sudo apt-get install software-properties-common; sudo add-apt-repository ppa:george-edison55/cmake-3.x; sudo apt-get update; sudo apt-get upgrade cmake
 
 TODO [0]: Can we just upgrade a single package or do we need to do apt-get upgrade and let everything hit?)
 
