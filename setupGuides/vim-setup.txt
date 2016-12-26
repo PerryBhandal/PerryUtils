@@ -42,6 +42,23 @@ Once the above is done ensure you have an alias for "vim -g" called gvim. Should
 
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+** Upgrade cmake
+
+Note that Jedi for python3 (including pep484 annotation based completions) doesn't work unless you run jedi via Python3. The problem is that even if you compile vim with python3 YCM's completer still uses python2 when running Jedi.
+
+To resolve it you need to:
+
+1) Install python3-dev
+
+2) Upgrade your cmake from ~2.8 to ~3.2 (otherwise you'll get an error about python include dirs). Use this PPA for the cmake portion:
+
+sudo apt-get install software-properties-common; sudo add-apt-repository ppa:george-edison55/cmake-3.x; sudo apt-get upgrade cmake
+
+TODO [0]: Can we just upgrade a single package or do we need to do apt-get upgrade and let everything hit?)
+
+3) Now you can compile the YCM completer using Python. In the YCM dir run python3.5 (or whatever python you want to use) install.py --all. 
+
+
 **** Install YCM auto completion
 
 1) Ensure development tools and cmake are installed (sudo apt-get install build-essential cmake)
