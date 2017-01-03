@@ -42,6 +42,12 @@ Once the above is done ensure you have an alias for "vim -g" called gvim. Should
 
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+** If you get an error with YCM on startup
+
+Had issues with 484 annotations and YCM when editing a file called test.py. Switched name and it worked fine -- has something to do with imports/name clashing. See:
+
+https://github.com/Valloric/YouCompleteMe/issues/2332
+
 ** Upgrade cmake
 
 Note that Jedi for python3 (including pep484 annotation based completions) doesn't work unless you run jedi via Python3. The problem is that even if you compile vim with python3 YCM's completer still uses python2 when running Jedi.
