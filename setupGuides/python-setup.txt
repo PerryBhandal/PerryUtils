@@ -16,7 +16,20 @@ Disable the annoying notifications by patching out the broadcaster call:
 
 sudo sed --in-place=.bak -r 's/(broadcaster.success)/pass #\1/g' /usr/local/lib/python2.7/dist-packages/sniffer/runner.py; sudo sed --in-place=.bak -r 's/(broadcaster.failure)/pass #\1/g' /usr/local/lib/python2.7/dist-packages/sniffer/runner.py
 ---
-Install pyflakes as well.
+Checking
+
+Install mypy, pyflakes and pylint globally.
+
+For mypy and pylint be sure to get them from their git repos:
+
+https://github.com/python/mypy
+
+https://github.com/PyCQA/pylint
+
+The current version of mypy is throwing an error from an assert, you can just comment that out.
+
+Ensure all installs are done using python3 (keep none of the above installed on Python 2 to avoid using Py2 linters on Py3 code).
+
 ---
 For debugging use pudb and ipdb.
 
