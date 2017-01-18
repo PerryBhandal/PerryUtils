@@ -6,6 +6,13 @@ Install necessary apps:
 
 sudo apt-get install git subversion gnome-do gnustep-gui-runtime curl xclip ruby xdotool gnome-screenshot silversearcher-ag chromium-browser cloc
 
+====
+Install markdown viewer
+
+https://github.com/axiros/terminal_markdown_viewer
+
+Not available on apt. Run it using python 2.7 (global install).
+
 =====
 
 Install VirtualBox 5.0 directly from Oracle
