@@ -365,6 +365,8 @@ Set the battery monitor applet to be compact view, show time/percentage, show ti
 
 Fonts and sizes
 
+- Set fixed width font to Monospace 11.
+
 - Set font DPI to 110 in appearnce/fonts/details. Still need to see if this will scale up in all applications, whether menu will fit post reboot, and how to up font size in Firefox.
 
 - Set Chromium's default zoom (advanced settings) to 110%.
