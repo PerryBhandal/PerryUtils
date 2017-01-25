@@ -6,6 +6,10 @@ Install necessary apps:
 
 sudo apt-get install git subversion gnome-do gnustep-gui-runtime curl xclip ruby xdotool gnome-screenshot silversearcher-ag chromium-browser cloc
 
+===
+
+Get necessary packages for rclake and install via pip3 (colorama, zope.interface, pyinotify, PyUserInput)
+
 ====
 Install markdown viewer
 
