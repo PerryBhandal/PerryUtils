@@ -136,6 +136,9 @@ Set up new tab redirect to show about:blank on load.
 Set up SmoothScroll
 
 For laptop it's: step size 50, all others default. Only feature is "enable touchpad support."
+
+Step size is100, animation time is 50, rest is same (relative to custom initial profile).
+
 ==
 Set Chrome as your default browser.
 
