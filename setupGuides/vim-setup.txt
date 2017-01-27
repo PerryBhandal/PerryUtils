@@ -37,7 +37,15 @@ sudo make install
 
 Once the above is done ensure you have an alias for "vim -g" called gvim. Should already be in the home dot files, but verify to be sure.
 
+** Set font
 
+In vim run :set guifont=*
+
+That'll open a window, select "Monospace" regular with size 10.
+
+Also set the line spacing to ensure that underscores don't show as spaces: set linespace=2
+
+ 
 ** *** Install Vundle plugin manager
 
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
