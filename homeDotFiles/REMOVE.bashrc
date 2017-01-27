@@ -105,6 +105,7 @@ alias vnc_connect="vncviewer 192.168.1.10:5900"
 export vnc_connect
 
 export TERM=xterm-256color
+PS1='\[\033[1;32m\]\u\[\033[1;32m\]@\[\033[1;32m\]\h:\[\033[1;34m\]\w\[\033[1;34m\]\$\[\033[0m\] '
 
 export ag="ag -f"
 
