@@ -3,7 +3,7 @@ sudo apt-get remove --purge vim vim-runtime vim-gnome vim-tiny vim-common vim-gu
 
 sudo apt-get build-dep vim-gnome
  
-sudo apt-get install liblua5.1-dev luajit libluajit-5.1 python-dev ruby-dev libperl-dev libncurses5-dev libgnome2-dev libgnomeui-dev libgtk2.0-dev libatk1.0-dev libbonoboui2-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev
+sudo apt-get install liblua5.1-dev luajit libluajit-5.1 python3-dev ruby-dev libperl-dev libncurses5-dev libgnome2-dev libgnomeui-dev libgtk2.0-dev libatk1.0-dev libbonoboui2-dev libcairo2-dev libx11-dev libxpm-dev libxt-dev
 
 sudo rm -rf /usr/local/share/vim
 
@@ -23,8 +23,8 @@ make distclean
             --enable-rubyinterp \
             --enable-largefile \
             --disable-netbeans \
-            --enable-pythoninterp \
-            --with-python-config-dir=/usr/lib/python3.4/config \
+            --enable-python3interp \
+            --with-python3-config-dir=/usr/lib/python3.5/config \
             --enable-perlinterp \
             --enable-luainterp \
             --with-luajit \

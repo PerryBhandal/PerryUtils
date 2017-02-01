@@ -115,7 +115,7 @@ Install the dark horizon theme: https://chrome.google.com/webstore/detail/dark-h
 -----
 Chromium additional settings:
 
-Make the audio symbol a mute button:
+Make the audio symbol a mute button (run the chrome line in chrome's address bar. It'll take you to the audio muting setting and you can then enable it there):
 
 chrome://flags/#enable-tab-audio-muting
 
