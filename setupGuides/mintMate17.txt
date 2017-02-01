@@ -19,6 +19,12 @@ Not available on apt. Run it using python 2.7 (global install).
 
 =====
 
+Add rclake's dependencies:
+
+sudo pip3 install PyUserInput colorama sh zope.interface virtualenv
+
+====
+
 Install VirtualBox 5.0 directly from Oracle
 
 https://www.virtualbox.org/wiki/Linux_Downloads
