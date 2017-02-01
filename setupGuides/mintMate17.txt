@@ -4,7 +4,7 @@
 
 Install necessary apps:
 
-sudo apt-get install git subversion gnome-do gnustep-gui-runtime curl xclip ruby xdotool gnome-screenshot silversearcher-ag chromium-browser cloc
+sudo apt-get install git subversion gnome-do gnustep-gui-runtime curl xclip ruby xdotool gnome-screenshot silversearcher-ag chromium-browser cloc ubuntu-mono python-wnck
 
 ===
 
@@ -179,8 +179,6 @@ Set up theme
 
 Get the theme from PerryUtils/theme, run copyTo.sh
 
-Next install the ubuntu icons: apt-get install ubuntu-mono
-
 Set terminal to be white on black background. 
 
 Set the terminal scheme to match vim's theme if you plan to use vim via tmux:
@@ -209,10 +207,6 @@ Get window snapping working
 Go into scripts, run copyTo.sh.
 
 Now go into keyboard shortcuts and add the following hotkeys:
-
-If you get anerror on loading wnck module, run:
-
-sudo apt-get install python-wnck
 
 NOTE: This is being done using quicktile now, not your original script
 
