@@ -35,6 +35,9 @@ nnoremap <silent> <c-s> :w<cr>:call SyntasticCheck()<cr>
 nnoremap <tab> :Bufferlist<cr>
 nnoremap <s-tab> :tabnext<cr>
 
+" Ensures underscores show.
+set linespace=2
+
 nnoremap <F3> :setlocal spell! spelllang=en_us<CR>
 
 " Open git status
