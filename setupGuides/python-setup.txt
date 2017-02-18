@@ -50,3 +50,9 @@ Recall that mypy needs python3. Use the following (ensure it's not in a venv):
 sudo pip3 install mypy-lang typing
 
 ---
+
+Getting eralchemy working
+
+Use eralchemy for generating ER diagrams from SQLAlchemy or a standalone db.
+
+First install graphviz-dev via apt, then use pip to install pygraphviz and eralchemy.
