@@ -157,8 +157,6 @@ Plugin 'klen/python-mode'
 
 Plugin 'mitsuhiko/vim-jinja'
 
-Plugin 'jaxbot/browserlink.vim'
-
 " JAVASCRIPT BEGIN
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
@@ -345,10 +343,23 @@ au BufNewFile,BufRead *.swift set filetype=swift
 "
 "}}}
 
+""" MY PLGUINS
+function! RunMine(...)
+    py3file ~/work/git/vimpy/src/vimpy.py
+endfunction
+""" END MY PLUGINS
+
+
+
+
+
+
+
+
 
 " Add the virtualenv's site-packages to vim path
-if has('python')
-py << EOF
+if has('python3')
+python3 << EOF
 import os.path
 import sys
 import vim
