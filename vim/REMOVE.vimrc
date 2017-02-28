@@ -344,7 +344,7 @@ au BufNewFile,BufRead *.swift set filetype=swift
 "}}}
 
 """ MY PLGUINS
-function! RunMine(...)
+function! RCFunc(...)
     py3file ~/work/git/vimpy/src/vimpy.py
 endfunction
 """ END MY PLUGINS
