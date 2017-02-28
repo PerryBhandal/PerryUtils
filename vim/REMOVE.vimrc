@@ -357,8 +357,10 @@ endfunction
 
 
 
+" TODO [2]: Fix this so that it supports Python 3. Currently if I check
+" python3 it throws an error about execfile being undefined.
 " Add the virtualenv's site-packages to vim path
-if has('python3')
+if has('python')
 python3 << EOF
 import os.path
 import sys
