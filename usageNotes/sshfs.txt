@@ -1,0 +1,4 @@
+To mount via your public key first add the key to the target server's authorized_keys, then run this on the mounting client. It should auto reconnect on connection loss.
+
+sudo umount -l 70
+sshfs -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3,IdentityFile=/home/perry/.ssh/id_rsa deluge@198.154.103.70:/home/deluge/ 70
