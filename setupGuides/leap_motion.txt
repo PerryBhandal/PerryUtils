@@ -1,0 +1,34 @@
+Copied from: https://community.leapmotion.com/t/leap-motion-sdk-with-python-3-5-in-linux-tutorial/5249
+---
+Recently, old similar tutorial (http://www.warp1337.com/content/leap-motion-sdk-python3-python-33-ubuntu) became offline and it was pretty outdated anyway. But people need new tutorial, so I decided to write one. This should work in Debian and Ubuntu/Kubuntu 16. Other distros may have different package manager and/or package names but the rest should be same.
+
+First, download latest version of Leap Motion software for Linux (2.3.1+33747). It still not released officially yet but only available as "hotfix" from here:
+https://leapmotion.app.box.com/s/rlwzvt680i5r6zes75ge36ub2yt7ksx367
+If you use old release 2.3.1+31549 which is latest at the time of writing, Leap Motion Controller software may not work properly (at very least, in KDE LeapControlPanel icon in systray will be missing, so you will not be able to configure your Leap Motion without tricks).
+
+If you download hotfix, do not use SDK from it, it's SWIG interface seems to be broken:
+https://community.leapmotion.com/t/segmentation-fault-with-python-even-with-samply-py-from-sdk-solved/508515 .
+So you need to download stable version of SDK (2.3.1+31549 at the time of writing). It will work just fine with 33747 software.
+
+Assuming you have downloaded both stable SDK and "hotfix" packages, here is how to install "hotfix" version of the software and then use it with Python 3.5 and stable SDK:
+
+tar -xaf LeapDeveloperKit*31549*.tgz
+tar -xaf LeapDeveloperKit*33747*.tgz
+cd LeapDeveloperKit*33747*
+sudo dpkg -i Leap*x64.deb
+cd ../LeapDeveloperKit*31549*/LeapSDK
+mkdir python3.5_project
+cp -a lib/x64/libLeap.so lib/Leap.py samples/Sample.py python3.5_project/
+sudo apt-get install swig g++ libpython3.5-dev
+2to3-3.5 -nw python3.5_project/Sample.py
+wget http://tinyurl.com/leap-i-patch -O Leap.i.diff
+patch -p0 < Leap.i.diff
+swig -c++ -python -o /tmp/LeapPython.cpp -interface LeapPython include/Leap.i
+g++ -fPIC -I/usr/include/python3.5m -I./include /tmp/LeapPython.cpp lib/x64/libLeap.so -shared -o python3.5-project/LeapPython.so
+cd python3.5-project/
+LD_PRELOAD=./libLeap.so python3.5 Sample.py
+This is it, it should be working.
+
+If you encounter SystemError, please read this topic: https://community.leapmotion.com/t/error-for-python-3-4-3-wrapper/416419 . In that thread you also can learn why patching Leap.i was necessary.
+
+One issue not related to Python/SWIG but that I think is worth mentioning anyway: for me, Leap Motion works as expected after system start up most of the time, but sometimes I need to execute "sudo service leapd restart" multiple times to get it working. I have encountered this issue on both real and virtual hardware. Not sure what causes it, but knowing this workaround may save some time if you encounter this problem.
