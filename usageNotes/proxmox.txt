@@ -1,0 +1,7 @@
+To load a VM's console do the following:
+
+1) Open your Java control panel and add the proxmox server's IP (including port) to the exceptions list. In your case it's https://198.154.100.110:8006
+
+2) Open Firefox and load Proxmox
+
+3) Log in, try to load the console and hit "allow and remember" when prompted about running Java.
