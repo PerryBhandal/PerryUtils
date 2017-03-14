@@ -1,0 +1,9 @@
+Using additional IPs in KVM on Proxmox (may not apply to LXC):
+
+- Create a virtual mac address for the IP
+
+- Create the container, ensure you use the virtual mac address is set as the interface's mac address during creation.
+
+- In set up use the netmask provided in the extra IP e-mail.
+
+- Use the gateway from your block (not the main server's gateway as the instructions mention).
