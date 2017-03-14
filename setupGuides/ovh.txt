@@ -7,3 +7,28 @@ Using additional IPs in KVM on Proxmox (may not apply to LXC):
 - In set up use the netmask provided in the extra IP e-mail.
 
 - Use the gateway from your block (not the main server's gateway as the instructions mention).
+
+--
+
+Migrating openVZ to LXC and updating network config.
+
+1) Run a backup then pull the lzo to ovh.
+
+2) Restore the save: pct restore 103 vzdump-openvz-103-2017_03_14-03_19_34.tar.lzo
+
+In the above replace 103 with the desired node id and the lzo to the system you want to restore.
+
+3) Generate a virtual mac address and bind the desired IP to it (do this via cpanel [right click ip, make virtual mac])
+
+4) Add the ip (via proxmox's network ui, not directly to interfaces) with the following settings:
+
+name: eth0
+
+MAC Address: Set this to your virtual MAC
+
+IPV4 static, 149.56.34.x/29 , replace x with last octet
+Gateway is 149.56.34.126 [*NOT* the root system's ip with 254 as the last octet [ovh suggests this])
+
+5) Start the container now.
+
+6) Can enter the container to debug using pct enter 103 (node id) from the host.
