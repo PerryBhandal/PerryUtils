@@ -8,6 +8,10 @@ Using additional IPs in KVM on Proxmox (may not apply to LXC):
 
 - Use the gateway from your block (not the main server's gateway as the instructions mention).
 
+IPV4 static, 149.56.34.x/29 , replace x with last octet
+Gateway is 149.56.34.126 [*NOT* the root system's ip with 254 as the last octet [ovh suggests this])
+Netmask is 255.255.255.248
+
 --
 
 Migrating openVZ to LXC and updating network config.
@@ -28,6 +32,7 @@ MAC Address: Set this to your virtual MAC
 
 IPV4 static, 149.56.34.x/29 , replace x with last octet
 Gateway is 149.56.34.126 [*NOT* the root system's ip with 254 as the last octet [ovh suggests this])
+Netmask is 255.255.255.248
 
 5) Start the container now.
 
