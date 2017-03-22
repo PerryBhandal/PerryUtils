@@ -10,14 +10,9 @@ BROWSER_BIN = "chromium"
 BLOCK_LIST = [
   "www.reddit.com",
   "www.cnn.com",
-  "www.johnstonefitness.com",
   "www.bbc.com",
   "www.imgur.com",
   "www.twitch.tv",
-  "www.arenajunkies.com",
-  "www.worldofwarcraft.com",
-  "www.johnstonefitness.com",
-  "redcache.slack.com",
   "www.slack.com",
   "www.facebook.com"
 ]
