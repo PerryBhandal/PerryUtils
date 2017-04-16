@@ -1,0 +1,3 @@
+sudo apt-get install virtualbox virtualbox-guest-utils virtualbox-qt
+
+Now create a new VM instance and mount the Windows.vdi store as a hard disk.
