@@ -37,3 +37,30 @@ Netmask is 255.255.255.248
 5) Start the container now.
 
 6) Can enter the container to debug using pct enter 103 (node id) from the host.
+
+--
+
+Calculator:
+
+http://ipcalc.nmonitoring.com/?zmena=5&ip1=158&ip2=690&ip3=130&ip4=224&netmask=0&mask_bits=27&max_subnets=0&max_addresses=0
+
+Network address:	158.178.130.224 / 28
+Usable IP addresses:	158.178.130.225 - 158.178.130.238
+Broadcast:	158.178.130.239
+
+FOr instance, when using 158.69.139.225 here were the network device settigns:
+
+Name eth0
+Mac address (the one bound to 225)
+bridge: vmbr0
+No vlan tag, rate limite or firewall.
+
+IPv4 is set to static with IPv$ set to 158.69.139.225/28 and the gateway set to 158.69.139.238
+
+For some reason entering the gateway as 58.69.139.238 makes it work... Why?!
+
+---
+
+IPMI:
+
+To run IPMI add OVH's KVM IP to your Java exceptions list (open Java Config, this isn't done in browser). The IP to add to exceptions is "http://142.4.221.0"
