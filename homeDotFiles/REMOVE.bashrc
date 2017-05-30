@@ -6,6 +6,7 @@ PATH="${PATH}:/home/perry/work/applications/local_bin:/home/perry/.scripts/pathe
 ANDROID_HOME=/home/perry/work/applications/android-sdk-linux
 export ANDROID_HOME
 
+
 #Set git info
 git config --global user.name "Perry Bhandal"
 git config --global user.email "perry.bhandal@gmail.com"
@@ -26,6 +27,8 @@ git config --global core.excludesfile '~/.gitignore_global'
 
 alias undo_last_local_git_commit="git reset --soft HEAD~1"
 alias auth_key="/home/perry/work/git/PerryUtils/systemConfigNotes/scripts/authKey.sh"
+
+alias cpu_set="python /home/perry/work/git/PerryUtils/systemConfigNotes/scripts/cpu_set.py"
 
 alias zipass="zip -e -r -T"
 
