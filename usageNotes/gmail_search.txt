@@ -1,0 +1,9 @@
+Based on:
+
+https://support.google.com/mail/answer/7190?hl=en&vid=0-777775844216-1498681741339
+
+Examples:
+
+Can do multiple 'contains' using:
+
+user@gmail.com {"term_one" or "term_two"} 
