@@ -24,6 +24,12 @@ Add rclake's dependencies:
 sudo pip3 install PyUserInput colorama sh zope.interface virtualenv
 
 ====
+Increase watch count
+
+This resolves the ENOSPC error you get when you're running inotify regularly, or if you're running it on folders where you have symlinks. Only need to set this once.
+
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+====
 
 Install VirtualBox 5.0 directly from Oracle
 
