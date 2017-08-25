@@ -5,6 +5,8 @@
 
 set nocompatible " Ensure this always remains at the top as it has side effects.
 
+set guifont=Monospace\ 10.5
+
 "{{{General Hotkeys
 
 " Jump between windows
