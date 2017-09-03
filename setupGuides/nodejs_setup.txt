@@ -4,3 +4,11 @@ curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
 Now install browserify globally.
+
+===
+
+Update npm:
+
+npm install npm@latest -g
+
+If you don't you'll get the "Arch__Package" error.
