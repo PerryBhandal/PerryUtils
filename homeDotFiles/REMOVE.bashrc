@@ -96,8 +96,10 @@ type rvm | head -n 1 > /dev/null
 alias gvim="vim -g"
 export gvim
 
-alias cpu_performance="sudo cpufreq-set -r -g performance #-r"
-alias cpu_powersave="sudo cpufreq-set -r -g powersave #-r"
+# TODO [1]: Iterate over the number of cores instead of manually doing it as you do below (move it into a Python script?
+alias cpu_performance="sudo cpufreq-set -r -g performance 0-r; sudo cpufreq-set -r -g performance 1-r; sudo cpufreq-set -r -g performance 2-r;  sudo cpufreq-set -r -g performance 3-r"
+alias cpu_powersave="sudo cpufreq-set -r -g powersave 0-r; sudo cpufreq-set -r -g powersave 1-r; sudo cpufreq-set -r -g powersave 2-r;  sudo cpufreq-set -r -g powersave 3-r"
+
 export cpu_performance
 export cpu_powersave
 
