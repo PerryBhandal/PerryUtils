@@ -386,6 +386,22 @@ Fonts and sizes
 ===
 
 ############################
+##### XPS 9360 ##############
+###########################
+
+Mouse issue
+
+This covers the erratic 'sticky' mouse issue:
+
+http://www.dell.com/support/article/ca/en/cabsdt1/sln304721/erratic-cursor-movement-on-the-xps-13-15-series-laptops-and-precision-mobile-workstations-with-ubuntu-1604-installed?lang=en
+
+Commands are
+
+sudo echo "blacklist psmouse" > /etc/modprobe.d/xps13-9360.conf; sudo update-initramfs -u
+
+Now reboot.
+
+############################
 ##### Zenbook ##############
 ###########################
 
