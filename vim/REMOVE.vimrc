@@ -155,7 +155,7 @@ Plugin 'xuhdev/vim-latex-live-preview'
 " UI Elements
 Plugin 'bling/vim-airline'
 
-Plugin 'klen/python-mode'
+" Plugin 'klen/python-mode'
 
 Plugin 'mitsuhiko/vim-jinja'
 

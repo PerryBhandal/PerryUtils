@@ -97,6 +97,7 @@ alias gvim="vim -g"
 export gvim
 
 # TODO [1]: Iterate over the number of cores instead of manually doing it as you do below (move it into a Python script?
+# TODO [0]: Here's the for loop to do it: for ((i=0;i<$(nproc);i++)); do sudo cpufreq-set -c $i -r -g performance; done
 alias cpu_performance="sudo cpufreq-set -r -g performance 0-r; sudo cpufreq-set -r -g performance 1-r; sudo cpufreq-set -r -g performance 2-r;  sudo cpufreq-set -r -g performance 3-r"
 alias cpu_powersave="sudo cpufreq-set -r -g powersave 0-r; sudo cpufreq-set -r -g powersave 1-r; sudo cpufreq-set -r -g powersave 2-r;  sudo cpufreq-set -r -g powersave 3-r"
 
