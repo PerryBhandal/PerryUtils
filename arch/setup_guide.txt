@@ -19,4 +19,14 @@ On new desktop, the ethernet controller is e1000e. 00:1f.6.
 
 Found this using lspci -v | grep Ethernet
 
+Could e1000e-dkms solve it?
 
+==
+
+General tools info
+
+https://wiki.archlinux.org/title/installation_guide
+
+If you reenter the installer, you need to use arch-chroot to remount your install:
+
+arch-chroot /mnt
