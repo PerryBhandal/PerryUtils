@@ -29,4 +29,28 @@ https://wiki.archlinux.org/title/installation_guide
 
 If you reenter the installer, you need to use arch-chroot to remount your install:
 
+First you need to mount your root partition to /mnt and your swap is on:
+
+mount /dev/<partition> /mnt
+swapon /dev/<swap par> # Don't have to do this if you don't want.
+
+Then run
+
 arch-chroot /mnt
+
+==
+
+Missing packages in your install initially:
+
+dhcpcd
+
+===
+
+Networking:
+
+Initially you need to enable and start the dhpccd yourself
+
+systemctl enable dhcpcd@enp0s31f6 (or whatever the id is from your dmesg | grep e***)
+
+Then do systemctl start. It'll now run on every reboot.
+
