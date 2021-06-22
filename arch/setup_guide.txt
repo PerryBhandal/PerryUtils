@@ -1,0 +1,12 @@
+Problems
+==
+
+Install dosfstools so you can do mkfs.vfat
+
+pacman -S dosfstools; mkfs.vfat -F32 /dev/<DRIVE HERE>
+
+==
+
+mount -a remounts fstab.
+
+Ensure your EFI system partition is not over 512 megs. You have to manually add it into your FSTAB using its partid. Get it from blkid.
