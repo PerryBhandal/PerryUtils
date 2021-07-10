@@ -1,3 +1,8 @@
+Missing packages
+==
+
+sudo
+
 Problems
 ==
 
@@ -54,3 +59,22 @@ systemctl enable dhcpcd@enp0s31f6 (or whatever the id is from your dmesg | grep 
 
 Then do systemctl start. It'll now run on every reboot.
 
+
+==
+==
+
+user interface
+
+Ensure you have your locale set or terminal won't open.
+
+==
+
+Gnome
+
+systemctl enable GDM
+
+==
+
+Create your user and add it to sudoers
+
+Use sudo visudo or you'll get write issues.

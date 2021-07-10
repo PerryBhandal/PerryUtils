@@ -1,0 +1,3 @@
+Install kupfer. Set the default action for chrome to open a new window, .Do that by typing in "google chrome", then click the cog icon and select "Make launch again default"
+
+To fix ui scale go into appearance, fonts, details, then increase the font resolution from 96 to 128.
