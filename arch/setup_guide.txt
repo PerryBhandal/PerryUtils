@@ -18,6 +18,14 @@ Ensure your EFI system partition is not over 512 megs. You have to manually add 
 
 ==
 
+drive layout:
+
+efi: 512mb. Alias efi.
+swap: 64 gigs. Alias swap.
+all remaining space to /. Determine that using F in fdisk. Alias linux.
+
+==
+
 Ethernet:
 
 On new desktop, the ethernet controller is e1000e. 00:1f.6.
