@@ -18,6 +18,15 @@ Ensure your EFI system partition is not over 512 megs. You have to manually add 
 
 ==
 
+***Remounting/prepping when re-entering installer**
+
+mount /dev/nvme0n1p3 /mnt
+mount /dev/nvme0n1p1 /boot/efi
+
+pacman -S grub; grub-install --target=x86_64-efi --efi-directory=/boot/efi --boot-directory=/boot/efi --bootloader-id=GRUB
+
+==
+
 drive layout:
 
 efi: 512mb. Alias uefi.
@@ -65,8 +74,11 @@ Initially you need to enable and start the dhpccd yourself
 
 systemctl enable dhcpcd@enp0s31f6 (or whatever the id is from your dmesg | grep e***)
 
-Then do systemctl start. It'll now run on every reboot.
 
+
+Then do systemctl start ( systemctl start dhcpcd@enp0s31f6 . It'll now run on every reboot.
+
+(Also seems you can find it in 'ip link', it lists the identifier on the left.
 
 ==
 ==
@@ -86,3 +98,11 @@ systemctl enable GDM
 Create your user and add it to sudoers
 
 Use sudo visudo or you'll get write issues.
+
+==
+==
+==
+
+**BOOTLOADER**
+
+pacman -S grub efibootmgr; mkdir /boot/efi; mount /dev/nvme0n1p1 /boot/efi; grub-install --target=x86_64-efi --bootloader-id=GRUB --efi-directory=/boot/efi; grub-mkconfig -o /boot/grub/grub.cfg
