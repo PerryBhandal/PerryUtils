@@ -20,8 +20,8 @@ Ensure your EFI system partition is not over 512 megs. You have to manually add 
 
 drive layout:
 
-efi: 512mb. Alias efi.
-swap: 64 gigs. Alias swap.
+efi: 512mb. Alias uefi.
+swap: 64 gigs. Alias swap. +64G.
 all remaining space to /. Determine that using F in fdisk. Alias linux.
 
 ==
