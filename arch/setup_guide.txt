@@ -133,6 +133,8 @@ Configure browser:
 
 https://itsfoss.com/install-chrome-arch-linux/
 
+Once installed, go into kupfer to launch it, click the top right icon, and then select "launch again."
+
 --
 
 Create your user, then add yourself to sudoers.
