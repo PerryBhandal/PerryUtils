@@ -1,3 +1,7 @@
+Unresolved issues:
+
+- Getting force composition pipeline to work to prevent screen tearing.
+
 Missing packages
 ==
 
