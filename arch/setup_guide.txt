@@ -106,3 +106,38 @@ Use sudo visudo or you'll get write issues.
 **BOOTLOADER**
 
 pacman -S grub efibootmgr; mkdir /boot/efi; mount /dev/nvme0n1p1 /boot/efi; grub-install --target=x86_64-efi --bootloader-id=GRUB --efi-directory=/boot/efi; grub-mkconfig -o /boot/grub/grub.cfg
+
+===
+
+**DESKTOP ENVIRONMENT**
+
+https://www.tecmint.com/install-mate-desktop-in-arch-linux/
+
+Once booted in, you need to:
+
+1) Set up monitor placements.
+2) Set up a keybind for terminal. Go into terminal and set your color scheme to white on black.
+3) pacman -S kupfer
+4) Setup your hotkeys
+
+	ctrl + alt + t > launch terminal
+	alt + directional arrow > snap in direction.
+
+---
+
+Configure browser:
+
+https://itsfoss.com/install-chrome-arch-linux/
+
+--
+
+Create your user, then add yourself to sudoers.
+
+https://linuxize.com/post/how-to-create-users-in-linux-using-the-useradd-command/
+
+useradd --create-home perry
+passwd perry
+sudo usermod -aG wheel perry
+Uncomment out wheel in /etc/sudoers (this gives wheel group sudo permissions, perry inherits from that).
+
+Reboot after doing this before logging in.
