@@ -35,7 +35,7 @@ drive layout:
 
 efi: 512mb. Alias uefi.
 swap: 64 gigs. Alias swap. +64G.
-all remaining space to /. Determine that using F in fdisk. Alias linux.
+all remaining space to /. You just press enter during drive creation to use all remaining space, don't need to look it up. Default partition type is fine.
 
 ==
 
