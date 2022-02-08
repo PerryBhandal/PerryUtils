@@ -20,7 +20,19 @@ mount -a remounts fstab.
 
 Ensure your EFI system partition is not over 512 megs. You have to manually add it into your FSTAB using its partid. Get it from blkid.
 
-==
+==** Config sudo and create user **==
+
+Uncomment the sudo group line in /etc/sudoers
+
+Create your user and add a home directory:
+
+useradd -m perry
+
+passwd perry
+
+usermod -aG sudo perry
+
+====
 
 ***Remounting/prepping when re-entering installer**
 
