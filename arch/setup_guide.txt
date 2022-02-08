@@ -22,7 +22,7 @@ Ensure your EFI system partition is not over 512 megs. You have to manually add 
 
 ==** Config sudo and create user **==
 
-Uncomment the sudo group line in /etc/sudoers
+Uncomment the wheel group line in /etc/sudoers (sudo group doesn't exist on arch). Ensure it's the one that still requires a password.
 
 Create your user and add a home directory:
 
@@ -30,7 +30,7 @@ useradd -m perry
 
 passwd perry
 
-usermod -aG sudo perry
+usermod -aG wheel perry
 
 ====
 
