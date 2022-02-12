@@ -6,6 +6,11 @@ PATH="${PATH}:/home/perry/work/applications/local_bin:/home/perry/.scripts/pathe
 ANDROID_HOME=/home/perry/work/applications/android-sdk-linux
 export ANDROID_HOME
 
+#### Recent entries
+
+export FLASK_ENV=development
+
+####
 
 #Set git info
 git config --global user.name "Perry Bhandal"
