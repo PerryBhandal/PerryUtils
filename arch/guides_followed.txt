@@ -1,0 +1,3 @@
+To install the Nvidia driver:
+
+https://howto.lintel.in/install-nvidia-arch-linux/	
