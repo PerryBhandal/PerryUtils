@@ -2,6 +2,8 @@
 
 sudo pacman -S nvidia-settings
 
+Set "Force full composition pipeline" for all 3 monitors. This prevents tearing.
+
 # Set the DPI to tweak the UI scale.
 
 Currently using 112
