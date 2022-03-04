@@ -1,0 +1,9 @@
+# Install nvidia-settings
+
+sudo pacman -S nvidia-settings
+
+# Set the DPI to tweak the UI scale.
+
+Currently using 112
+
+
