@@ -8,4 +8,8 @@ Set "Force full composition pipeline" for all 3 monitors. This prevents tearing.
 
 Currently using 112
 
+# Important packages (incomplete list)
+
+the_silver_searcher (used for ag)
+
 
