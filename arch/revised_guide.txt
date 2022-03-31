@@ -12,4 +12,10 @@ Currently using 112
 
 the_silver_searcher (used for ag)
 
+# Create your spotify icon.
 
+Create a custom application launcher. Set its command to
+
+google-chrome-stable --new-window https://open.spotify.com/collection/tracks
+
+Set the icon to the spotify icon from the icons folder.
