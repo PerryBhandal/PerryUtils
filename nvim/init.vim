@@ -25,25 +25,17 @@ call plug#begin()
     Plug 'roxma/vim-hug-neovim-rpc'
     " Install this plugin
     Plug 'roxma/nvim-yarp', { 'do': 'pip install -r requirements.txt' }
-
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " assuming you're using vim-plug: https://github.com/junegunn/vim-plug
-    Plug 'ncm2/ncm2'
     Plug 'roxma/nvim-yarp'
-
-    " enable ncm2 for all buffers
-    autocmd BufEnter * call ncm2#enable_for_buffer()
 
     " IMPORTANT: :help Ncm2PopupOpen for more information
     set completeopt=noinsert,menuone,noselect
 
-    " NOTE: you need to install completion sources to get completions. Check
-    " our wiki page for a list of sources: https://github.com/ncm2/ncm2/wiki
-    Plug 'ncm2/ncm2-bufword'
-    Plug 'ncm2/ncm2-path'
-Plug 'ncm2/ncm2-jedi'
-Plug 'ncm2/ncm2'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'scrooloose/nerdtree'
+
 call plug#end()
 
 
@@ -53,7 +45,6 @@ inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' : '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 filetype plugin on
 
-autocmd BufEnter * call ncm2#enable_for_buffer()
 set completeopt=noinsert,menuone,noselect
 
 " supress the annoying 'match x of y', 'The only match' and 'Patter not found'
@@ -62,46 +53,6 @@ set completeopt=noinsert,menuone,noselect
 
 " CTRL-C doesn't trigger the InsertLeave autocmd . map to <ESC> instead.
 inoremap <c-c> <ESC>
-
-" When the <Enter> key is pressed while the popup menu is visible, it only
-" hides the menu. Use this mapping to close the menu and also start a new line
-inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>")
-
-
-    " suppress the annoying 'match x of y', 'The only match' and 'Pattern not
-    " found' messages
-    set shortmess+=c
-
-    " CTRL-C doesn't trigger the InsertLeave autocmd . map to <ESC> instead.
-    inoremap <c-c> <ESC>
-
-    " When the <Enter> key is pressed while the popup menu is visible, it only
-    " hides the menu. Use this mapping to close the menu and also start a new
-    " line.
-    inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>")
-
-    " Use <TAB> to select the popup menu:
-inoremap <expr> <tab> pumvisible() ? "\<c-n>" : "\<tab>"
-
-inoremap <expr> <s-tab> pumvisible() ? "\<c-p>" : "\<tab>"
-
-    " wrap existing omnifunc
-    " Note that omnifunc does not run in background and may probably block the
-    " editor. If you don't want to be blocked by omnifunc too often, you could
-    " add 180ms delay before the omni wrapper:
-    "  'on_complete': ['ncm2#on_complete#delay', 180,
-    "               \ 'ncm2#on_complete#omni', 'csscomplete#CompleteCSS'],
-    au User Ncm2Plugin call ncm2#register_source({
-            \ 'name' : 'css',
-            \ 'priority': 9,
-            \ 'subscope_enable': 1,
-            \ 'scope': ['css','scss'],
-            \ 'mark': 'css',
-            \ 'word_pattern': '[\w\-]+',
-            \ 'complete_pattern': ':\s*',
-            \ 'on_complete': ['ncm2#on_complete#omni', 'csscomplete#CompleteCSS'],
-            \ })
-
 set nocompatible " Ensure this always remains at the top as it has side effects.
 
 set guifont=Monospace\ 10.5
@@ -151,7 +102,6 @@ nnoremap <c-a> <esc>ggvG<s-$>
 
 
  " BEGIN NERDTREE                                                                
-Plug 'scrooloose/nerdtree'                                                    
 map <a-p> :NERDTreeToggle<CR>                                                   
 " Auto close side file window when we select a file.                            
 let NERDTreeQuitOnOpen=1                                                        
@@ -163,3 +113,6 @@ nnoremap y "+y
 vnoremap y "+y
 nnoremap p "+p
 vnoremap p "+p
+
+" Make tab autocomplete
+inoremap <tab> <c-n>
