@@ -1,7 +1,7 @@
 cd /home/perry/work
 export LANG=en_US.UTF-8
 alias gopen="gnome-open 2>/dev/null"
-PATH="${PATH}:/home/perry/work/applications/local_bin:/home/perry/.scripts/pathed_scripts:/home/perry/work/applications/in_path"
+PATH="${PATH}:/home/perry/work/applications/local_bin:/home/perry/.scripts/pathed_scripts:/home/perry/work/applications/in_path:/home/perry/Android/sdk/emulator/"
 
 ANDROID_HOME=/home/perry/work/applications/android-sdk-linux
 export ANDROID_HOME
