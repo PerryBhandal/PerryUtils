@@ -1,4 +1,3 @@
-cd /home/perry/work
 export LANG=en_US.UTF-8
 alias gopen="gnome-open 2>/dev/null"
 PATH="${PATH}:/home/perry/work/applications/local_bin:/home/perry/.scripts/pathed_scripts:/home/perry/work/applications/in_path:/home/perry/Android/sdk/emulator/"
@@ -93,10 +92,6 @@ done
 }
 
 alias killguard="kill_guard_procs"
-
-# RVM
-source ~/.rvm/scripts/rvm
-type rvm | head -n 1 > /dev/null
 
 alias gvim="vim -g"
 export gvim
