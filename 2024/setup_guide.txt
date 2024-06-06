@@ -45,6 +45,14 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 
+** ChatGPT Terminal **
+
+curl -sS https://raw.githubusercontent.com/0xacx/chatGPT-shell-cli/main/install.sh | sudo -E bash
+
+Ensure OPENAI_KEY is defined in your bashrc.
+
+chatgpt -p "Prompt here"
+
 ** VScode**
 
 ** Android studio for simulator **
