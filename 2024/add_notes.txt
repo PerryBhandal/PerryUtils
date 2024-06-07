@@ -1,0 +1,32 @@
+Note buffer is for stuff that hasn't been added into the formal set up guide yet. Fine if it's a bit messier.
+
+==
+for laptop upgrade to 6.5 or higher kernel that will fix the nic issues.
+
+use mint-l dark aqua under appearance preferences
+
+for 9315:
+
+- when you install shadow pc also install libva-glx2 using apt.
+
+==
+generating github key:
+
+ssh-keygen -t rsa -b 4096 -C "perry.bhandal@gmail.com" -f ~/.ssh/github_rsa && cat ~/.ssh/github_rsa.pub
+
+==
+
+Make it so docker can be used by the current user without sudo
+
+sudo usermod -aG docker $USER && newgrp docker
+==
+
+Fix sound issues after suspend. Due to power save issue, it's not turning back on after suspend. Gets replaced with dummy output.
+
+sudo vi /etc/modprobe.d/alsa-base.conf
+
+Add a line to the end:
+
+options snd-hda-intel power_save=0
+
+
